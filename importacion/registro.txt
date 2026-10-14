@@ -1,0 +1,9 @@
+· búsqueda: intitle:Vigo filetype:bitmap incategory:Images_from_Nationaal_Archief
+· búsqueda: intitle:Vigo filetype:bitmap Anefo
+· búsqueda: intitle:Vigo filetype:bitmap Spaarnestad
+· búsqueda: intitle:Vigo filetype:bitmap "Nationaal Archief"
+· búsqueda: intitle:Vigo filetype:bitmap Bestanddeelnummer
+
+Revisados 1 archivos en 0 categorías.
+Nuevas: 0 (0 sin ubicación confirmada).
+Guardadas 0 fotos nuevas en importacion/resultado.json para revisar.
