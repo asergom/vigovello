@@ -22,7 +22,7 @@
     zoomControl: false
   });
   L.control.zoom({ position: 'bottomright' }).addTo(mapa);
-  L.tileLayer(C.teselas, { attribution: C.atribucion, maxZoom: C.zoomMax, className: 'teselas-oscuras' }).addTo(mapa);
+  L.tileLayer(C.teselas, { attribution: C.atribucion, maxZoom: C.zoomMax, className: 'teselas-pastel' }).addTo(mapa);
 
   // ---------- Utilidades ----------
   const clave = (lat, lng) => lat.toFixed(5) + ',' + lng.toFixed(5);

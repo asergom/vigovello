@@ -1,18 +1,20 @@
-/* VigoVello · estilo minimalista oscuro
-   Fondos grafito, un solo color de acento (azul ría) y líneas de 1px. */
+/* VigoVello · estilo minimalista en tonos pastel
+   Fondos verdemar suaves, un solo color de acento (azul ría) y líneas de 1px. */
 :root {
-  color-scheme: dark;
-  --papel: #121517;        /* fondo general */
-  --superficie: #1a1f22;   /* cabecera, paneles, ventanas */
+  color-scheme: light;
+  --papel: #dde5e3;        /* fondo general: gris verdemar pastel */
+  --superficie: #eef2f0;   /* cabecera, paneles, ventanas (claro, sin llegar a blanco) */
   --blanco: var(--superficie); /* alias: lo usa el editor */
-  --papel-2: #22282c;      /* hundidos, marcadores de imagen, campos */
-  --borde: #2f373c;        /* todas las líneas */
-  --tinta: #e8e5de;        /* texto principal */
-  --tinta-suave: #98a2a7;  /* texto secundario */
-  --acento: #5fb0c5;       /* azul ría, aclarado para fondo oscuro */
+  --papel-2: #d2dbd8;      /* hundidos, marcadores de imagen, campos */
+  --borde: #c2cdca;        /* todas las líneas */
+  --tinta: #24323a;        /* texto principal */
+  --tinta-suave: #5b6b71;  /* texto secundario */
+  --acento: #2f7286;       /* azul ría */
   --acento-fuerte: #1e5a6b;/* azul del logo */
-  --acento-suave: rgba(95, 176, 197, .14);
-  --sobre-acento: #0d1214; /* texto sobre botones de acento */
+  --acento-suave: rgba(47, 114, 134, .14);
+  --sobre-acento: #f4f7f6; /* texto sobre botones de acento */
+  --foto-fondo: #2b363c;   /* fondo tras las fotos en el visor */
+  --sombra: 0 12px 32px rgba(36, 50, 58, .18);
   --radio: 8px;
   --cab-alto: 64px;
   --panel-ancho: 380px;
@@ -51,7 +53,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .filtro { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--tinta-suave); }
 .filtro select {
   font: 500 13px var(--sans); color: var(--tinta);
-  background: var(--papel-2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%2398a2a7' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 10px center;
+  background: var(--papel-2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%235b6b71' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 10px center;
   border: 1px solid var(--borde); border-radius: var(--radio);
   padding: 6px 28px 6px 10px; appearance: none;
 }
@@ -72,13 +74,13 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .btn-idioma:hover, .btn-idioma[aria-expanded="true"] { border-color: var(--acento); }
 .btn-idioma .chevron { color: var(--tinta-suave); }
-.bandera { display: inline-flex; width: 21px; height: 14px; border-radius: 2px; overflow: hidden; flex: none; box-shadow: 0 0 0 1px rgba(255, 255, 255, .12); }
+.bandera { display: inline-flex; width: 21px; height: 14px; border-radius: 2px; overflow: hidden; flex: none; box-shadow: 0 0 0 1px rgba(36, 50, 58, .15); }
 .bandera svg { width: 100%; height: 100%; display: block; }
 .menu-idioma {
   position: absolute; right: 0; top: calc(100% + 6px); z-index: 1100;
   min-width: 170px; margin: 0; padding: 4px; list-style: none;
   background: var(--superficie); border: 1px solid var(--borde); border-radius: var(--radio);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, .45);
+  box-shadow: var(--sombra);
 }
 .menu-idioma[hidden] { display: none; }
 .menu-idioma button {
@@ -96,34 +98,34 @@ button { font: inherit; color: inherit; cursor: pointer; }
   transition: right .2s ease;
 }
 body.con-panel #mapa { right: var(--panel-ancho); }
-/* Mapa base oscuro y sin color: deja todo el protagonismo a los puntos */
-.teselas-oscuras { filter: grayscale(1) invert(1) brightness(.82) contrast(.88); }
+/* Mapa base con un tinte pastel verdemar: deja el protagonismo a los puntos */
+.teselas-pastel { filter: grayscale(1) sepia(.35) hue-rotate(130deg) saturate(.55) contrast(.86) brightness(1.03); }
 .leaflet-container { font-family: var(--sans); background: var(--papel); }
 .leaflet-bar { border: 1px solid var(--borde) !important; box-shadow: none !important; border-radius: var(--radio) !important; overflow: hidden; }
 .leaflet-bar a { background: var(--superficie) !important; color: var(--tinta) !important; border-bottom-color: var(--borde) !important; }
 .leaflet-bar a:hover { background: var(--papel-2) !important; }
-.leaflet-control-attribution { background: rgba(26, 31, 34, .85) !important; color: var(--tinta-suave); }
+.leaflet-control-attribution { background: rgba(238, 242, 240, .85) !important; color: var(--tinta-suave); }
 .leaflet-control-attribution a { color: var(--acento); }
 
 .punto {
   fill: var(--acento); fill-opacity: .9;
-  stroke: var(--papel); stroke-opacity: 1;
+  stroke: var(--superficie); stroke-opacity: 1;
   transition: fill-opacity .15s;
 }
 .punto:hover { fill-opacity: 1; }
 .leaflet-tooltip {
-  background: var(--tinta); color: var(--papel); border: 0; border-radius: 6px;
+  background: var(--tinta); color: var(--superficie); border: 0; border-radius: 6px;
   font-size: 12px; font-weight: 500; padding: 4px 8px; box-shadow: none;
 }
 .leaflet-tooltip-top::before { border-top-color: var(--tinta); }
 
 /* Puntos cuya ubicación no está confirmada: huecos y con borde discontinuo */
 .punto.punto-sin-confirmar {
-  fill: var(--papel); fill-opacity: .85;
+  fill: var(--superficie); fill-opacity: .9;
   stroke: var(--acento); stroke-dasharray: 3 2;
 }
 .punto.punto-sin-confirmar:hover { fill: var(--acento-suave); fill-opacity: 1; }
-.punto-propuesta { fill: var(--tinta); fill-opacity: 1; stroke: var(--papel); }
+.punto-propuesta { fill: var(--tinta); fill-opacity: 1; stroke: var(--superficie); }
 
 .leyenda {
   position: fixed; left: 12px; bottom: 28px; z-index: 800;
@@ -181,7 +183,7 @@ body.con-panel #mapa { right: var(--panel-ancho); }
 /* ---------- Capas (visor y "acerca de") ---------- */
 .capa { position: fixed; inset: 0; z-index: 2000; display: grid; place-items: center; padding: 20px; }
 .capa[hidden] { display: none; }
-.capa-fondo { position: absolute; inset: 0; background: rgba(5, 7, 8, .8); }
+.capa-fondo { position: absolute; inset: 0; background: rgba(36, 50, 58, .55); backdrop-filter: blur(2px); }
 .capa-cerrar { position: absolute; top: 12px; right: 12px; z-index: 2; }
 
 .visor-caja {
@@ -189,9 +191,11 @@ body.con-panel #mapa { right: var(--panel-ancho); }
   display: grid; grid-template-columns: minmax(0, 1fr) 300px;
   background: var(--superficie); border: 1px solid var(--borde); border-radius: 12px; overflow: hidden;
 }
-.visor-imagen { background: #0b0d0e; display: grid; place-items: center; min-height: 320px; }
+.visor-imagen { background: var(--foto-fondo); display: grid; place-items: center; min-height: 320px; }
 .visor-imagen img { display: block; max-width: 100%; max-height: 80vh; object-fit: contain; }
-.visor-imagen .sin-imagen { width: 100%; height: 100%; min-height: 420px; border: 0; border-radius: 0; background: #0b0d0e; }
+.visor-imagen .sin-imagen { width: 100%; height: 100%; min-height: 420px; border: 0; border-radius: 0; background: var(--foto-fondo); }
+.visor-imagen .sin-imagen span { color: #e8ece9; }
+.visor-imagen .sin-imagen small { color: #a9b6b9; }
 .visor-caja figcaption { padding: 56px 24px 24px; overflow-y: auto; max-height: 80vh; }
 .visor-caja h3 { margin: 0 0 4px; font-size: 18px; font-weight: 600; letter-spacing: -.01em; line-height: 1.3; }
 .meta { margin: 0 0 14px; font-size: 13px; color: var(--acento); font-weight: 500; }
@@ -216,7 +220,7 @@ body.con-panel #mapa { right: var(--panel-ancho); }
   position: absolute; top: 50%; transform: translateY(-50%); z-index: 2;
   width: 36px; height: 36px; border-radius: 50%;
   display: grid; place-items: center;
-  border: 1px solid var(--borde); background: rgba(26, 31, 34, .9);
+  border: 1px solid var(--borde); background: rgba(238, 242, 240, .92);
 }
 .visor-nav svg { width: 14px; height: 14px; }
 .visor-nav:hover { border-color: var(--acento); color: var(--acento); }
@@ -236,7 +240,7 @@ body.con-panel #mapa { right: var(--panel-ancho); }
   position: fixed; z-index: 1500; top: calc(var(--cab-alto) + 12px); left: 50%; transform: translateX(-50%);
   width: min(480px, calc(100% - 32px));
   background: var(--superficie); border: 1px solid var(--borde); border-radius: 12px; padding: 14px 16px;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, .45);
+  box-shadow: var(--sombra);
 }
 .propuesta[hidden] { display: none; }
 .propuesta > p { margin: 0 0 10px; font-size: 14px; font-weight: 500; }
