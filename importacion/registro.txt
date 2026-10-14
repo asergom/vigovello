@@ -1,0 +1,47 @@
+· búsqueda: ETH-BIB Vigo
+  [no imagen] File:A briefe and necessarie treatise, touching the cure of the disease called Morbus Gallicus, or Lues Venerea, by unctions and other approoved waies of curing (IA b30339601 0001).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:A briefe and necessarie treatise, touching the cure of the disease called Morbus Gallicus, or Lues Venerea, by unctions and other approoved waies of curing (IA b30339601 0002).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:A Lecture Introductory to the Course of Obstetrics in Jefferson Medical College of Philadelphia, Delivered November 5, 1842. (IA tju OA-1842 Meigs).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:Cornell University Library digitization (IA cu31924024836342).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:Laurie's catalogue of charts and other nautical works (microform) - geographically and alphabetically arranged (IA cihm 45439).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:The Bombay Gazette, 7 September 1841 (IA dli.granth.19531).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'responsiveUrls', 'size']
+  [no imagen] File:Il Cittadino Italiano n 270-1890 (IA CittadinoItaliano1892-2406).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:Logbook of the Louisiana (Ship) of New Bedford, mastered by John A. Kelley, kept by Franklin Cammett, on voyage from 3 August 1858-5 June 1862 (IA KWM-427-1).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:Logbook of the Ganges (Ship) of Nantucket, Mass., mastered by Barzillai T. Folger, kept by first mate) Unknown (attributed to Frederick W. Myrick , on voyage from 13 October 1835-18 May 1839 (IA KWM-966).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:Thomas Arnold Journal, 1784-1785 (IA Mss56-SA-Ss25-V1).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:Physica excerpta ex publicis praelectionibus (IA physica00saus).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'responsiveUrls', 'size']
+  [no imagen] File:᾿Αλεχανδρος Αφροδισεος προς τους αυτοκράτορας ... de ... 1658 (IA bim early-english-books-1641-1700 - alexander-of-aphrodisai 1658).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:1694.. Apollo Anglicanus,... 1694 (IA bim early-english-books-1641-1700 1694-apollo-anglicanus almanacs-saunders-rich 1694).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:The founders of Ohio- brief sketches of the forty-eight pioneers who, under commmand of General Rufus Putnam, landed at the mouth of the Muskingum River on the seventh of (IA foundersofohiobr00cutl 0).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:Assertion septem sacramentorum ... 1687 (IA bim early-english-books-1641-1700 assertion-septem-sacrame henry-viii-king-of-engl 1687).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:Bowker, 1675. An Almanack ... 1675 (IA bim early-english-books-1641-1700 bowker-1675-an-almanac almanacs-bowker-james 1675).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:Minutes (IA minutes 00asso).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:Symbolorum & Emblomatum ex Animalibus ... 1595 (IA bim early-english-books-1641-1700 camerarius-joachim 1595).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:W. A. Bowles family letters, French Lick, Indiana, 1859-1904 (IA wabowlesfamilyle00in).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:Disputatio juridica de constitutionibus principum. ... 1700 (IA bim early-english-books-1641-1700 disputatio-juridica-de-c clerk-sir-john 1700).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:Lillies rules construed, ... 1694 (IA bim early-english-books-1641-1700 lillies-rules-construed- lily-william 1694).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:Rhetorices contractae ... 1664 (IA bim early-english-books-1641-1700 rhetorices-contractae- voss-gerard-johann 1664).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+· búsqueda: ETH-BIB Vigo Dia
+· búsqueda: ETH-BIB Vigo Hafen
+· búsqueda: ETH-BIB Vigo Bucht
+· búsqueda: ETH-BIB Vigo Panorama
+· búsqueda: ETH-BIB Vigo Lotse
+· búsqueda: ETH-BIB Galicien Vigo
+· búsqueda: Leo Wehrli Vigo
+· búsqueda: Mittelholzer Vigo
+· búsqueda: Comet Photo Vigo
+  [no imagen] File:România liberă 1885-08-21, nr. 2422.pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'responsiveUrls', 'size']
+  [no imagen] File:Trade catalogue of seeds, plants and bulbs (IA tradecatalogueof1893unit).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:Descriptive catalogue of the Yokohama Nursery Co., Limited. 1918-9. (IA CAT31301830).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:The quest of the gilt-edged girl (IA questofgiltedged00delyiala).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:The British navy - its making and its meaning (IA cu31924028018541).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:National magazine .. (IA nationalmagazine32brayrich).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:Men's minutes (IA mensminutes18361848dove).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:The official Catholic directory for the year of Our Lord (IA officialcatholic1911unse).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+  [no imagen] File:Manoscritto n. P MSS 1188 Fondo Principale (Biblioteca 'Joppi' - Udine) (IA P MSS 1188).pdf | mime='application/pdf' | claves=['descriptionshorturl', 'descriptionurl', 'extmetadata', 'height', 'mime', 'pagecount', 'size', 'thumbattribs']
+
+Revisados 39 archivos en 0 categorías.
+Nuevas: 0 (0 sin ubicación confirmada).
+  descartadas por no es una imagen: 31
+  descartadas por no es de Vigo: 1
+Guardadas 0 fotos nuevas en importacion/resultado.json para revisar.
