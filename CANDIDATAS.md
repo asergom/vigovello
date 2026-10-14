@@ -17,6 +17,16 @@ Las fotos de Wikimedia Commons de los apartados anteriores se han añadido al ma
 
 Desde ahora, las fotos de Wikimedia Commons se incorporan automáticamente cada semana (ver README). Este listado queda para fuentes externas a Commons.
 
+## Pendientes de decidir: fotos del archivo de la ETH de Zúrich que no están en Commons
+
+Encontradas el 14/10/2026 en el buscador [E-Pics](https://e-pics3.ethz.ch/en/home_en/) de la ETH-Bibliothek. Los enlaces a las miniaturas caducaban esa misma noche, así que se guarda el número de inventario: basta con buscarlo en E-Pics para encontrar la ficha.
+
+| N.º de inventario | Qué se sabe | Qué falta |
+|---|---|---|
+| Dia 298-05341 | Serie de diapositivas; las de la ETH suelen tener CC BY-SA 4.0 | Título, fecha, licencia y lugar. Si es libre, habría que subirla a Wikimedia Commons para tener una dirección permanente. |
+| Fel 045353 | Miniatura con marca de agua: probablemente derechos reservados | Confirmar el campo de derechos; si no es libre, pedir permiso a la ETH o descartarla. |
+| Fel 045354 | Miniatura con marca de agua: probablemente derechos reservados | Ídem. |
+
 ## C · Otras fotos sueltas encontradas en Commons (sin revisar)
 
 | Foto | Notas para revisar |
