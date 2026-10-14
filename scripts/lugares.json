@@ -1,36 +1,386 @@
 {
   "_ayuda": "Lugares de Vigo que el importador reconoce en títulos, descripciones y categorías para situar fotos sin coordenadas. Se comprueban en orden: los más concretos primero. 'claves' se buscan sin acentos y en minúsculas. 'ubicacion' es el estado que recibe la foto. Las coordenadas son aproximadas: corrígelas cuando haga falta.",
   "lugares": [
-    { "nombre": "O Berbés", "claves": ["berbes"], "lat": 42.23880, "lng": -8.72640, "ubicacion": "aproximada" },
-    { "nombre": "Porta do Sol", "claves": ["puerta del sol", "porta do sol", "sireno"], "lat": 42.23700, "lng": -8.72300, "ubicacion": "aproximada" },
-    { "nombre": "Rúa do Príncipe", "claves": ["principe"], "lat": 42.23690, "lng": -8.72080, "ubicacion": "aproximada" },
-    { "nombre": "Alameda (Praza de Compostela)", "claves": ["alameda", "compostela"], "lat": 42.23955, "lng": -8.72230, "ubicacion": "aproximada" },
-    { "nombre": "Praza da Constitución", "claves": ["constitucion", "plaza de la constitucion"], "lat": 42.23890, "lng": -8.72480, "ubicacion": "aproximada" },
-    { "nombre": "Colexiata de Santa María", "claves": ["colegiata", "colexiata", "santa maria de vigo"], "lat": 42.23930, "lng": -8.72530, "ubicacion": "aproximada" },
-    { "nombre": "Campo de Granada", "claves": ["campo de granada"], "lat": 42.23890, "lng": -8.72250, "ubicacion": "aproximada" },
-    { "nombre": "A Laxe", "claves": ["laxe", "la laje"], "lat": 42.23980, "lng": -8.72320, "ubicacion": "aproximada" },
-    { "nombre": "Rúa de Elduayen", "claves": ["elduayen"], "lat": 42.23720, "lng": -8.72420, "ubicacion": "aproximada" },
-    { "nombre": "Paseo de Alfonso XII", "claves": ["paseo de alfonso", "alfonso xii"], "lat": 42.23820, "lng": -8.72750, "ubicacion": "aproximada" },
-    { "nombre": "Rúa de Policarpo Sanz", "claves": ["policarpo sanz"], "lat": 42.23810, "lng": -8.72030, "ubicacion": "aproximada" },
-    { "nombre": "Teatro García Barbón", "claves": ["garcia barbon"], "lat": 42.23740, "lng": -8.71810, "ubicacion": "aproximada" },
-    { "nombre": "Rúa de Colón", "claves": ["colon"], "lat": 42.23620, "lng": -8.71780, "ubicacion": "aproximada" },
-    { "nombre": "Rúa de Urzaiz", "claves": ["urzaiz"], "lat": 42.23300, "lng": -8.71600, "ubicacion": "aproximada" },
-    { "nombre": "Rúa Velázquez Moreno", "claves": ["velazquez moreno"], "lat": 42.23650, "lng": -8.71950, "ubicacion": "aproximada" },
-    { "nombre": "O Areal", "claves": ["areal", "arenal"], "lat": 42.24080, "lng": -8.71600, "ubicacion": "aproximada" },
-    { "nombre": "Estación de ferrocarril", "claves": ["estacion de ferrocarril", "estacion de vigo", "railway station", "ferrocarril"], "lat": 42.23420, "lng": -8.71280, "ubicacion": "aproximada" },
-    { "nombre": "Monte do Castro", "claves": ["castro"], "lat": 42.23350, "lng": -8.72450, "ubicacion": "aproximada" },
-    { "nombre": "Castrelos", "claves": ["castrelos"], "lat": 42.21400, "lng": -8.72300, "ubicacion": "aproximada" },
-    { "nombre": "Bouzas", "claves": ["bouzas"], "lat": 42.23450, "lng": -8.75200, "ubicacion": "aproximada" },
-    { "nombre": "Coia", "claves": ["coia", "coya"], "lat": 42.22700, "lng": -8.74200, "ubicacion": "aproximada" },
-    { "nombre": "Alcabre", "claves": ["alcabre"], "lat": 42.22450, "lng": -8.76050, "ubicacion": "aproximada" },
-    { "nombre": "Praia de Samil", "claves": ["samil"], "lat": 42.21050, "lng": -8.77450, "ubicacion": "aproximada" },
-    { "nombre": "Teis", "claves": ["teis"], "lat": 42.25100, "lng": -8.69500, "ubicacion": "aproximada" },
-    { "nombre": "O Guixar", "claves": ["guixar"], "lat": 42.24450, "lng": -8.70600, "ubicacion": "aproximada" },
-    { "nombre": "Lavadores", "claves": ["lavadores"], "lat": 42.22100, "lng": -8.68800, "ubicacion": "aproximada" },
-    { "nombre": "Illas Cíes", "claves": ["cies"], "lat": 42.21800, "lng": -8.90500, "ubicacion": "aproximada" },
-    { "nombre": "Muelle de Trasatlánticos", "claves": ["trasatlantico", "transatlantico", "transatlantic", "emigrante"], "lat": 42.24100, "lng": -8.72350, "ubicacion": "aproximada" },
-    { "nombre": "Puerto de Vigo", "claves": ["puerto", "porto de vigo", "port of vigo", "harbour", "harbor", "muelle", "peirao", "lotse", "barco", "vapor", "ship", "dique"], "lat": 42.24250, "lng": -8.72400, "ubicacion": "sin_confirmar" },
-    { "nombre": "Ría de Vigo", "claves": ["ria de vigo", "bahia de vigo", "vigo bay", "batalla", "battle", "naval"], "lat": 42.24900, "lng": -8.74300, "ubicacion": "sin_confirmar" }
+    {
+      "nombre": "O Berbés",
+      "claves": [
+        "berbes",
+        "pescaderia",
+        "la ribera",
+        "escabecheiras"
+      ],
+      "lat": 42.2388,
+      "lng": -8.7264,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Porta do Sol",
+      "claves": [
+        "puerta del sol",
+        "porta do sol",
+        "sireno"
+      ],
+      "lat": 42.237,
+      "lng": -8.723,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Rúa do Príncipe",
+      "claves": [
+        "principe"
+      ],
+      "lat": 42.2369,
+      "lng": -8.7208,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Alameda (Praza de Compostela)",
+      "claves": [
+        "alameda",
+        "compostela"
+      ],
+      "lat": 42.23955,
+      "lng": -8.7223,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Praza da Constitución",
+      "claves": [
+        "constitucion",
+        "plaza de la constitucion"
+      ],
+      "lat": 42.2389,
+      "lng": -8.7248,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Colexiata de Santa María",
+      "claves": [
+        "colegiata",
+        "colexiata",
+        "santa maria de vigo"
+      ],
+      "lat": 42.2393,
+      "lng": -8.7253,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Campo de Granada",
+      "claves": [
+        "campo de granada"
+      ],
+      "lat": 42.2389,
+      "lng": -8.7225,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "A Laxe",
+      "claves": [
+        "laxe",
+        "la laje"
+      ],
+      "lat": 42.2398,
+      "lng": -8.7232,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Rúa de Cánovas del Castillo",
+      "claves": [
+        "canovas del castillo",
+        "canovas"
+      ],
+      "lat": 42.2396,
+      "lng": -8.7215,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Porta da Gamboa",
+      "claves": [
+        "gamboa"
+      ],
+      "lat": 42.2378,
+      "lng": -8.7258,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Rúa de Elduayen",
+      "claves": [
+        "elduayen"
+      ],
+      "lat": 42.2372,
+      "lng": -8.7242,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Paseo de Alfonso XII",
+      "claves": [
+        "paseo de alfonso",
+        "alfonso xii"
+      ],
+      "lat": 42.2382,
+      "lng": -8.7275,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Rúa de Policarpo Sanz",
+      "claves": [
+        "policarpo sanz"
+      ],
+      "lat": 42.2381,
+      "lng": -8.7203,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Teatro García Barbón",
+      "claves": [
+        "garcia barbon"
+      ],
+      "lat": 42.2374,
+      "lng": -8.7181,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Rúa de Colón",
+      "claves": [
+        "colon"
+      ],
+      "lat": 42.2362,
+      "lng": -8.7178,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Rúa de Urzaiz",
+      "claves": [
+        "urzaiz"
+      ],
+      "lat": 42.233,
+      "lng": -8.716,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Rúa Velázquez Moreno",
+      "claves": [
+        "velazquez moreno"
+      ],
+      "lat": 42.2365,
+      "lng": -8.7195,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "O Areal",
+      "claves": [
+        "areal",
+        "arenal"
+      ],
+      "lat": 42.2408,
+      "lng": -8.716,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Estación de ferrocarril",
+      "claves": [
+        "estacion de ferrocarril",
+        "estacion de vigo",
+        "railway station",
+        "ferrocarril"
+      ],
+      "lat": 42.2342,
+      "lng": -8.7128,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Monte do Castro",
+      "claves": [
+        "castro"
+      ],
+      "lat": 42.2335,
+      "lng": -8.7245,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Castrelos",
+      "claves": [
+        "castrelos"
+      ],
+      "lat": 42.214,
+      "lng": -8.723,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Bouzas",
+      "claves": [
+        "bouzas"
+      ],
+      "lat": 42.2345,
+      "lng": -8.752,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Coia",
+      "claves": [
+        "coia",
+        "coya"
+      ],
+      "lat": 42.227,
+      "lng": -8.742,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Alcabre",
+      "claves": [
+        "alcabre"
+      ],
+      "lat": 42.2245,
+      "lng": -8.7605,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Praia de Samil",
+      "claves": [
+        "samil"
+      ],
+      "lat": 42.2105,
+      "lng": -8.7745,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Teis",
+      "claves": [
+        "teis"
+      ],
+      "lat": 42.251,
+      "lng": -8.695,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "O Guixar",
+      "claves": [
+        "guixar"
+      ],
+      "lat": 42.2445,
+      "lng": -8.706,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "O Calvario",
+      "claves": [
+        "calvario"
+      ],
+      "lat": 42.227,
+      "lng": -8.705,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Lavadores",
+      "claves": [
+        "lavadores"
+      ],
+      "lat": 42.221,
+      "lng": -8.688,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Illas Cíes",
+      "claves": [
+        "cies"
+      ],
+      "lat": 42.218,
+      "lng": -8.905,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Muelle de Trasatlánticos",
+      "claves": [
+        "trasatlantico",
+        "transatlantico",
+        "transatlantic",
+        "emigrante",
+        "estacion maritima"
+      ],
+      "lat": 42.241,
+      "lng": -8.7235,
+      "ubicacion": "aproximada"
+    },
+    {
+      "nombre": "Casco Vello",
+      "claves": [
+        "reconquista",
+        "casco vello",
+        "casco viejo",
+        "barrio viejo"
+      ],
+      "lat": 42.2383,
+      "lng": -8.7242,
+      "ubicacion": "sin_confirmar"
+    },
+    {
+      "nombre": "Puerto de Vigo",
+      "claves": [
+        "puerto",
+        "porto de vigo",
+        "port of vigo",
+        "harbour",
+        "harbor",
+        "muelle",
+        "peirao",
+        "lotse",
+        "barco",
+        "vapor",
+        "ship",
+        "dique",
+        "hafen",
+        "le port",
+        "dampfer",
+        "steamer"
+      ],
+      "lat": 42.2425,
+      "lng": -8.724,
+      "ubicacion": "sin_confirmar"
+    },
+    {
+      "nombre": "Ría de Vigo",
+      "claves": [
+        "ria de vigo",
+        "bahia de vigo",
+        "vigo bay",
+        "batalla",
+        "battle",
+        "naval",
+        "bucht",
+        "bouchots",
+        "bateas",
+        "bateeiro",
+        "reconquista de vigo bay"
+      ],
+      "lat": 42.249,
+      "lng": -8.743,
+      "ubicacion": "sin_confirmar"
+    },
+    {
+      "nombre": "Vista general desde el Castro",
+      "claves": [
+        "panorama",
+        "vista xeral",
+        "vista general",
+        "vista de vigo",
+        "vistas de vigo",
+        "visto dende",
+        "vista desde",
+        "general view",
+        "ruckblick",
+        "uberblick",
+        "vigo desde",
+        "vigo dende"
+      ],
+      "lat": 42.2336,
+      "lng": -8.7233,
+      "ubicacion": "sin_confirmar"
+    }
   ],
-  "por_defecto": { "nombre": "Vigo (sin ubicar)", "lat": 42.23700, "lng": -8.72150, "ubicacion": "sin_confirmar" }
+  "por_defecto": {
+    "nombre": "Vigo (sin ubicar)",
+    "lat": 42.237,
+    "lng": -8.7215,
+    "ubicacion": "sin_confirmar"
+  }
 }

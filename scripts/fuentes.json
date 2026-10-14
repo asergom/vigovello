@@ -1,20 +1,117 @@
 {
-  "_ayuda": "Colecciones de Wikimedia Commons que importa scripts/importar_commons.py. 'categorias': se recorren con sus subcategorías hasta 'profundidad'. 'busquedas': búsquedas de archivos en Commons. 'antiguas' marca colecciones que son históricas en su totalidad (se aceptan fotos sin fecha). 'solo_vigo': exige que el archivo mencione Vigo o un lugar de Vigo.",
+  "_ayuda": "Colecciones de Wikimedia Commons que importa scripts/importar_commons.py. 'categorias': se recorren con sus subcategorías hasta 'profundidad'. 'busquedas': búsquedas de archivos en Commons. 'antiguas' marca colecciones que son históricas en su totalidad (se aceptan fotos sin fecha). 'solo_vigo': exige que el archivo mencione Vigo o un lugar de Vigo. 'excluir': palabras que, si aparecen en el título, la descripción o las categorías, indican un documento (prensa, actas, planos…) y no una imagen del lugar.",
   "hasta_anio": 1980,
   "categorias": [
-    { "nombre": "Category:History of Vigo", "profundidad": 3, "antiguas": false, "solo_vigo": false },
-    { "nombre": "Category:Old photographs of Vigo", "profundidad": 2, "antiguas": true, "solo_vigo": false },
-    { "nombre": "Category:Postcards published by Eugenio Krapf", "profundidad": 2, "antiguas": true, "solo_vigo": true },
-    { "nombre": "Category:Hauser y Menet", "profundidad": 2, "antiguas": true, "solo_vigo": true },
-    { "nombre": "Category:Port of Vigo", "profundidad": 2, "antiguas": false, "solo_vigo": false },
-    { "nombre": "Category:Ría de Vigo", "profundidad": 1, "antiguas": false, "solo_vigo": false }
+    {
+      "nombre": "Category:History of Vigo",
+      "profundidad": 3,
+      "antiguas": false,
+      "solo_vigo": false
+    },
+    {
+      "nombre": "Category:Old photographs of Vigo",
+      "profundidad": 2,
+      "antiguas": true,
+      "solo_vigo": false
+    },
+    {
+      "nombre": "Category:Postcards published by Eugenio Krapf",
+      "profundidad": 2,
+      "antiguas": true,
+      "solo_vigo": true
+    },
+    {
+      "nombre": "Category:Hauser y Menet",
+      "profundidad": 2,
+      "antiguas": true,
+      "solo_vigo": true
+    },
+    {
+      "nombre": "Category:Port of Vigo",
+      "profundidad": 2,
+      "antiguas": false,
+      "solo_vigo": false
+    },
+    {
+      "nombre": "Category:Ría de Vigo",
+      "profundidad": 1,
+      "antiguas": false,
+      "solo_vigo": false
+    }
   ],
   "busquedas": [
-    { "texto": "ETH-BIB Vigo", "antiguas": true, "solo_vigo": true },
-    { "texto": "Krapf Vigo", "antiguas": true, "solo_vigo": true },
-    { "texto": "Vigo postal antigua", "antiguas": false, "solo_vigo": true },
-    { "texto": "Vigo fotografía antigua", "antiguas": false, "solo_vigo": true },
-    { "texto": "Vigo Illustrated London News", "antiguas": true, "solo_vigo": true },
-    { "texto": "Vigo grabado siglo XIX", "antiguas": true, "solo_vigo": true }
+    {
+      "texto": "ETH-BIB Vigo",
+      "antiguas": true,
+      "solo_vigo": true
+    },
+    {
+      "texto": "Krapf Vigo",
+      "antiguas": true,
+      "solo_vigo": true
+    },
+    {
+      "texto": "Vigo postal antigua",
+      "antiguas": false,
+      "solo_vigo": true
+    },
+    {
+      "texto": "Vigo fotografía antigua",
+      "antiguas": false,
+      "solo_vigo": true
+    },
+    {
+      "texto": "Vigo Illustrated London News",
+      "antiguas": true,
+      "solo_vigo": true
+    },
+    {
+      "texto": "Vigo grabado siglo XIX",
+      "antiguas": true,
+      "solo_vigo": true
+    }
+  ],
+  "excluir": [
+    "periodico",
+    "periódico",
+    "newspaper",
+    "semanario",
+    "revista semanal",
+    "diario",
+    "boletin",
+    "boletín",
+    "gaceta",
+    "necroloxica",
+    "necrológica",
+    "esquela",
+    "acta de nacimiento",
+    "partida de",
+    "plano de",
+    "mapa de",
+    "map of",
+    "escudo",
+    "coat of arms",
+    "firma",
+    "signature",
+    "portada",
+    "cuberta",
+    "cubierta",
+    "carta de",
+    "letter",
+    "sello",
+    "stamp",
+    "billete",
+    "el pueblo gallego",
+    "faro de vigo",
+    "el mino",
+    "organo del",
+    "órgano del",
+    "órgano de",
+    "ecos de vigo",
+    "galicia social",
+    "catalogo de",
+    "catálogo de",
+    "marechal de france",
+    "pdf"
   ]
 }

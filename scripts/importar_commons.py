@@ -138,6 +138,17 @@ def extraer_anio(m, texto_extra):
     return None, False, ""
 
 
+def limpiar_titulo(t):
+    """Quita restos de plantillas de Commons (p. ej. 'label QS:Len,"…"')."""
+    t = re.split(r"\s*label QS:", t)[0]
+    return re.sub(r"\s+", " ", t).strip(" ,.-")
+
+
+def es_documento(texto, palabras):
+    t = normalizar(texto)
+    return any(re.search(r"\b" + re.escape(normalizar(w)) + r"\b", t) for w in palabras)
+
+
 def titulo_archivo(p):
     return p["title"].removeprefix("File:")
 
@@ -165,7 +176,7 @@ class Ubicador:
 
 
 # ------------------------------------------------------------ convertir ----
-def convertir(p, fuente, hasta, ubicador):
+def convertir(p, fuente, hasta, ubicador, excluir=()):
     info = (p.get("imageinfo") or [{}])[0]
     if not info.get("mime", "").startswith("image/") or info.get("mime") == "image/svg+xml":
         return None, "no es una imagen"
@@ -183,6 +194,8 @@ def convertir(p, fuente, hasta, ubicador):
 
     if fuente.get("solo_vigo") and "vigo" not in normalizar(texto):
         return None, "no es de Vigo"
+    if es_documento(texto, excluir):
+        return None, "documento, no imagen del lugar"
 
     anio, aprox, fecha_txt = extraer_anio(m, nombre_limpio + " " + descripcion)
     if anio is None and not fuente.get("antiguas"):
@@ -209,7 +222,7 @@ def convertir(p, fuente, hasta, ubicador):
 
     return {
         "id": f"commons-{p['pageid']}",
-        "titulo": meta(m, "ObjectName") or nombre_limpio,
+        "titulo": limpiar_titulo(meta(m, "ObjectName")) or nombre_limpio,
         "lugar": lugar,
         "anio": anio,
         "aproximada": aprox,
@@ -229,6 +242,45 @@ def convertir(p, fuente, hasta, ubicador):
     }, None
 
 
+# ------------------------------------------------ revisar importadas ----
+NOTA_SIN_UBICAR = "No se ha podido ubicar: situada de forma orientativa."
+
+
+def depurar_importadas(fotos, ubicador, excluir):
+    """Mejora las fotos importadas automáticamente que nadie ha tocado a mano:
+    limpia títulos, retira documentos y reubica las que siguen en el punto
+    por defecto si ahora se reconoce su lugar. Las fotos añadidas a mano
+    (sin "importada") no se modifican nunca."""
+    d = ubicador.defecto
+    resultado, cambios, retiradas, reubicadas = [], 0, 0, 0
+    for f in fotos:
+        if not f.get("importada"):
+            resultado.append(f)
+            continue
+        texto = f.get("titulo", "") + " " + f.get("descripcion", "")
+        if es_documento(texto, excluir):
+            retiradas += 1
+            cambios += 1
+            continue
+        t = limpiar_titulo(f.get("titulo", ""))
+        if t != f.get("titulo"):
+            f["titulo"] = t
+            cambios += 1
+        en_defecto = f.get("ubicacion") == "sin_confirmar" and abs(f["lat"] - d["lat"]) < 1e-6 and abs(f["lng"] - d["lng"]) < 1e-6
+        if en_defecto:
+            l = ubicador.situar(texto.replace(NOTA_SIN_UBICAR, ""))
+            if l is not d:
+                f.update(lat=l["lat"], lng=l["lng"], lugar=l["nombre"], ubicacion=l.get("ubicacion", "sin_confirmar"))
+                if f["ubicacion"] != "sin_confirmar":
+                    f["descripcion"] = f.get("descripcion", "").replace(NOTA_SIN_UBICAR, "").strip()
+                reubicadas += 1
+                cambios += 1
+        resultado.append(f)
+    if cambios:
+        print(f"Revisión de importadas: {retiradas} documentos retirados, {reubicadas} fotos reubicadas.")
+    return resultado, cambios
+
+
 # ---------------------------------------------------------------- main ----
 def cargar_lista(ruta):
     if not ruta.exists():
@@ -244,9 +296,11 @@ def main():
 
     fuentes = json.loads(FUENTES.read_text(encoding="utf-8"))
     hasta = fuentes.get("hasta_anio", 1980)
+    excluir = fuentes.get("excluir", [])
     ubicador = Ubicador(LUGARES)
 
     fotos = cargar_lista(FOTOS)
+    fotos, cambios = depurar_importadas(fotos, ubicador, excluir)
     excluidas = {clave_archivo(e if isinstance(e, str) else e.get("url_fuente", "")) for e in cargar_lista(EXCLUIDAS)}
     conocidas = {clave_archivo(f.get("url_fuente", "")) for f in fotos if f.get("url_fuente")} | excluidas
     conocidas |= {f["id"] for f in fotos}
@@ -261,7 +315,7 @@ def main():
             k = clave_archivo(titulo_archivo(p))
             if k in conocidas or f"commons-{p.get('pageid')}" in conocidas:
                 continue
-            f, motivo = convertir(p, fuente, hasta, ubicador)
+            f, motivo = convertir(p, fuente, hasta, ubicador, excluir)
             if f:
                 nuevas.append(f)
                 conocidas.add(k)
@@ -283,7 +337,7 @@ def main():
     for motivo, n in sorted(motivos.items(), key=lambda x: -x[1]):
         print(f"  descartadas por {motivo}: {n}")
 
-    if args.simular or not nuevas:
+    if args.simular or not (nuevas or cambios):
         return
     FOTOS.write_text(json.dumps({"fotos": fotos + nuevas}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"Guardado en {FOTOS.relative_to(RAIZ)}: {len(fotos) + len(nuevas)} fotos en total.")
