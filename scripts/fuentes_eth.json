@@ -1,0 +1,18 @@
+{
+  "_ayuda": "Fuentes para una importación puntual: fotos de Vigo del archivo de la ETH de Zúrich (ETH-Bibliothek, Bildarchiv) publicadas en Wikimedia Commons con licencia CC BY-SA 4.0.",
+  "hasta_anio": 1980,
+  "categorias": [],
+  "busquedas": [
+    { "texto": "ETH-BIB Vigo", "antiguas": true, "solo_vigo": true },
+    { "texto": "ETH-BIB Vigo Dia", "antiguas": true, "solo_vigo": true },
+    { "texto": "ETH-BIB Vigo Hafen", "antiguas": true, "solo_vigo": true },
+    { "texto": "ETH-BIB Vigo Bucht", "antiguas": true, "solo_vigo": true },
+    { "texto": "ETH-BIB Vigo Panorama", "antiguas": true, "solo_vigo": true },
+    { "texto": "ETH-BIB Vigo Lotse", "antiguas": true, "solo_vigo": true },
+    { "texto": "ETH-BIB Galicien Vigo", "antiguas": true, "solo_vigo": true },
+    { "texto": "Leo Wehrli Vigo", "antiguas": true, "solo_vigo": true },
+    { "texto": "Mittelholzer Vigo", "antiguas": true, "solo_vigo": true },
+    { "texto": "Comet Photo Vigo", "antiguas": true, "solo_vigo": true }
+  ],
+  "excluir": ["plano de", "mapa de", "map of", "karte", "escudo", "coat of arms", "pdf"]
+}
