@@ -1,22 +1,26 @@
 #!/usr/bin/env python3
 """
-Importa fotos históricas de Vigo desde Wikimedia Commons.
+Importa fotos históricas de Vigo desde Wikimedia Commons a data/fotos.json.
 
-Recorre una o varias categorías de Commons (y sus subcategorías), se queda con
-las fotos anteriores al año límite y:
-
-  * las que tienen coordenadas  -> se añaden a data/fotos.json
-  * las que NO tienen coordenadas -> se guardan en data/pendientes.json
-    para situarlas a mano con editor.html
-
-Solo usa la librería estándar de Python. Ejemplos:
+Lo ejecuta automáticamente GitHub Actions (.github/workflows/importar.yml),
+pero también se puede lanzar a mano:
 
     python3 scripts/importar_commons.py
-    python3 scripts/importar_commons.py --hasta 1975 --profundidad 3
-    python3 scripts/importar_commons.py --categoria "Category:Port of Vigo"
+    python3 scripts/importar_commons.py --simular      # no escribe nada
 
-Las fotos que ya estén en fotos.json (mismo id) no se duplican, así que puedes
-ejecutarlo tantas veces como quieras.
+Qué hace:
+  1. Recorre las categorías y búsquedas de scripts/fuentes.json.
+  2. Solo acepta licencias libres: dominio público, CC0, CC BY y CC BY-SA
+     (descarta NC, ND y cualquier licencia desconocida).
+  3. Descarta fotos posteriores a 'hasta_anio' y, en colecciones no
+     históricas, las que no tienen fecha.
+  4. Sitúa cada foto: con sus coordenadas de Commons si las tiene; si no,
+     buscando un lugar de scripts/lugares.json en su título, descripción y
+     categorías; si no, en un punto por defecto marcado "sin_confirmar".
+  5. Añade solo fotos nuevas: nunca toca las que ya están en fotos.json
+     (así se conservan las correcciones manuales) ni las de data/excluidas.json.
+
+Solo usa la librería estándar de Python.
 """
 
 import argparse
@@ -25,42 +29,38 @@ import json
 import re
 import sys
 import time
+import unicodedata
 import urllib.parse
 import urllib.request
 from pathlib import Path
 
 API = "https://commons.wikimedia.org/w/api.php"
-# Wikimedia pide identificarse con un User-Agent descriptivo.
-UA = "VigoVello/0.1 (https://github.com/asergom/vigovello)"
-
-CATEGORIAS_POR_DEFECTO = [
-    "Category:History of Vigo",
-    "Category:Old photographs of Vigo",
-    "Category:Black and white photographs of Vigo",
-]
+UA = "VigoVello/0.2 (https://github.com/asergom/vigovello)"
 
 RAIZ = Path(__file__).resolve().parent.parent
 FOTOS = RAIZ / "data" / "fotos.json"
-PENDIENTES = RAIZ / "data" / "pendientes.json"
+EXCLUIDAS = RAIZ / "data" / "excluidas.json"
+FUENTES = RAIZ / "scripts" / "fuentes.json"
+LUGARES = RAIZ / "scripts" / "lugares.json"
 
 
+# ---------------------------------------------------------------- API ----
 def api(**params):
     params.update(format="json", formatversion="2")
     url = API + "?" + urllib.parse.urlencode(params)
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    for intento in range(4):
+    for intento in range(5):
         try:
-            with urllib.request.urlopen(req, timeout=30) as r:
+            with urllib.request.urlopen(req, timeout=60) as r:
                 return json.load(r)
-        except Exception as e:  # red inestable o límite de peticiones
+        except Exception as e:
             espera = 2 ** intento
             print(f"  aviso: {e}; reintento en {espera}s", file=sys.stderr)
             time.sleep(espera)
-    raise SystemExit("No se pudo contactar con Commons.")
+    raise SystemExit("No se pudo contactar con Wikimedia Commons.")
 
 
 def paginar(**params):
-    """Recorre todas las páginas de resultados de la API."""
     cont = {}
     while True:
         datos = api(**params, **cont)
@@ -68,7 +68,11 @@ def paginar(**params):
         if "continue" not in datos:
             break
         cont = datos["continue"]
-        time.sleep(0.2)
+        time.sleep(0.3)
+
+
+PROPS = dict(prop="imageinfo|coordinates|categories", iiprop="url|extmetadata|mime|size",
+             iiurlwidth="1280", colimit="max", cllimit="max", clshow="!hidden")
 
 
 def subcategorias(cat, profundidad, vistas):
@@ -78,133 +82,211 @@ def subcategorias(cat, profundidad, vistas):
     yield cat
     if profundidad <= 0:
         return
-    for datos in paginar(action="query", list="categorymembers", cmtitle=cat,
-                         cmtype="subcat", cmlimit="max"):
+    for datos in paginar(action="query", list="categorymembers", cmtitle=cat, cmtype="subcat", cmlimit="max"):
         for m in datos.get("query", {}).get("categorymembers", []):
             yield from subcategorias(m["title"], profundidad - 1, vistas)
 
 
+def archivos_de_categoria(cat):
+    for datos in paginar(action="query", generator="categorymembers", gcmtitle=cat,
+                         gcmtype="file", gcmlimit="50", **PROPS):
+        yield from datos.get("query", {}).get("pages", [])
+
+
+def archivos_de_busqueda(texto):
+    for datos in paginar(action="query", generator="search", gsrsearch=texto,
+                         gsrnamespace="6", gsrlimit="50", **PROPS):
+        yield from datos.get("query", {}).get("pages", [])
+
+
+# --------------------------------------------------------- utilidades ----
 def limpiar(texto):
-    """Quita HTML de los metadatos de Commons."""
     if not texto:
         return ""
-    texto = re.sub(r"<[^>]+>", " ", texto)
+    texto = re.sub(r"<[^>]+>", " ", str(texto))
     return re.sub(r"\s+", " ", html.unescape(texto)).strip()
 
 
-def extraer_anio(meta):
-    for campo in ("DateTimeOriginal", "DateTime"):
-        valor = limpiar(meta.get(campo, {}).get("value", ""))
-        m = re.search(r"\b(18[4-9]\d|19\d\d|20[0-2]\d)\b", valor)
-        if m:
-            aprox = bool(re.search(r"circa|ca\.|c\.|hacia|aprox|\bh\.", valor, re.I))
-            return int(m.group(1)), aprox, valor
+def normalizar(texto):
+    t = unicodedata.normalize("NFKD", texto.lower())
+    return "".join(c for c in t if not unicodedata.combining(c))
+
+
+def meta(m, campo):
+    return limpiar((m.get(campo) or {}).get("value", ""))
+
+
+def licencia_libre(m):
+    """Devuelve el nombre de la licencia si es libre y aceptable, o None."""
+    nombre = meta(m, "LicenseShortName")
+    clave = normalizar(nombre + " " + meta(m, "License") + " " + meta(m, "UsageTerms"))
+    if re.search(r"\b(nc|nd)\b|non-?commercial|no ?deriv|all rights reserved|fair use", clave):
+        return None
+    if re.search(r"public domain|dominio publico|\bpd\b|pd-|cc0|cc-zero|no restrictions|no known copyright", clave):
+        return nombre or "Dominio público"
+    if re.search(r"\bcc[ -]by(-sa)?\b|cc[ -]by[ -]sa|creative commons attribution", clave):
+        return nombre or "Creative Commons"
+    return None
+
+
+def extraer_anio(m, texto_extra):
+    for valor in (meta(m, "DateTimeOriginal"), meta(m, "DateTime"), texto_extra):
+        anios = [int(a) for a in re.findall(r"\b(18[3-9]\d|19\d\d|20[0-2]\d)\b", valor)]
+        if anios:
+            aprox = bool(re.search(r"circa|\bca\.|\bc\.|hacia|aprox|\bh\.|entre|between|\d{4}s\b", valor, re.I))
+            return min(anios), aprox, valor
     return None, False, ""
 
 
-def fotos_de_categoria(cat):
-    for datos in paginar(action="query", generator="categorymembers", gcmtitle=cat,
-                         gcmtype="file", gcmlimit="50",
-                         prop="imageinfo|coordinates",
-                         iiprop="url|extmetadata|mime", iiurlwidth="1280",
-                         colimit="max"):
-        for p in datos.get("query", {}).get("pages", []):
-            yield p
+def titulo_archivo(p):
+    return p["title"].removeprefix("File:")
 
 
-def convertir(p):
+def clave_archivo(url_o_titulo):
+    """Clave común para reconocer el mismo archivo venga de donde venga."""
+    t = urllib.parse.unquote(url_o_titulo.split("File:")[-1]).replace(" ", "_")
+    return normalizar(t)
+
+
+# ----------------------------------------------------------- lugares ----
+class Ubicador:
+    def __init__(self, ruta):
+        datos = json.loads(ruta.read_text(encoding="utf-8"))
+        self.lugares = datos["lugares"]
+        self.defecto = datos["por_defecto"]
+
+    def situar(self, texto):
+        t = normalizar(texto)
+        for l in self.lugares:
+            for c in l["claves"]:
+                if re.search(r"\b" + re.escape(normalizar(c)) + r"\b", t):
+                    return l
+        return self.defecto
+
+
+# ------------------------------------------------------------ convertir ----
+def convertir(p, fuente, hasta, ubicador):
     info = (p.get("imageinfo") or [{}])[0]
-    if not info.get("mime", "").startswith("image/"):
-        return None
-    meta = info.get("extmetadata", {})
-    anio, aprox, fecha_txt = extraer_anio(meta)
+    if not info.get("mime", "").startswith("image/") or info.get("mime") == "image/svg+xml":
+        return None, "no es una imagen"
+    m = info.get("extmetadata", {})
+
+    licencia = licencia_libre(m)
+    if not licencia:
+        return None, "licencia no libre o desconocida"
+
+    titulo_fich = titulo_archivo(p)
+    nombre_limpio = re.sub(r"\.(jpe?g|png|tiff?|gif|webp)$", "", titulo_fich, flags=re.I).replace("_", " ")
+    descripcion = meta(m, "ImageDescription")[:600]
+    categorias = " ".join(c["title"].removeprefix("Category:") for c in p.get("categories", []))
+    texto = " ".join([nombre_limpio, meta(m, "ObjectName"), descripcion, categorias])
+
+    if fuente.get("solo_vigo") and "vigo" not in normalizar(texto):
+        return None, "no es de Vigo"
+
+    anio, aprox, fecha_txt = extraer_anio(m, nombre_limpio + " " + descripcion)
+    if anio is None and not fuente.get("antiguas"):
+        return None, "sin fecha en colección no histórica"
+    if anio is not None and anio > hasta:
+        return None, f"posterior a {hasta}"
 
     coords = (p.get("coordinates") or [None])[0]
-    lat = coords.get("lat") if coords else None
-    lng = coords.get("lon") if coords else None
+    if coords:
+        lat, lng, lugar, ubicacion = coords["lat"], coords["lon"], ubicador.situar(texto)["nombre"], "confirmada"
+        if lugar == ubicador.defecto["nombre"]:
+            lugar = ""
+    else:
+        l = ubicador.situar(texto)
+        lat, lng, lugar, ubicacion = l["lat"], l["lng"], l["nombre"], l.get("ubicacion", "sin_confirmar")
 
     imagen = info.get("thumburl") or info.get("url")
-    miniatura = re.sub(r"/\d+px-", "/400px-", imagen) if "/thumb/" in imagen else imagen
+    miniatura = re.sub(r"/(lossy-page1-)?\d+px-", lambda x: "/" + (x.group(1) or "") + "500px-", imagen) if "/thumb/" in imagen else imagen
+    original = info.get("url") if not titulo_fich.lower().endswith((".tif", ".tiff")) else imagen
 
-    titulo = p["title"].removeprefix("File:")
-    titulo = re.sub(r"\.(jpe?g|png|tiff?|gif|webp)$", "", titulo, flags=re.I).replace("_", " ")
+    if ubicacion == "sin_confirmar":
+        nota = "No se ha podido ubicar: situada de forma orientativa."
+        descripcion = (descripcion + " " + nota).strip() if descripcion else nota
 
     return {
         "id": f"commons-{p['pageid']}",
-        "titulo": limpiar(meta.get("ObjectName", {}).get("value")) or titulo,
-        "lugar": "",
+        "titulo": meta(m, "ObjectName") or nombre_limpio,
+        "lugar": lugar,
         "anio": anio,
         "aproximada": aprox,
-        "fecha": fecha_txt if fecha_txt and not re.fullmatch(r"\d{4}", fecha_txt) else "",
-        "descripcion": limpiar(meta.get("ImageDescription", {}).get("value"))[:600],
-        "lat": round(lat, 6) if lat is not None else None,
-        "lng": round(lng, 6) if lng is not None else None,
+        "fecha": fecha_txt if fecha_txt and not re.fullmatch(r"\d{4}", fecha_txt) and len(fecha_txt) < 60 else "",
+        "descripcion": descripcion,
+        "lat": round(lat, 6),
+        "lng": round(lng, 6),
+        "ubicacion": ubicacion,
         "imagen": imagen,
         "miniatura": miniatura,
-        "autor": limpiar(meta.get("Artist", {}).get("value"))[:200],
+        "original": original,
+        "autor": meta(m, "Artist")[:200],
         "fuente": "Wikimedia Commons",
         "url_fuente": info.get("descriptionurl", ""),
-        "licencia": limpiar(meta.get("LicenseShortName", {}).get("value")),
-    }
+        "licencia": licencia,
+        "importada": True,
+    }, None
 
 
-def cargar(ruta):
-    if ruta.exists():
-        datos = json.loads(ruta.read_text(encoding="utf-8"))
-        return datos.get("fotos", datos) if isinstance(datos, dict) else datos
-    return []
-
-
-def guardar(ruta, fotos):
-    ruta.write_text(json.dumps({"fotos": fotos}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+# ---------------------------------------------------------------- main ----
+def cargar_lista(ruta):
+    if not ruta.exists():
+        return []
+    d = json.loads(ruta.read_text(encoding="utf-8"))
+    return d.get("fotos", d) if isinstance(d, dict) else d
 
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--categoria", action="append", help="Categoría de Commons (se puede repetir)")
-    ap.add_argument("--profundidad", type=int, default=2, help="Niveles de subcategorías (por defecto 2)")
-    ap.add_argument("--hasta", type=int, default=1980, help="Año máximo de las fotos (por defecto 1980)")
-    ap.add_argument("--incluir-sin-fecha", action="store_true", help="Incluir fotos sin fecha reconocible")
-    ap.add_argument("--quitar-ejemplos", action="store_true", help="Borrar las fotos de ejemplo (id que empieza por 'ej-')")
+    ap.add_argument("--simular", action="store_true", help="Muestra qué haría sin escribir nada")
     args = ap.parse_args()
 
-    categorias = args.categoria or CATEGORIAS_POR_DEFECTO
-    vistas = set()
-    todas = []
-    for raiz in categorias:
-        for cat in subcategorias(raiz, args.profundidad, vistas):
-            print(f"· {cat}")
-            todas.extend(fotos_de_categoria(cat))
+    fuentes = json.loads(FUENTES.read_text(encoding="utf-8"))
+    hasta = fuentes.get("hasta_anio", 1980)
+    ubicador = Ubicador(LUGARES)
 
-    nuevas, sin_coords, vistos = [], [], set()
-    for p in todas:
-        if p.get("pageid") in vistos:
-            continue
-        vistos.add(p.get("pageid"))
-        f = convertir(p)
-        if not f:
-            continue
-        if f["anio"] is None and not args.incluir_sin_fecha:
-            continue
-        if f["anio"] is not None and f["anio"] > args.hasta:
-            continue
-        (nuevas if f["lat"] is not None else sin_coords).append(f)
+    fotos = cargar_lista(FOTOS)
+    excluidas = {clave_archivo(e if isinstance(e, str) else e.get("url_fuente", "")) for e in cargar_lista(EXCLUIDAS)}
+    conocidas = {clave_archivo(f.get("url_fuente", "")) for f in fotos if f.get("url_fuente")} | excluidas
+    conocidas |= {f["id"] for f in fotos}
 
-    fotos = cargar(FOTOS)
-    if args.quitar_ejemplos:
-        fotos = [f for f in fotos if not str(f.get("id", "")).startswith("ej-")]
-    ids = {f.get("id") for f in fotos}
-    añadidas = [f for f in nuevas if f["id"] not in ids]
-    guardar(FOTOS, fotos + añadidas)
+    nuevas, motivos, vistas_pag = [], {}, set()
 
-    pendientes = cargar(PENDIENTES)
-    ids_p = {f.get("id") for f in pendientes} | ids
-    pend_nuevas = [f for f in sin_coords if f["id"] not in ids_p]
-    guardar(PENDIENTES, pendientes + pend_nuevas)
+    def procesar(paginas, fuente):
+        for p in paginas:
+            if p.get("pageid") in vistas_pag or "imageinfo" not in p:
+                continue
+            vistas_pag.add(p.get("pageid"))
+            k = clave_archivo(titulo_archivo(p))
+            if k in conocidas or f"commons-{p.get('pageid')}" in conocidas:
+                continue
+            f, motivo = convertir(p, fuente, hasta, ubicador)
+            if f:
+                nuevas.append(f)
+                conocidas.add(k)
+            else:
+                motivos[motivo] = motivos.get(motivo, 0) + 1
 
-    print(f"\n{len(vistas)} categorías revisadas, {len(vistos)} archivos.")
-    print(f"Añadidas al mapa: {len(añadidas)}  ->  {FOTOS.relative_to(RAIZ)}")
-    print(f"Sin coordenadas (para situar a mano): {len(pend_nuevas)}  ->  {PENDIENTES.relative_to(RAIZ)}")
+    vistas_cat = set()
+    for fuente in fuentes.get("categorias", []):
+        for cat in subcategorias(fuente["nombre"], fuente.get("profundidad", 1), vistas_cat):
+            print("·", cat)
+            procesar(archivos_de_categoria(cat), fuente)
+    for fuente in fuentes.get("busquedas", []):
+        print("· búsqueda:", fuente["texto"])
+        procesar(archivos_de_busqueda(fuente["texto"]), fuente)
+
+    sin_ub = sum(1 for f in nuevas if f["ubicacion"] == "sin_confirmar")
+    print(f"\nRevisados {len(vistas_pag)} archivos en {len(vistas_cat)} categorías.")
+    print(f"Nuevas: {len(nuevas)} ({sin_ub} sin ubicación confirmada).")
+    for motivo, n in sorted(motivos.items(), key=lambda x: -x[1]):
+        print(f"  descartadas por {motivo}: {n}")
+
+    if args.simular or not nuevas:
+        return
+    FOTOS.write_text(json.dumps({"fotos": fotos + nuevas}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    print(f"Guardado en {FOTOS.relative_to(RAIZ)}: {len(fotos) + len(nuevas)} fotos en total.")
 
 
 if __name__ == "__main__":

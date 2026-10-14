@@ -15,9 +15,12 @@ css/estilo.css             estilos
 js/config.js               ajustes (centro del mapa, enlace al repo…)
 js/app.js                  lógica del mapa, panel y visor
 data/fotos.json            las fotos que salen en el mapa
-data/pendientes.json       fotos importadas que aún no tienen ubicación
 img/logo-vv.svg            logo (aquí no se guardan fotos)
 scripts/importar_commons.py  importa fotos antiguas de Wikimedia Commons
+scripts/fuentes.json       colecciones de Commons que se importan
+scripts/lugares.json       lugares de Vigo para situar fotos sin coordenadas
+data/excluidas.json        fotos retiradas que no deben volver a importarse
+.github/workflows/         importación automática semanal
 CANDIDATAS.md              fotos encontradas pendientes de revisar
 ```
 
@@ -39,25 +42,34 @@ y abre <http://localhost:8000>.
 
 ## Añadir fotos
 
-### Desde Wikimedia Commons (dominio público y licencias libres)
+### Automáticamente desde Wikimedia Commons
 
-```bash
-python3 scripts/importar_commons.py --quitar-ejemplos
+Una tarea de GitHub Actions ([`importar.yml`](.github/workflows/importar.yml)) ejecuta `scripts/importar_commons.py`. Lo hace cada lunes, cada vez que cambian las fuentes o los lugares, y también a mano desde **Actions → Importar fotos de Wikimedia Commons → Run workflow**. La tarea:
+
+1. Recorre las categorías y búsquedas de [`scripts/fuentes.json`](scripts/fuentes.json). Para añadir una colección, se añade ahí.
+2. **Solo acepta licencias libres:** dominio público, CC0, CC BY y CC BY-SA. Descarta las «no comercial» (NC), «sin derivadas» (ND) y las desconocidas.
+3. Descarta las fotos posteriores a 1980. En colecciones que no son históricas en su totalidad, descarta también las que no tienen fecha.
+4. Sitúa cada foto:
+   - con sus coordenadas de Commons si las tiene (`confirmada`);
+   - si no, buscando un lugar de [`scripts/lugares.json`](scripts/lugares.json) en su título, descripción y categorías (`aproximada`);
+   - si no, en un punto por defecto con la etiqueta «Ubicación sin confirmar» (`sin_confirmar`).
+5. Solo añade fotos nuevas. **Nunca modifica las que ya están**, así que las correcciones manuales se conservan.
+
+Para retirar una foto y que no vuelva a importarse, bórrala de `data/fotos.json` y añade la dirección de su ficha a `data/excluidas.json`:
+
+```json
+{"fotos": ["https://commons.wikimedia.org/wiki/File:Nombre_del_archivo.jpg"]}
 ```
 
-- Las fotos **con coordenadas** se añaden directamente a `data/fotos.json`.
-- Las fotos **sin coordenadas** (la mayoría de las antiguas) van a `data/pendientes.json`.
+Para probarlo en tu ordenador sin escribir nada: `python3 scripts/importar_commons.py --simular`.
 
-Opciones útiles: `--hasta 1975` (año máximo), `--profundidad 3` (niveles de subcategorías), `--categoria "Category:Port of Vigo"` (se puede repetir), `--incluir-sin-fecha`.
+### Corregir ubicaciones con el editor
 
-Las imágenes no se descargan: se enlazan desde Commons, que lo permite, y cada foto muestra su autor, fuente y licencia.
+No es necesario para publicar: las fotos sin ubicación ya aparecen en el mapa con su etiqueta. El editor sirve para ir mejorándolas, por ejemplo al validar propuestas de los visitantes.
 
-### Situar fotos a mano con el editor
-
-1. Abre `http://localhost:8000/editor.html`.
-2. Elige una foto de la lista, haz clic en el mapa donde se tomó y completa título, lugar y año.
-3. Pulsa **Descargar fotos.json** y **Descargar pendientes.json**, y sustituye los de `data/`.
-4. Haz commit y push.
+1. Abre `https://asergom.github.io/vigovello/editor.html` (o la versión local).
+2. La lista muestra las fotos con la ubicación sin confirmar. Elige una, haz clic en el mapa donde se tomó y pulsa **Guardar y siguiente**.
+3. Pulsa **Descargar fotos.json** y sustituye `data/fotos.json` en el repositorio.
 
 Para que varias fotos se agrupen en el mismo punto (como en OldNYC), haz clic sobre un punto existente: el editor copia sus coordenadas exactas y el nombre del lugar.
 

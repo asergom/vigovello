@@ -58,7 +58,7 @@
 
   <section class="editor">
     <h2>1 · Elige una foto</h2>
-    <p class="ayuda">Fotos de <code>data/pendientes.json</code> que aún no tienen ubicación.</p>
+    <p class="ayuda">Fotos con la ubicación sin confirmar. Elige una, sitúala y marca la ubicación como confirmada.</p>
     <ul id="lista" class="lista"></ul>
     <div class="botones"><button id="nueva" class="btn" type="button">+ Añadir foto por URL</button></div>
 
@@ -95,7 +95,7 @@
         <label class="campo">Fuente <input id="f-fuente"></label>
         <label class="campo">Página de origen <input id="f-url" type="url" placeholder="https://…"></label>
       </div>
-      <p class="ayuda">Truco: haz clic en un punto rojo existente para usar exactamente esas coordenadas y nombre de lugar.</p>
+      <p class="ayuda">Truco: haz clic en un punto existente para usar exactamente esas coordenadas y nombre de lugar.</p>
       <div class="botones">
         <button id="guardar" class="btn principal" type="button" disabled>Guardar y siguiente</button>
         <button id="omitir" class="btn" type="button">Omitir</button>
@@ -103,10 +103,9 @@
     </div>
 
     <h2>3 · Exporta los cambios</h2>
-    <p class="ayuda">Descarga los dos ficheros y sustitúyelos en la carpeta <code>data/</code> del repositorio.</p>
+    <p class="ayuda">Descarga el fichero y sustituye <code>data/fotos.json</code> en el repositorio.</p>
     <div class="botones">
       <button id="exp-fotos" class="btn principal" type="button">Descargar fotos.json</button>
-      <button id="exp-pend" class="btn" type="button">Descargar pendientes.json</button>
     </div>
     <p class="ayuda">El progreso se guarda en este navegador mientras trabajas.</p>
   </section>
@@ -130,18 +129,19 @@
       .then((d) => d.fotos || d).catch(() => []);
 
     function guardarLocal() {
-      try { localStorage.setItem(CLAVE, JSON.stringify({ fotos, pendientes })); } catch (e) {}
+      try { localStorage.setItem(CLAVE, JSON.stringify({ fotos })); } catch (e) {}
     }
     function leerLocal() {
       try { return JSON.parse(localStorage.getItem(CLAVE)); } catch (e) { return null; }
     }
 
-    Promise.all([leerJSON(C.datos), leerJSON('data/pendientes.json')]).then(([f, p]) => {
+    leerJSON(C.datos).then((f) => {
       const local = leerLocal();
-      if (local && (local.fotos.length || local.pendientes.length) &&
+      if (local && local.fotos && local.fotos.length &&
           confirm('Hay trabajo sin exportar guardado en este navegador. ¿Continuar con él?')) {
-        fotos = local.fotos; pendientes = local.pendientes;
-      } else { fotos = f; pendientes = p; }
+        fotos = local.fotos;
+      } else { fotos = f; }
+      pendientes = fotos.filter((x) => x.ubicacion === 'sin_confirmar');
       refrescar();
     });
 
@@ -159,7 +159,7 @@
         li.onclick = () => abrir(f);
         ul.appendChild(li);
       });
-      if (!pendientes.length) ul.innerHTML = '<li>No hay fotos pendientes 🎉</li>';
+      if (!pendientes.length) ul.innerHTML = '<li>Todas las fotos tienen ubicación 🎉</li>';
 
       capaExistentes.clearLayers();
       const lugares = new Map();
@@ -175,7 +175,7 @@
       });
       $('lugares').innerHTML = [...new Set(fotos.map((f) => f.lugar).filter(Boolean))]
         .map((l) => '<option value="' + l.replace(/"/g, '&quot;') + '">').join('');
-      $('estado').textContent = fotos.length + ' en el mapa · ' + pendientes.length + ' pendientes';
+      $('estado').textContent = fotos.length + ' fotos · ' + pendientes.length + ' sin ubicación confirmada';
     }
 
     const campos = { imagen: 'f-imagen', miniatura: 'f-miniatura', titulo: 'f-titulo', lugar: 'f-lugar', descripcion: 'f-desc',
@@ -187,7 +187,8 @@
       Object.entries(campos).forEach(([k, id]) => { $(id).value = f[k] || ''; });
       $('f-anio').value = f.anio || '';
       $('f-aprox').checked = !!f.aproximada;
-      $('f-ubicacion').value = f.ubicacion || 'confirmada';
+      // Al reubicar una foto a mano, lo normal es confirmarla.
+      $('f-ubicacion').value = f.ubicacion === 'sin_confirmar' ? 'confirmada' : (f.ubicacion || 'confirmada');
       $('previa').src = f.imagen || f.miniatura || '';
       $('previa').hidden = !(f.imagen || f.miniatura);
       if (marcador) { marcador.remove(); marcador = null; }
@@ -228,7 +229,7 @@
       actual.lat = +p.lat.toFixed(6); actual.lng = +p.lng.toFixed(6);
       const i = pendientes.indexOf(actual);
       if (i >= 0) pendientes.splice(i, 1);
-      fotos.push(actual);
+      if (!fotos.includes(actual)) fotos.push(actual);
       guardarLocal();
       siguiente(i);
     };
@@ -243,7 +244,7 @@
 
     $('nueva').onclick = () => {
       const f = { id: 'propia-' + Date.now().toString(36), titulo: '', lugar: '', anio: null, aproximada: false,
-                  descripcion: '', lat: null, lng: null, imagen: '', miniatura: '',
+                  descripcion: '', lat: null, lng: null, ubicacion: 'confirmada', imagen: '', miniatura: '',
                   autor: '', fuente: '', url_fuente: '', licencia: '' };
       pendientes.unshift(f);
       abrir(f);
@@ -257,7 +258,6 @@
       setTimeout(() => URL.revokeObjectURL(a.href), 1000);
     }
     $('exp-fotos').onclick = () => descargar('fotos.json', fotos);
-    $('exp-pend').onclick = () => descargar('pendientes.json', pendientes);
   })();
   </script>
 </body>

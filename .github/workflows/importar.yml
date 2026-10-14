@@ -1,0 +1,51 @@
+name: Importar fotos de Wikimedia Commons
+
+# Se ejecuta:
+#  - cada lunes de madrugada, para recoger fotos nuevas;
+#  - cuando cambian las fuentes, los lugares o el importador;
+#  - a mano, desde la pestaña Actions → "Importar fotos de Wikimedia Commons" → Run workflow.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 4 * * 1"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/importar_commons.py"
+      - "scripts/fuentes.json"
+      - "scripts/lugares.json"
+      - ".github/workflows/importar.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: importar-commons
+  cancel-in-progress: false
+
+jobs:
+  importar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Importar fotos
+        run: python3 scripts/importar_commons.py
+
+      - name: Guardar fotos nuevas en el repositorio
+        run: |
+          if git diff --quiet -- data/; then
+            echo "No hay fotos nuevas."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "Importación automática de fotos de Wikimedia Commons"
+          git pull --rebase origin main
+          git push
