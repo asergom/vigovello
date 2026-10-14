@@ -13,7 +13,9 @@ Para incluir una, usa `editor.html` → **+ Añadir foto por URL**, o pídeselo 
 
 Las fotos de Wikimedia Commons de los apartados anteriores se han añadido al mapa. Commons solo admite archivos de dominio público o con licencia libre, y cada foto enlaza a su ficha, donde figuran autor y licencia. Las que no tienen un lugar conocido llevan la etiqueta «Ubicación sin confirmar», y los visitantes pueden proponer dónde se tomaron.
 
-**Revisar primero:** *Cine Royalty en la calle Velázquez Moreno (Archivo Pacheco)*. Aunque está en Commons, el Archivo Pacheco suele tener derechos del Concello. Conviene abrir su ficha y confirmar la licencia.
+**Cine Royalty (Archivo Pacheco):** licencia CC BY-SA 4.0 confirmada en su ficha.
+
+Desde ahora, las fotos de Wikimedia Commons se incorporan automáticamente cada semana (ver README). Este listado queda para fuentes externas a Commons.
 
 ## C · Otras fotos sueltas encontradas en Commons (sin revisar)
 
