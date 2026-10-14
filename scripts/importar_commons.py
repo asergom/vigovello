@@ -100,10 +100,16 @@ def archivos_de_categoria(cat):
         yield from datos.get("query", {}).get("pages", [])
 
 
-def archivos_de_busqueda(texto):
+def archivos_de_busqueda(texto, maximo=400):
+    vistos = 0
     for datos in paginar(action="query", generator="search", gsrsearch=texto,
                          gsrnamespace="6", gsrlimit="50", **PROPS):
-        yield from datos.get("query", {}).get("pages", [])
+        paginas = datos.get("query", {}).get("pages", [])
+        yield from paginas
+        vistos += len(paginas)
+        if vistos >= maximo:
+            print(f"  (tope de {maximo} resultados alcanzado)", flush=True)
+            return
 
 
 # --------------------------------------------------------- utilidades ----
@@ -301,6 +307,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--simular", action="store_true", help="Muestra qué haría sin escribir nada")
     ap.add_argument("--fuentes", default=str(FUENTES), help="Fichero de fuentes a usar (por defecto scripts/fuentes.json)")
+    ap.add_argument("--minutos", type=float, default=15, help="Tiempo máximo de búsqueda; al agotarse se guarda lo encontrado")
     ap.add_argument("--salida", help="Guarda solo las fotos nuevas en este fichero, sin tocar data/fotos.json (para revisarlas antes)")
     args = ap.parse_args()
 
@@ -336,7 +343,16 @@ def main():
 
     vistas_cat = set()
     errores = []
+    limite = time.time() + args.minutos * 60
+
+    def a_tiempo():
+        if time.time() > limite:
+            print(f"Tiempo máximo de {args.minutos:g} min agotado: se guarda lo encontrado hasta ahora.", flush=True)
+            return False
+        return True
     for fuente in fuentes.get("categorias", []):
+        if not a_tiempo():
+            break
         try:
             for cat in subcategorias(fuente["nombre"], fuente.get("profundidad", 1), vistas_cat):
                 print("·", cat, flush=True)
@@ -345,9 +361,11 @@ def main():
             errores.append(f"{fuente['nombre']}: {e!r}")
             print("  ERROR:", errores[-1], flush=True)
     for fuente in fuentes.get("busquedas", []):
+        if not a_tiempo():
+            break
         try:
             print("· búsqueda:", fuente["texto"], flush=True)
-            procesar(archivos_de_busqueda(fuente["texto"]), fuente)
+            procesar(archivos_de_busqueda(fuente["texto"], fuente.get("maximo", 400)), fuente)
         except Exception as e:
             errores.append(f"{fuente['texto']}: {e!r}")
             print("  ERROR:", errores[-1], flush=True)

@@ -19,7 +19,7 @@ permissions:
 jobs:
   importar:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
 
@@ -32,7 +32,7 @@ jobs:
         run: |
           mkdir -p importacion
           set -o pipefail
-          python3 -u scripts/importar_commons.py --fuentes "${{ inputs.fuentes }}" --salida importacion/resultado.json 2>&1 | tee importacion/registro.txt
+          python3 -u scripts/importar_commons.py --fuentes "${{ inputs.fuentes }}" --minutos 15 --salida importacion/resultado.json 2>&1 | tee importacion/registro.txt
 
       - name: Guardar resultado en una rama aparte
         run: |
