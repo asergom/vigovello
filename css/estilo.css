@@ -146,6 +146,12 @@ body.con-panel #mapa { right: var(--panel-ancho); }
 #visor-desc { margin: 0; font-size: 14px; }
 .credito:empty { display: none; }
 .credito { margin: 20px 0 0; padding-top: 12px; border-top: 1px solid var(--borde); font-size: 12px; color: var(--tinta-suave); }
+.enlace-origen {
+  display: inline-flex; align-items: center; gap: 6px; margin-top: 14px;
+  font-size: 13px; font-weight: 500; text-decoration: none;
+}
+.enlace-origen:hover { text-decoration: underline; }
+.enlace-origen[hidden] { display: none; }
 .visor-nav {
   position: absolute; top: 50%; transform: translateY(-50%); z-index: 2;
   width: 36px; height: 36px; border-radius: 50%;

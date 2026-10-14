@@ -45,7 +45,9 @@
     if (!src) {
       return '<div class="sin-imagen"><span>' + escapar(f.titulo) + '</span><small>Imagen pendiente</small></div>';
     }
-    return '<img src="' + escapar(src) + '" alt="' + escapar(f.titulo) + '" loading="lazy">';
+    // La imagen se carga directamente desde la web donde está alojada; aquí no se guarda nada.
+    return '<img src="' + escapar(src) + '" alt="' + escapar(f.titulo) + '" loading="lazy" referrerpolicy="no-referrer"' +
+      ' onerror="this.outerHTML=\'<div class=&quot;sin-imagen&quot;><span>No se pudo cargar</span><small>La imagen no está disponible en su web de origen</small></div>\'">';
   }
 
   // ---------- Datos ----------
@@ -176,6 +178,10 @@
       : escapar(f.fuente));
     if (f.licencia) partes.push(escapar(f.licencia));
     $('visor-credito').innerHTML = partes.join(' · ');
+
+    const origen = f.url_fuente || f.imagen;
+    $('visor-origen').hidden = !origen;
+    if (origen) $('visor-origen').href = origen;
 
     const varias = fotosVisor.length > 1;
     document.querySelector('.visor-ant').hidden = !varias;

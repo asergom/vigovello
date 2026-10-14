@@ -4,6 +4,8 @@ Mapa de fotografías históricas de Vigo, al estilo de [OldNYC](https://www.oldn
 
 Es una web estática (HTML, CSS y JavaScript, sin compilar nada), así que se publica gratis con **GitHub Pages**.
 
+**VigoVello no almacena fotografías.** Es solo un visor: `data/fotos.json` guarda, para cada foto, la dirección de la imagen en la web donde está alojada (Wikimedia Commons, archivos, bibliotecas…), su página de origen, su ubicación y sus datos. El navegador carga cada imagen directamente desde su origen, y el visor enlaza siempre a esa página.
+
 ## Estructura
 
 ```
@@ -14,7 +16,7 @@ js/config.js               ajustes (centro del mapa, enlace al repo…)
 js/app.js                  lógica del mapa, panel y visor
 data/fotos.json            las fotos que salen en el mapa
 data/pendientes.json       fotos importadas que aún no tienen ubicación
-img/                       aquí van tus propias fotos, si las alojas en el repo
+img/logo-vv.svg            logo (aquí no se guardan fotos)
 scripts/importar_commons.py  importa fotos antiguas de Wikimedia Commons
 ```
 
@@ -56,11 +58,13 @@ Las imágenes no se descargan: se enlazan desde Commons, que lo permite, y cada 
 3. Pulsa **Descargar fotos.json** y **Descargar pendientes.json**, y sustituye los de `data/`.
 4. Haz commit y push.
 
-Para que varias fotos se agrupen en el mismo punto (como en OldNYC), haz clic sobre un punto rojo existente: el editor copia sus coordenadas exactas y el nombre del lugar.
+Para que varias fotos se agrupen en el mismo punto (como en OldNYC), haz clic sobre un punto existente: el editor copia sus coordenadas exactas y el nombre del lugar.
 
-### Tus propias fotos
+### Fotos de otras webs
 
-Copia la imagen a `img/` (mejor en JPG de unos 1.200–1.600 px de ancho), y en el editor pulsa **+ Añadir foto propia** y escribe `img/nombre-del-archivo.jpg`.
+En el editor pulsa **+ Añadir foto por URL** y pega la dirección de la imagen tal como está alojada en su web (y, si existe, la de una versión pequeña para la miniatura), junto con la página de origen. Solo se admiten direcciones `https://`: nunca se copian imágenes al repositorio.
+
+Algunas webs no permiten mostrar sus imágenes desde otros sitios. Si una imagen no carga, la web lo indica en su lugar y sigue ofreciendo el enlace a la página original. Antes de enlazar fotos de un archivo, comprueba sus condiciones de uso.
 
 ## Formato de cada foto
 

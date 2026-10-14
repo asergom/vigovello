@@ -60,7 +60,7 @@
     <h2>1 · Elige una foto</h2>
     <p class="ayuda">Fotos de <code>data/pendientes.json</code> que aún no tienen ubicación.</p>
     <ul id="lista" class="lista"></ul>
-    <div class="botones"><button id="nueva" class="btn" type="button">+ Añadir foto propia</button></div>
+    <div class="botones"><button id="nueva" class="btn" type="button">+ Añadir foto por URL</button></div>
 
     <div id="ficha" hidden>
       <h2>2 · Haz clic en el mapa donde se tomó</h2>
@@ -68,8 +68,10 @@
       <p class="ayuda">Puedes arrastrar el marcador para afinar. Fíjate en fachadas, esquinas y la línea de costa.</p>
       <p class="coords" id="coords">Sin ubicar</p>
 
-      <label class="campo">Imagen (URL o ruta como <code>img/mi-foto.jpg</code>)
-        <input id="f-imagen"></label>
+      <label class="campo">URL de la imagen, en la web donde está alojada
+        <input id="f-imagen" type="url" placeholder="https://…"></label>
+      <label class="campo">URL de la miniatura (opcional, versión pequeña)
+        <input id="f-miniatura" type="url" placeholder="https://…"></label>
       <label class="campo">Título <input id="f-titulo"></label>
       <label class="campo">Lugar (las fotos con el mismo lugar y punto se agrupan)
         <input id="f-lugar" list="lugares"></label>
@@ -85,7 +87,7 @@
       </div>
       <div class="fila">
         <label class="campo">Fuente <input id="f-fuente"></label>
-        <label class="campo">URL fuente <input id="f-url"></label>
+        <label class="campo">Página de origen <input id="f-url" type="url" placeholder="https://…"></label>
       </div>
       <p class="ayuda">Truco: haz clic en un punto rojo existente para usar exactamente esas coordenadas y nombre de lugar.</p>
       <div class="botones">
@@ -170,7 +172,7 @@
       $('estado').textContent = fotos.length + ' en el mapa · ' + pendientes.length + ' pendientes';
     }
 
-    const campos = { imagen: 'f-imagen', titulo: 'f-titulo', lugar: 'f-lugar', descripcion: 'f-desc',
+    const campos = { imagen: 'f-imagen', miniatura: 'f-miniatura', titulo: 'f-titulo', lugar: 'f-lugar', descripcion: 'f-desc',
                      autor: 'f-autor', licencia: 'f-licencia', fuente: 'f-fuente', url_fuente: 'f-url' };
 
     function abrir(f) {
@@ -204,6 +206,12 @@
     });
 
     $('guardar').onclick = () => {
+      const url = $('f-imagen').value.trim();
+      if (!/^https?:\/\//i.test(url)) {
+        alert('La imagen debe ser una dirección web (https://…). VigoVello no guarda fotos: solo enlaza a donde están alojadas.');
+        $('f-imagen').focus();
+        return;
+      }
       const p = marcador.getLatLng();
       Object.entries(campos).forEach(([k, id]) => { actual[k] = $(id).value.trim(); });
       if (!actual.miniatura) actual.miniatura = actual.imagen;
