@@ -9,26 +9,11 @@ Antes de pasar una foto al mapa, comprueba en su ficha de Commons:
 
 Para incluir una, usa `editor.html` → **+ Añadir foto por URL**, o pídeselo a Claude.
 
-## A · Licencia comprobada, falta saber dónde situarla
+## Ya incorporadas al mapa
 
-| Foto | Fecha | Licencia | Qué falta |
-|---|---|---|---|
-| [Vigo, Panorama, Osten](https://commons.wikimedia.org/wiki/File:ETH-BIB-Vigo,_Panorama,_Osten-Dia_247-07294.tif) · ETH-Bibliothek Zürich | Abril de 1934 | CC BY-SA 4.0 | Identificar desde qué punto se tomó el panorama («Osten» = este). |
-| [Chocolatero y churrero en Vigo](https://commons.wikimedia.org/wiki/File:Chocolatero_and_churrero_in_Vigo,_ca._1900_-_Eugenio_Krapf_photo.jpg) · Eugenio Krapf | h. 1900 | Dominio público (PD-Art, vida del autor + 80 años) | Retrato de dos vendedores ambulantes: identificar la calle o el lugar. |
+Las fotos de Wikimedia Commons de los apartados anteriores se han añadido al mapa. Commons solo admite archivos de dominio público o con licencia libre, y cada foto enlaza a su ficha, donde figuran autor y licencia. Las que no tienen un lugar conocido llevan la etiqueta «Ubicación sin confirmar», y los visitantes pueden proponer dónde se tomaron.
 
-## B · Parecen libres, pero no he podido comprobar la licencia
-
-Están en la categoría [History of Vigo](https://commons.wikimedia.org/wiki/Category:History_of_Vigo) de Commons. Por su antigüedad, muchas serán de dominio público, pero hay que confirmarlo en cada ficha.
-
-| Foto | Fecha | Notas para revisar |
-|---|---|---|
-| [En la playa de Vigo](https://commons.wikimedia.org/wiki/File:EN_LA_PLAYA_DE_VIGO,_Eugenio_Krapf,_Luis_Taboada,_1901.jpg) · Eugenio Krapf | 1901 | Probable dominio público. Comprobar qué playa es. |
-| [La Casa de Caridad](https://commons.wikimedia.org/wiki/File:Vigo,_LA_CASA_DE_CARIDAD,_Eugenio_Krapf.jpg) · Eugenio Krapf | h. 1900 | Probable dominio público. Edificio localizable. |
-| [Fuente de la Ribera del Berbés](https://commons.wikimedia.org/wiki/File:Fuente_de_la_Ribera_del_Berb%C3%A9s,_Hauser_y_Menet,_1925.jpg) · Hauser y Menet | 1925 | Postal de editorial: comprobar la licencia que indica Commons. Lugar claro (Berbés). |
-| [Cine Royalty en la calle Velázquez Moreno](https://commons.wikimedia.org/wiki/File:Cine_Royalty_en_la_calle_Vel%C3%A1zquez_Moreno_(Archivo_Pacheco).jpg) · Archivo Pacheco | — | **Cuidado:** el Archivo Pacheco tiene derechos del Concello de Vigo. Solo usar si la ficha muestra una licencia libre explícita. |
-| [Mercedes de la Escalera entregando diplomas de la Escuela Obrera de Vigo](https://commons.wikimedia.org/wiki/File:Mercedes_de_la_Escalera_entregando_diplomas_de_la_Escuela_Obrera_de_Vigo.jpg) | — | Comprobar fecha, autor y licencia. Lugar sin identificar. |
-| [Un incidente durante la búsqueda del HMS Atalanta](https://commons.wikimedia.org/wiki/File:An_Incident_during_the_Search_for_HMS_Atalanta_ILN-1880-0508-0014_(cropped).jpg) · Illustrated London News | 1880 | Grabado de 1880: probable dominio público. Comprobar si representa Vigo y dónde. |
-| [Batalla de Vigo, octubre de 1832 (coloreada)](https://commons.wikimedia.org/wiki/File:Batalla_de_Vigo_oct_1832_coloreada.jpg) | 1832 | Ilustración, no fotografía. Decidir si encaja en la web. |
+**Revisar primero:** *Cine Royalty en la calle Velázquez Moreno (Archivo Pacheco)*. Aunque está en Commons, el Archivo Pacheco suele tener derechos del Concello. Conviene abrir su ficha y confirmar la licencia.
 
 ## C · Otras fotos sueltas encontradas en Commons (sin revisar)
 

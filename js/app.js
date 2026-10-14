@@ -46,9 +46,23 @@
       return '<div class="sin-imagen"><span>' + escapar(f.titulo) + '</span><small>Imagen pendiente</small></div>';
     }
     // La imagen se carga directamente desde la web donde está alojada; aquí no se guarda nada.
+    // Si la versión reducida falla, se prueba con el archivo original antes de rendirse.
+    const alt = f.original && f.original !== src ? ' data-original="' + escapar(f.original) + '"' : '';
     return '<img src="' + escapar(src) + '" alt="' + escapar(f.titulo) + '" loading="lazy" referrerpolicy="no-referrer"' +
-      ' onerror="this.outerHTML=\'<div class=&quot;sin-imagen&quot;><span>No se pudo cargar</span><small>La imagen no está disponible en su web de origen</small></div>\'">';
+      alt + ' onerror="vvFalloImagen(this)">';
   }
+
+  window.vvFalloImagen = function (img) {
+    const orig = img.getAttribute('data-original');
+    if (orig) { img.removeAttribute('data-original'); img.src = orig; return; }
+    img.outerHTML = '<div class="sin-imagen"><span>No se pudo cargar</span><small>La imagen no está disponible en su web de origen</small></div>';
+  };
+
+  const sinConfirmar = (f) => f.ubicacion === 'sin_confirmar';
+  const TEXTO_UBICACION = {
+    sin_confirmar: 'Ubicación sin confirmar · situada de forma orientativa',
+    aproximada: 'Ubicación aproximada'
+  };
 
   // ---------- Datos ----------
   fetch(C.datos)
@@ -105,12 +119,14 @@
     lugares.forEach((l, k) => {
       l.fotos.sort((a, b) => (a.anio || 9999) - (b.anio || 9999));
       const n = l.fotos.length;
+      l.sinConfirmar = l.fotos.every(sinConfirmar);
       const m = L.circleMarker([l.lat, l.lng], {
         radius: 6 + Math.min(10, Math.sqrt(n) * 2),
-        className: 'punto',
+        className: 'punto' + (l.sinConfirmar ? ' punto-sin-confirmar' : ''),
         weight: 1.5
       });
-      m.bindTooltip((l.nombre || 'Lugar') + ' · ' + n + (n === 1 ? ' foto' : ' fotos'), { direction: 'top', offset: [0, -6] });
+      m.bindTooltip((l.nombre || 'Lugar') + ' · ' + n + (n === 1 ? ' foto' : ' fotos') +
+        (l.sinConfirmar ? ' · ubicación sin confirmar' : ''), { direction: 'top', offset: [0, -6] });
       m.on('click', () => abrirLugar(k));
       m.addTo(capaPuntos);
     });
@@ -128,7 +144,8 @@
     $('panel-titulo').textContent = l.nombre || 'Lugar sin nombre';
     const anios = l.fotos.map((f) => f.anio).filter(Boolean);
     const rango = anios.length ? (Math.min(...anios) === Math.max(...anios) ? Math.min(...anios) : Math.min(...anios) + '–' + Math.max(...anios)) : '';
-    $('panel-resumen').textContent = l.fotos.length + (l.fotos.length === 1 ? ' fotografía' : ' fotografías') + (rango ? ' · ' + rango : '');
+    $('panel-resumen').textContent = l.fotos.length + (l.fotos.length === 1 ? ' fotografía' : ' fotografías') + (rango ? ' · ' + rango : '') +
+      (l.sinConfirmar ? ' · ubicación sin confirmar' : '');
 
     const ul = $('panel-rejilla');
     ul.innerHTML = '';
@@ -170,6 +187,10 @@
     $('visor-titulo').textContent = f.titulo || 'Sin título';
     $('visor-meta').textContent = [textoFecha(f), f.lugar].filter(Boolean).join(' · ');
     $('visor-desc').textContent = f.descripcion || '';
+    const avisoUb = TEXTO_UBICACION[f.ubicacion];
+    $('visor-ubicacion').hidden = !avisoUb;
+    $('visor-ubicacion').textContent = avisoUb || '';
+    $('btn-proponer').textContent = sinConfirmar(f) ? 'Proponer ubicación' : 'Proponer otra ubicación';
 
     const partes = [];
     if (f.autor) partes.push(escapar(f.autor));
@@ -201,6 +222,65 @@
     }
   }
 
+  // ---------- Propuestas de ubicación ----------
+  // El visitante marca un punto y se abre una propuesta (issue) en GitHub para validarla.
+  let propuesta = null; // { foto, latlng }
+  const capaPropuesta = L.layerGroup().addTo(mapa);
+
+  function iniciarPropuesta() {
+    const f = fotosVisor[indiceVisor];
+    propuesta = { foto: f, latlng: null };
+    cerrarCapa('visor');
+    cerrarPanel();
+    capaPropuesta.clearLayers();
+    $('propuesta-texto').textContent = 'Haz clic en el mapa donde crees que se tomó «' + (f.titulo || 'esta foto') + '».';
+    $('propuesta-detalle').hidden = true;
+    $('propuesta').hidden = false;
+    document.body.classList.add('proponiendo');
+  }
+
+  function terminarPropuesta() {
+    propuesta = null;
+    capaPropuesta.clearLayers();
+    $('propuesta').hidden = true;
+    $('propuesta-comentario').value = '';
+    document.body.classList.remove('proponiendo');
+  }
+
+  mapa.on('click', (e) => {
+    if (!propuesta) return;
+    propuesta.latlng = { lat: +e.latlng.lat.toFixed(6), lng: +e.latlng.lng.toFixed(6) };
+    capaPropuesta.clearLayers();
+    L.circleMarker([propuesta.latlng.lat, propuesta.latlng.lng], { radius: 9, className: 'punto-propuesta', weight: 2 }).addTo(capaPropuesta);
+    $('propuesta-texto').textContent = 'Punto marcado. Puedes hacer clic en otro sitio para cambiarlo.';
+    $('propuesta-detalle').hidden = false;
+  });
+
+  function enviarPropuesta() {
+    if (!propuesta || !propuesta.latlng) return;
+    const f = propuesta.foto, p = propuesta.latlng;
+    const cuerpo = [
+      '**Foto:** ' + (f.titulo || '') + ' (`' + f.id + '`)',
+      '**Ubicación actual:** ' + f.lat + ', ' + f.lng + (f.ubicacion === 'sin_confirmar' ? ' (sin confirmar)' : ''),
+      '**Ubicación propuesta:** ' + p.lat + ', ' + p.lng,
+      '',
+      'Ver en el mapa: https://www.openstreetmap.org/?mlat=' + p.lat + '&mlon=' + p.lng + '#map=18/' + p.lat + '/' + p.lng,
+      'Foto en VigoVello: ' + location.origin + location.pathname + '#foto=' + encodeURIComponent(f.id),
+      f.url_fuente ? 'Ficha original: ' + f.url_fuente : '',
+      '',
+      '**Comentario:**',
+      $('propuesta-comentario').value.trim() || '(sin comentario)'
+    ].join('\n');
+    const url = C.repo + '/issues/new?title=' + encodeURIComponent('Ubicación: ' + (f.titulo || f.id)) +
+      '&body=' + encodeURIComponent(cuerpo);
+    window.open(url, '_blank', 'noopener');
+    terminarPropuesta();
+  }
+
+  $('btn-proponer').addEventListener('click', iniciarPropuesta);
+  $('propuesta-enviar').addEventListener('click', enviarPropuesta);
+  $('propuesta-cancelar').addEventListener('click', terminarPropuesta);
+
   document.querySelector('.visor-ant').addEventListener('click', () => moverVisor(-1));
   document.querySelector('.visor-sig').addEventListener('click', () => moverVisor(1));
   document.querySelectorAll('[data-cerrar]').forEach((el) =>
@@ -215,12 +295,15 @@
       else if (e.key === 'Escape') cerrarCapa('visor');
     } else if (!$('acerca').hidden && e.key === 'Escape') {
       cerrarCapa('acerca');
+    } else if (propuesta && e.key === 'Escape') {
+      terminarPropuesta();
     } else if (!$('panel').hidden && e.key === 'Escape') {
       cerrarPanel();
     }
   });
 
   // ---------- Enlaces directos (#lugar=… / #foto=…) ----------
+  window.addEventListener('hashchange', () => { if (fotos.length) leerEnlace(); });
   function leerEnlace() {
     const h = decodeURIComponent(location.hash.slice(1));
     if (h.startsWith('lugar=')) {

@@ -80,8 +80,10 @@ Algunas webs no permiten mostrar sus imágenes desde otros sitios. Si una imagen
   "descripcion": "…",
   "lat": 42.2388,
   "lng": -8.7264,
+  "ubicacion": "aproximada",
   "imagen": "https://…/1280px-….jpg",
-  "miniatura": "https://…/400px-….jpg",
+  "miniatura": "https://…/500px-….jpg",
+  "original": "https://…/….jpg",
   "autor": "…",
   "fuente": "Wikimedia Commons",
   "url_fuente": "https://commons.wikimedia.org/wiki/File:…",
@@ -89,7 +91,21 @@ Algunas webs no permiten mostrar sus imágenes desde otros sitios. Si una imagen
 }
 ```
 
+`original` es opcional: si la imagen reducida no carga, la web lo intenta con esta dirección.
+
 `fecha` es opcional: si está, se muestra tal cual («verano de 1924», «1910–1915»); si no, se usa `anio`.
+
+## Ubicaciones sin confirmar y propuestas de los visitantes
+
+Cada foto tiene un campo `ubicacion`:
+
+- `confirmada`: el lugar es seguro.
+- `aproximada`: la zona es correcta, pero el punto exacto no.
+- `sin_confirmar`: no se sabe dónde se tomó. Se sitúa de forma orientativa, el punto se dibuja hueco y la foto lleva la etiqueta «Ubicación sin confirmar».
+
+En el visor, cualquier visitante puede pulsar **Proponer ubicación**, marcar un punto en el mapa y añadir un comentario. Se abre una propuesta (issue) en GitHub con las coordenadas, un enlace al mapa y a la foto. Hace falta una cuenta gratuita de GitHub.
+
+Para validar una propuesta, revísala en la pestaña **Issues** del repositorio. Si es correcta, cambia `lat`, `lng` y `ubicacion` de esa foto en `data/fotos.json` (o con el editor) y cierra el issue.
 
 ## Enlaces directos
 

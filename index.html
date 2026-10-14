@@ -56,11 +56,33 @@
       <figcaption>
         <h3 id="visor-titulo"></h3>
         <p id="visor-meta" class="meta"></p>
+        <p id="visor-ubicacion" class="aviso-ubicacion" hidden></p>
         <p id="visor-desc"></p>
+        <button id="btn-proponer" class="btn-texto btn-proponer" type="button">Proponer ubicación</button>
         <p id="visor-credito" class="credito"></p>
         <a id="visor-origen" class="enlace-origen" target="_blank" rel="noopener" hidden>Ver en su web original <svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </figcaption>
     </figure>
+  </div>
+
+  <!-- Proponer ubicación -->
+  <div id="propuesta" class="propuesta" hidden role="dialog" aria-labelledby="propuesta-texto">
+    <p id="propuesta-texto"></p>
+    <div id="propuesta-detalle" hidden>
+      <label class="propuesta-campo">Comentario (opcional): ¿qué te hace pensar que es aquí?
+        <textarea id="propuesta-comentario" rows="2"></textarea></label>
+      <p class="propuesta-nota">Se abrirá GitHub para enviar la propuesta (hace falta una cuenta gratuita). La revisaremos antes de cambiar el mapa.</p>
+    </div>
+    <div class="propuesta-botones">
+      <button id="propuesta-cancelar" class="btn-texto" type="button">Cancelar</button>
+      <button id="propuesta-enviar" class="btn-principal" type="button">Enviar propuesta</button>
+    </div>
+  </div>
+
+  <!-- Leyenda -->
+  <div class="leyenda" aria-hidden="true">
+    <span><i class="ley-punto"></i>Ubicación conocida</span>
+    <span><i class="ley-punto ley-sin"></i>Sin confirmar</span>
   </div>
 
   <!-- Acerca de -->

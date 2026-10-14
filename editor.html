@@ -27,7 +27,7 @@
     .previa { width: 100%; max-height: 220px; object-fit: contain; background: #1c1814; border-radius: 6px; display: block; }
     .previa[hidden] { display: none; }
     .campo { display: block; margin: 8px 0; font-size: 12px; color: var(--tinta-suave); }
-    .campo input, .campo textarea { display: block; width: 100%; margin-top: 3px; padding: 7px 9px; font: 14px var(--sans);
+    .campo input, .campo textarea, .campo select { display: block; width: 100%; margin-top: 3px; padding: 7px 9px; font: 14px var(--sans);
              color: var(--tinta); background: var(--blanco); border: 1px solid var(--borde); border-radius: 6px; }
     .fila { display: flex; gap: 8px; align-items: end; }
     .fila .campo { flex: 1; }
@@ -67,6 +67,12 @@
       <img id="previa" class="previa" alt="">
       <p class="ayuda">Puedes arrastrar el marcador para afinar. Fíjate en fachadas, esquinas y la línea de costa.</p>
       <p class="coords" id="coords">Sin ubicar</p>
+      <label class="campo">Ubicación
+        <select id="f-ubicacion">
+          <option value="confirmada">Confirmada</option>
+          <option value="aproximada">Aproximada</option>
+          <option value="sin_confirmar">Sin confirmar (orientativa)</option>
+        </select></label>
 
       <label class="campo">URL de la imagen, en la web donde está alojada
         <input id="f-imagen" type="url" placeholder="https://…"></label>
@@ -181,6 +187,7 @@
       Object.entries(campos).forEach(([k, id]) => { $(id).value = f[k] || ''; });
       $('f-anio').value = f.anio || '';
       $('f-aprox').checked = !!f.aproximada;
+      $('f-ubicacion').value = f.ubicacion || 'confirmada';
       $('previa').src = f.imagen || f.miniatura || '';
       $('previa').hidden = !(f.imagen || f.miniatura);
       if (marcador) { marcador.remove(); marcador = null; }
@@ -217,6 +224,7 @@
       if (!actual.miniatura) actual.miniatura = actual.imagen;
       actual.anio = $('f-anio').value ? Number($('f-anio').value) : null;
       actual.aproximada = $('f-aprox').checked;
+      actual.ubicacion = $('f-ubicacion').value;
       actual.lat = +p.lat.toFixed(6); actual.lng = +p.lng.toFixed(6);
       const i = pendientes.indexOf(actual);
       if (i >= 0) pendientes.splice(i, 1);
