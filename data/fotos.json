@@ -1,0 +1,135 @@
+{
+  "_nota": "Datos de EJEMPLO para probar la web: lugares reales de Vigo con coordenadas aproximadas, pero sin foto todavía. Sustitúyelos con scripts/importar_commons.py o añadiendo fotos a mano (ver README).",
+  "fotos": [
+    {
+      "id": "ej-alameda-1",
+      "titulo": "La Alameda y la plaza de Compostela",
+      "lugar": "Alameda (Praza de Compostela)",
+      "anio": 1910, "aproximada": true,
+      "descripcion": "Foto de ejemplo. Aquí iría una vista de los jardines de la Alameda con los edificios de la burguesía viguesa al fondo.",
+      "lat": 42.23955, "lng": -8.72230,
+      "imagen": "", "miniatura": "",
+      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
+    },
+    {
+      "id": "ej-alameda-2",
+      "titulo": "Paseo en la Alameda",
+      "lugar": "Alameda (Praza de Compostela)",
+      "anio": 1935, "aproximada": true,
+      "descripcion": "Foto de ejemplo. Varias fotos en el mismo punto aparecen juntas en el panel, ordenadas por año.",
+      "lat": 42.23955, "lng": -8.72230,
+      "imagen": "", "miniatura": "",
+      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
+    },
+    {
+      "id": "ej-berbes-1",
+      "titulo": "Soportales del Berbés",
+      "lugar": "O Berbés",
+      "anio": 1900, "aproximada": true,
+      "descripcion": "Foto de ejemplo. El antiguo barrio marinero, con sus soportales a pie de mar antes de los rellenos del puerto.",
+      "lat": 42.23880, "lng": -8.72640,
+      "imagen": "", "miniatura": "",
+      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
+    },
+    {
+      "id": "ej-berbes-2",
+      "titulo": "Venta de pescado en el Berbés",
+      "lugar": "O Berbés",
+      "anio": 1925, "aproximada": true,
+      "descripcion": "Foto de ejemplo.",
+      "lat": 42.23880, "lng": -8.72640,
+      "imagen": "", "miniatura": "",
+      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
+    },
+    {
+      "id": "ej-colegiata",
+      "titulo": "Colegiata de Santa María",
+      "lugar": "Casco Vello · Colegiata",
+      "anio": 1915, "aproximada": true,
+      "descripcion": "Foto de ejemplo.",
+      "lat": 42.23930, "lng": -8.72530,
+      "imagen": "", "miniatura": "",
+      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
+    },
+    {
+      "id": "ej-portadosol",
+      "titulo": "La Puerta del Sol",
+      "lugar": "Porta do Sol",
+      "anio": 1920, "aproximada": true,
+      "descripcion": "Foto de ejemplo.",
+      "lat": 42.23700, "lng": -8.72300,
+      "imagen": "", "miniatura": "",
+      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
+    },
+    {
+      "id": "ej-principe",
+      "titulo": "Calle del Príncipe",
+      "lugar": "Rúa do Príncipe",
+      "anio": 1950, "aproximada": true,
+      "descripcion": "Foto de ejemplo.",
+      "lat": 42.23690, "lng": -8.72080,
+      "imagen": "", "miniatura": "",
+      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
+    },
+    {
+      "id": "ej-castro",
+      "titulo": "Vista desde el monte del Castro",
+      "lugar": "Monte do Castro",
+      "anio": null,
+      "descripcion": "Foto de ejemplo sin fecha conocida: aparece en el filtro «Sin fecha».",
+      "lat": 42.23350, "lng": -8.72450,
+      "imagen": "", "miniatura": "",
+      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
+    },
+    {
+      "id": "ej-garciabarbon",
+      "titulo": "Teatro García Barbón",
+      "lugar": "Teatro García Barbón",
+      "anio": 1930, "aproximada": true,
+      "descripcion": "Foto de ejemplo.",
+      "lat": 42.23740, "lng": -8.71810,
+      "imagen": "", "miniatura": "",
+      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
+    },
+    {
+      "id": "ej-estacion",
+      "titulo": "Estación de ferrocarril",
+      "lugar": "Estación de Urzáiz",
+      "anio": 1905, "aproximada": true,
+      "descripcion": "Foto de ejemplo.",
+      "lat": 42.23420, "lng": -8.71280,
+      "imagen": "", "miniatura": "",
+      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
+    },
+    {
+      "id": "ej-trasatlanticos",
+      "titulo": "Emigrantes en el muelle de trasatlánticos",
+      "lugar": "Muelle de Trasatlánticos",
+      "anio": 1920, "aproximada": true,
+      "descripcion": "Foto de ejemplo.",
+      "lat": 42.24100, "lng": -8.72350,
+      "imagen": "", "miniatura": "",
+      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
+    },
+    {
+      "id": "ej-bouzas",
+      "titulo": "Puerto de Bouzas",
+      "lugar": "Bouzas",
+      "anio": 1940, "aproximada": true,
+      "descripcion": "Foto de ejemplo.",
+      "lat": 42.23450, "lng": -8.75200,
+      "imagen": "", "miniatura": "",
+      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
+    },
+    {
+      "id": "ej-samil",
+      "titulo": "Bañistas en Samil",
+      "lugar": "Praia de Samil",
+      "anio": 1960, "aproximada": true,
+      "descripcion": "Foto de ejemplo.",
+      "lat": 42.21050, "lng": -8.77450,
+      "imagen": "", "miniatura": "",
+      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
+    }
+  ]
+}

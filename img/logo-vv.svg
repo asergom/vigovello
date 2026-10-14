@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="VigoVello">
+  <title>VigoVello</title>
+  <rect width="48" height="48" rx="12" fill="#1e5a6b"/>
+  <g fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8.5 15.5 L14.5 32.5 L20.5 15.5"/>
+    <path d="M27.5 15.5 L33.5 32.5 L39.5 15.5" stroke-opacity=".55"/>
+  </g>
+</svg>

@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Editor · VigoVello</title>
+  <meta name="robots" content="noindex">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="icon" href="img/logo-vv.svg" type="image/svg+xml">
+  <style>
+    body { overflow: hidden; }
+    .editor { position: fixed; top: var(--cab-alto); left: 0; bottom: 0; width: 400px; overflow-y: auto;
+              border-right: 1px solid var(--borde); padding: 16px; background: var(--papel); z-index: 900; }
+    #mapa { left: 400px; cursor: crosshair; }
+    .editor h2 { font: 600 17px var(--serif); margin: 18px 0 8px; }
+    .editor > h2:first-child { margin-top: 0; }
+    .lista { list-style: none; margin: 0; padding: 0; max-height: 220px; overflow-y: auto;
+             border: 1px solid var(--borde); border-radius: 6px; }
+    .lista li { display: flex; gap: 8px; align-items: center; padding: 6px 8px; cursor: pointer;
+                border-bottom: 1px solid var(--borde); font-size: 13px; }
+    .lista li:last-child { border-bottom: 0; }
+    .lista li.activa { background: var(--acento-suave); }
+    .lista li.hecha { color: var(--tinta-suave); text-decoration: line-through; }
+    .lista img { width: 44px; height: 34px; object-fit: cover; border-radius: 3px; flex: none; background: var(--papel-2); }
+    .previa { width: 100%; max-height: 220px; object-fit: contain; background: #1c1814; border-radius: 6px; display: block; }
+    .previa[hidden] { display: none; }
+    .campo { display: block; margin: 8px 0; font-size: 12px; color: var(--tinta-suave); }
+    .campo input, .campo textarea { display: block; width: 100%; margin-top: 3px; padding: 7px 9px; font: 14px var(--sans);
+             color: var(--tinta); background: var(--blanco); border: 1px solid var(--borde); border-radius: 6px; }
+    .fila { display: flex; gap: 8px; align-items: end; }
+    .fila .campo { flex: 1; }
+    .check { display: flex; gap: 6px; align-items: center; font-size: 13px; margin: 8px 0; }
+    .botones { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .btn { border: 1px solid var(--borde); background: var(--papel-2); border-radius: 6px; padding: 7px 12px; font-size: 13px; font-weight: 500; }
+    .btn.principal { background: var(--acento); border-color: var(--acento); color: #fff; }
+    .btn:disabled { opacity: .5; cursor: default; }
+    .ayuda { font-size: 12px; color: var(--tinta-suave); margin: 6px 0; }
+    .coords { font: 12px ui-monospace, monospace; color: var(--acento); }
+    @media (max-width: 760px) {
+      .editor { width: auto; right: 0; bottom: 50vh; border-right: 0; border-bottom: 1px solid var(--borde); }
+      #mapa { left: 0; top: 50vh; }
+    }
+  </style>
+</head>
+<body>
+  <header class="cabecera">
+    <div class="marca">
+      <img class="logo" src="img/logo-vv.svg" alt="" width="44" height="44">
+      <div>
+      <h1>Editor de ubicaciones</h1>
+      <p class="subtitulo">Sitúa cada foto en el mapa · <a href="index.html">ver la web</a></p>
+      </div>
+    </div>
+    <div class="controles"><span id="estado" class="contador"></span></div>
+  </header>
+
+  <section class="editor">
+    <h2>1 · Elige una foto</h2>
+    <p class="ayuda">Fotos de <code>data/pendientes.json</code> que aún no tienen ubicación.</p>
+    <ul id="lista" class="lista"></ul>
+    <div class="botones"><button id="nueva" class="btn" type="button">+ Añadir foto propia</button></div>
+
+    <div id="ficha" hidden>
+      <h2>2 · Haz clic en el mapa donde se tomó</h2>
+      <img id="previa" class="previa" alt="">
+      <p class="ayuda">Puedes arrastrar el marcador para afinar. Fíjate en fachadas, esquinas y la línea de costa.</p>
+      <p class="coords" id="coords">Sin ubicar</p>
+
+      <label class="campo">Imagen (URL o ruta como <code>img/mi-foto.jpg</code>)
+        <input id="f-imagen"></label>
+      <label class="campo">Título <input id="f-titulo"></label>
+      <label class="campo">Lugar (las fotos con el mismo lugar y punto se agrupan)
+        <input id="f-lugar" list="lugares"></label>
+      <datalist id="lugares"></datalist>
+      <div class="fila">
+        <label class="campo">Año <input id="f-anio" type="number" min="1840" max="2030"></label>
+        <label class="check"><input id="f-aprox" type="checkbox"> aproximado</label>
+      </div>
+      <label class="campo">Descripción <textarea id="f-desc" rows="3"></textarea></label>
+      <div class="fila">
+        <label class="campo">Autor <input id="f-autor"></label>
+        <label class="campo">Licencia <input id="f-licencia" placeholder="Dominio público"></label>
+      </div>
+      <div class="fila">
+        <label class="campo">Fuente <input id="f-fuente"></label>
+        <label class="campo">URL fuente <input id="f-url"></label>
+      </div>
+      <p class="ayuda">Truco: haz clic en un punto rojo existente para usar exactamente esas coordenadas y nombre de lugar.</p>
+      <div class="botones">
+        <button id="guardar" class="btn principal" type="button" disabled>Guardar y siguiente</button>
+        <button id="omitir" class="btn" type="button">Omitir</button>
+      </div>
+    </div>
+
+    <h2>3 · Exporta los cambios</h2>
+    <p class="ayuda">Descarga los dos ficheros y sustitúyelos en la carpeta <code>data/</code> del repositorio.</p>
+    <div class="botones">
+      <button id="exp-fotos" class="btn principal" type="button">Descargar fotos.json</button>
+      <button id="exp-pend" class="btn" type="button">Descargar pendientes.json</button>
+    </div>
+    <p class="ayuda">El progreso se guarda en este navegador mientras trabajas.</p>
+  </section>
+
+  <main id="mapa"></main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/config.js"></script>
+  <script>
+  (function () {
+    'use strict';
+    const C = window.CONFIG, $ = (id) => document.getElementById(id);
+    const CLAVE = 'vigovello-editor';
+    let fotos = [], pendientes = [], actual = null, marcador = null, capaExistentes = L.layerGroup();
+
+    const mapa = L.map('mapa', { center: C.centro, zoom: C.zoom, maxZoom: C.zoomMax });
+    L.tileLayer(C.teselas, { attribution: C.atribucion, maxZoom: C.zoomMax }).addTo(mapa);
+    capaExistentes.addTo(mapa);
+
+    const leerJSON = (url) => fetch(url).then((r) => r.ok ? r.json() : { fotos: [] })
+      .then((d) => d.fotos || d).catch(() => []);
+
+    function guardarLocal() {
+      try { localStorage.setItem(CLAVE, JSON.stringify({ fotos, pendientes })); } catch (e) {}
+    }
+    function leerLocal() {
+      try { return JSON.parse(localStorage.getItem(CLAVE)); } catch (e) { return null; }
+    }
+
+    Promise.all([leerJSON(C.datos), leerJSON('data/pendientes.json')]).then(([f, p]) => {
+      const local = leerLocal();
+      if (local && (local.fotos.length || local.pendientes.length) &&
+          confirm('Hay trabajo sin exportar guardado en este navegador. ¿Continuar con él?')) {
+        fotos = local.fotos; pendientes = local.pendientes;
+      } else { fotos = f; pendientes = p; }
+      refrescar();
+    });
+
+    function refrescar() {
+      const ul = $('lista'); ul.innerHTML = '';
+      pendientes.forEach((f, i) => {
+        const li = document.createElement('li');
+        if (f === actual) li.className = 'activa';
+        const img = document.createElement('img');
+        if (f.miniatura || f.imagen) img.src = f.miniatura || f.imagen;
+        img.alt = '';
+        const t = document.createElement('span');
+        t.textContent = (f.anio ? f.anio + ' · ' : '') + (f.titulo || 'Sin título');
+        li.append(img, t);
+        li.onclick = () => abrir(f);
+        ul.appendChild(li);
+      });
+      if (!pendientes.length) ul.innerHTML = '<li>No hay fotos pendientes 🎉</li>';
+
+      capaExistentes.clearLayers();
+      const lugares = new Map();
+      fotos.forEach((f) => { if (typeof f.lat === 'number') lugares.set(f.lat + ',' + f.lng, f); });
+      lugares.forEach((f) => {
+        L.circleMarker([f.lat, f.lng], { radius: 7, className: 'punto', weight: 1.5 })
+          .bindTooltip(f.lugar || f.titulo).on('click', (e) => {
+            L.DomEvent.stopPropagation(e);
+            if (!actual) return;
+            situar(f.lat, f.lng);
+            if (!$('f-lugar').value) $('f-lugar').value = f.lugar || '';
+          }).addTo(capaExistentes);
+      });
+      $('lugares').innerHTML = [...new Set(fotos.map((f) => f.lugar).filter(Boolean))]
+        .map((l) => '<option value="' + l.replace(/"/g, '&quot;') + '">').join('');
+      $('estado').textContent = fotos.length + ' en el mapa · ' + pendientes.length + ' pendientes';
+    }
+
+    const campos = { imagen: 'f-imagen', titulo: 'f-titulo', lugar: 'f-lugar', descripcion: 'f-desc',
+                     autor: 'f-autor', licencia: 'f-licencia', fuente: 'f-fuente', url_fuente: 'f-url' };
+
+    function abrir(f) {
+      actual = f;
+      $('ficha').hidden = false;
+      Object.entries(campos).forEach(([k, id]) => { $(id).value = f[k] || ''; });
+      $('f-anio').value = f.anio || '';
+      $('f-aprox').checked = !!f.aproximada;
+      $('previa').src = f.imagen || f.miniatura || '';
+      $('previa').hidden = !(f.imagen || f.miniatura);
+      if (marcador) { marcador.remove(); marcador = null; }
+      $('coords').textContent = 'Sin ubicar';
+      $('guardar').disabled = true;
+      if (typeof f.lat === 'number') situar(f.lat, f.lng);
+      refrescar();
+    }
+
+    function situar(lat, lng) {
+      lat = +lat.toFixed(6); lng = +lng.toFixed(6);
+      if (!marcador) {
+        marcador = L.marker([lat, lng], { draggable: true }).addTo(mapa);
+        marcador.on('dragend', () => { const p = marcador.getLatLng(); situar(p.lat, p.lng); });
+      } else marcador.setLatLng([lat, lng]);
+      $('coords').textContent = lat + ', ' + lng;
+      $('guardar').disabled = false;
+    }
+
+    mapa.on('click', (e) => { if (actual) situar(e.latlng.lat, e.latlng.lng); });
+    $('f-imagen').addEventListener('change', () => {
+      $('previa').src = $('f-imagen').value; $('previa').hidden = !$('f-imagen').value;
+    });
+
+    $('guardar').onclick = () => {
+      const p = marcador.getLatLng();
+      Object.entries(campos).forEach(([k, id]) => { actual[k] = $(id).value.trim(); });
+      if (!actual.miniatura) actual.miniatura = actual.imagen;
+      actual.anio = $('f-anio').value ? Number($('f-anio').value) : null;
+      actual.aproximada = $('f-aprox').checked;
+      actual.lat = +p.lat.toFixed(6); actual.lng = +p.lng.toFixed(6);
+      const i = pendientes.indexOf(actual);
+      if (i >= 0) pendientes.splice(i, 1);
+      fotos.push(actual);
+      guardarLocal();
+      siguiente(i);
+    };
+    $('omitir').onclick = () => siguiente(pendientes.indexOf(actual) + 1);
+
+    function siguiente(i) {
+      if (marcador) { marcador.remove(); marcador = null; }
+      actual = null;
+      if (pendientes.length) abrir(pendientes[Math.min(Math.max(i, 0), pendientes.length - 1)]);
+      else { $('ficha').hidden = true; refrescar(); }
+    }
+
+    $('nueva').onclick = () => {
+      const f = { id: 'propia-' + Date.now().toString(36), titulo: '', lugar: '', anio: null, aproximada: false,
+                  descripcion: '', lat: null, lng: null, imagen: '', miniatura: '',
+                  autor: '', fuente: '', url_fuente: '', licencia: '' };
+      pendientes.unshift(f);
+      abrir(f);
+      $('f-imagen').focus();
+    };
+
+    function descargar(nombre, lista) {
+      const blob = new Blob([JSON.stringify({ fotos: lista }, null, 1) + '\n'], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob); a.download = nombre; a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    }
+    $('exp-fotos').onclick = () => descargar('fotos.json', fotos);
+    $('exp-pend').onclick = () => descargar('pendientes.json', pendientes);
+  })();
+  </script>
+</body>
+</html>

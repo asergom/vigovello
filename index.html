@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VigoVello · El Vigo de antes en el mapa</title>
+  <meta name="description" content="Mapa de fotografías históricas de Vigo: recorre la ciudad de antes calle a calle.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="icon" href="img/logo-vv.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="marca">
+      <img class="logo" src="img/logo-vv.svg" alt="" width="44" height="44">
+      <div>
+      <h1>VigoVello</h1>
+      <p class="subtitulo">La ciudad de antes, en su sitio</p>
+      </div>
+    </div>
+    <div class="controles">
+      <label class="filtro" for="filtro-decada">
+        <span>Época</span>
+        <select id="filtro-decada">
+          <option value="">Todas</option>
+        </select>
+      </label>
+      <span id="contador" class="contador" aria-live="polite"></span>
+      <button id="btn-acerca" class="btn-texto" type="button">Acerca de</button>
+    </div>
+  </header>
+
+  <main id="mapa" aria-label="Mapa de Vigo con fotografías históricas"></main>
+
+  <!-- Panel lateral: fotos de un lugar -->
+  <aside id="panel" class="panel" hidden aria-labelledby="panel-titulo">
+    <div class="panel-cab">
+      <h2 id="panel-titulo"></h2>
+      <button id="panel-cerrar" class="btn-icono" type="button" aria-label="Cerrar"><svg viewBox="0 0 14 14" width="12" height="12" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+    </div>
+    <p id="panel-resumen" class="panel-resumen"></p>
+    <ul id="panel-rejilla" class="rejilla"></ul>
+  </aside>
+
+  <!-- Visor de una foto -->
+  <div id="visor" class="capa" hidden role="dialog" aria-modal="true" aria-labelledby="visor-titulo">
+    <div class="capa-fondo" data-cerrar></div>
+    <figure class="visor-caja">
+      <button class="btn-icono capa-cerrar" type="button" aria-label="Cerrar" data-cerrar><svg viewBox="0 0 14 14" width="12" height="12" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      <button class="visor-nav visor-ant" type="button" aria-label="Foto anterior"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M9 2L4 7l5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="visor-nav visor-sig" type="button" aria-label="Foto siguiente"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M5 2l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="visor-imagen" id="visor-imagen"></div>
+      <figcaption>
+        <h3 id="visor-titulo"></h3>
+        <p id="visor-meta" class="meta"></p>
+        <p id="visor-desc"></p>
+        <p id="visor-credito" class="credito"></p>
+      </figcaption>
+    </figure>
+  </div>
+
+  <!-- Acerca de -->
+  <div id="acerca" class="capa" hidden role="dialog" aria-modal="true" aria-labelledby="acerca-titulo">
+    <div class="capa-fondo" data-cerrar></div>
+    <div class="acerca-caja">
+      <button class="btn-icono capa-cerrar" type="button" aria-label="Cerrar" data-cerrar><svg viewBox="0 0 14 14" width="12" height="12" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      <h2 id="acerca-titulo">Acerca de VigoVello</h2>
+      <p>Un mapa de fotografías históricas de Vigo, inspirado en <a href="https://www.oldnyc.org" target="_blank" rel="noopener">OldNYC</a>. Cada punto del mapa es un lugar; púlsalo para ver las fotos tomadas allí.</p>
+      <p>Las imágenes proceden de fondos de dominio público o con licencia libre. Cada foto indica su fuente, autor y licencia.</p>
+      <p>¿Conoces mejor un lugar o has visto una foto mal situada? <a id="enlace-repo" href="#" target="_blank" rel="noopener">Colabora en el proyecto</a>.</p>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
