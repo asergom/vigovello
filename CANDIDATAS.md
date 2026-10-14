@@ -14,6 +14,7 @@ Para incluir una, usa `editor.html` → **+ Añadir foto por URL**, o pídeselo 
 | Foto | Fecha | Licencia | Qué falta |
 |---|---|---|---|
 | [Vigo, Panorama, Osten](https://commons.wikimedia.org/wiki/File:ETH-BIB-Vigo,_Panorama,_Osten-Dia_247-07294.tif) · ETH-Bibliothek Zürich | Abril de 1934 | CC BY-SA 4.0 | Identificar desde qué punto se tomó el panorama («Osten» = este). |
+| [Chocolatero y churrero en Vigo](https://commons.wikimedia.org/wiki/File:Chocolatero_and_churrero_in_Vigo,_ca._1900_-_Eugenio_Krapf_photo.jpg) · Eugenio Krapf | h. 1900 | Dominio público (PD-Art, vida del autor + 80 años) | Retrato de dos vendedores ambulantes: identificar la calle o el lugar. |
 
 ## B · Parecen libres, pero no he podido comprobar la licencia
 
@@ -21,7 +22,6 @@ Están en la categoría [History of Vigo](https://commons.wikimedia.org/wiki/Cat
 
 | Foto | Fecha | Notas para revisar |
 |---|---|---|
-| [Chocolatero y churrero en Vigo](https://commons.wikimedia.org/wiki/File:Chocolatero_and_churrero_in_Vigo,_ca._1900_-_Eugenio_Krapf_photo.jpg) · Eugenio Krapf | h. 1900 | Krapf murió hace más de 70 años: probable dominio público. Lugar sin identificar. |
 | [En la playa de Vigo](https://commons.wikimedia.org/wiki/File:EN_LA_PLAYA_DE_VIGO,_Eugenio_Krapf,_Luis_Taboada,_1901.jpg) · Eugenio Krapf | 1901 | Probable dominio público. Comprobar qué playa es. |
 | [La Casa de Caridad](https://commons.wikimedia.org/wiki/File:Vigo,_LA_CASA_DE_CARIDAD,_Eugenio_Krapf.jpg) · Eugenio Krapf | h. 1900 | Probable dominio público. Edificio localizable. |
 | [Fuente de la Ribera del Berbés](https://commons.wikimedia.org/wiki/File:Fuente_de_la_Ribera_del_Berb%C3%A9s,_Hauser_y_Menet,_1925.jpg) · Hauser y Menet | 1925 | Postal de editorial: comprobar la licencia que indica Commons. Lugar claro (Berbés). |
