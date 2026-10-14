@@ -30,6 +30,7 @@ import re
 import sys
 import time
 import unicodedata
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -53,11 +54,17 @@ def api(**params):
         try:
             with urllib.request.urlopen(req, timeout=60) as r:
                 return json.load(r)
+        except urllib.error.HTTPError as e:
+            espera = 2 ** intento
+            cuerpo = e.read()[:300].decode("utf-8", "replace")
+            print(f"  aviso: HTTP {e.code} {e.reason}: {cuerpo}; reintento en {espera}s", file=sys.stderr, flush=True)
+            time.sleep(espera)
+            continue
         except Exception as e:
             espera = 2 ** intento
             print(f"  aviso: {e}; reintento en {espera}s", file=sys.stderr)
             time.sleep(espera)
-    raise SystemExit("No se pudo contactar con Wikimedia Commons.")
+    raise RuntimeError("No se pudo contactar con Wikimedia Commons tras varios intentos.")
 
 
 def paginar(**params):
@@ -292,15 +299,19 @@ def cargar_lista(ruta):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--simular", action="store_true", help="Muestra qué haría sin escribir nada")
+    ap.add_argument("--fuentes", default=str(FUENTES), help="Fichero de fuentes a usar (por defecto scripts/fuentes.json)")
+    ap.add_argument("--salida", help="Guarda solo las fotos nuevas en este fichero, sin tocar data/fotos.json (para revisarlas antes)")
     args = ap.parse_args()
 
-    fuentes = json.loads(FUENTES.read_text(encoding="utf-8"))
+    fuentes = json.loads(Path(args.fuentes).read_text(encoding="utf-8"))
     hasta = fuentes.get("hasta_anio", 1980)
     excluir = fuentes.get("excluir", [])
     ubicador = Ubicador(LUGARES)
 
     fotos = cargar_lista(FOTOS)
-    fotos, cambios = depurar_importadas(fotos, ubicador, excluir)
+    cambios = 0
+    if not args.salida:
+        fotos, cambios = depurar_importadas(fotos, ubicador, excluir)
     excluidas = {clave_archivo(e if isinstance(e, str) else e.get("url_fuente", "")) for e in cargar_lista(EXCLUIDAS)}
     conocidas = {clave_archivo(f.get("url_fuente", "")) for f in fotos if f.get("url_fuente")} | excluidas
     conocidas |= {f["id"] for f in fotos}
@@ -323,13 +334,22 @@ def main():
                 motivos[motivo] = motivos.get(motivo, 0) + 1
 
     vistas_cat = set()
+    errores = []
     for fuente in fuentes.get("categorias", []):
-        for cat in subcategorias(fuente["nombre"], fuente.get("profundidad", 1), vistas_cat):
-            print("·", cat)
-            procesar(archivos_de_categoria(cat), fuente)
+        try:
+            for cat in subcategorias(fuente["nombre"], fuente.get("profundidad", 1), vistas_cat):
+                print("·", cat, flush=True)
+                procesar(archivos_de_categoria(cat), fuente)
+        except Exception as e:  # una fuente que falla no detiene las demás
+            errores.append(f"{fuente['nombre']}: {e!r}")
+            print("  ERROR:", errores[-1], flush=True)
     for fuente in fuentes.get("busquedas", []):
-        print("· búsqueda:", fuente["texto"])
-        procesar(archivos_de_busqueda(fuente["texto"]), fuente)
+        try:
+            print("· búsqueda:", fuente["texto"], flush=True)
+            procesar(archivos_de_busqueda(fuente["texto"]), fuente)
+        except Exception as e:
+            errores.append(f"{fuente['texto']}: {e!r}")
+            print("  ERROR:", errores[-1], flush=True)
 
     sin_ub = sum(1 for f in nuevas if f["ubicacion"] == "sin_confirmar")
     print(f"\nRevisados {len(vistas_pag)} archivos en {len(vistas_cat)} categorías.")
@@ -337,6 +357,13 @@ def main():
     for motivo, n in sorted(motivos.items(), key=lambda x: -x[1]):
         print(f"  descartadas por {motivo}: {n}")
 
+    if errores:
+        print(f"\nFuentes con error: {len(errores)}")
+    if args.salida and not args.simular:
+        Path(args.salida).parent.mkdir(parents=True, exist_ok=True)
+        Path(args.salida).write_text(json.dumps({"fotos": nuevas}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        print(f"Guardadas {len(nuevas)} fotos nuevas en {args.salida} para revisar.")
+        return
     if args.simular or not (nuevas or cambios):
         return
     FOTOS.write_text(json.dumps({"fotos": fotos + nuevas}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")

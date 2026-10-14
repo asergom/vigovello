@@ -1,0 +1,22 @@
+{
+  "_ayuda": "Fuentes para una importación puntual: páginas de revistas ilustradas antiguas con imágenes de Vigo, ya publicadas en Wikimedia Commons.",
+  "hasta_anio": 1945,
+  "categorias": [],
+  "busquedas": [
+    { "texto": "\"Ilustración Española y Americana\" Vigo", "antiguas": true, "solo_vigo": true },
+    { "texto": "\"Blanco y Negro\" Vigo", "antiguas": true, "solo_vigo": true },
+    { "texto": "\"Vida Gallega\" Vigo", "antiguas": true, "solo_vigo": true },
+    { "texto": "\"Ilustración Gallega\" Vigo", "antiguas": true, "solo_vigo": true },
+    { "texto": "\"Ilustración Gallega y Asturiana\" Vigo", "antiguas": true, "solo_vigo": true },
+    { "texto": "\"Nuevo Mundo\" Vigo", "antiguas": true, "solo_vigo": true },
+    { "texto": "\"Mundo Gráfico\" Vigo", "antiguas": true, "solo_vigo": true },
+    { "texto": "\"La Esfera\" Vigo", "antiguas": true, "solo_vigo": true },
+    { "texto": "\"Illustrated London News\" Vigo", "antiguas": true, "solo_vigo": true },
+    { "texto": "\"Le Monde illustré\" Vigo", "antiguas": true, "solo_vigo": true },
+    { "texto": "\"L'Illustration\" Vigo", "antiguas": true, "solo_vigo": true },
+    { "texto": "\"The Graphic\" Vigo", "antiguas": true, "solo_vigo": true }
+  ],
+  "excluir": ["necroloxica", "necrológica", "esquela", "acta de nacimiento", "plano de", "mapa de", "map of",
+              "escudo", "coat of arms", "firma", "signature", "carta de", "letter", "sello", "stamp", "billete",
+              "anuncio", "publicidad", "publicidade", "advertisement", "pdf"]
+}
