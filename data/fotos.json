@@ -1,135 +1,72 @@
 {
-  "_nota": "Datos de EJEMPLO para probar la web: lugares reales de Vigo con coordenadas aproximadas, pero sin foto todavía. Sustitúyelos con scripts/importar_commons.py o añadiendo fotos a mano (ver README).",
-  "fotos": [
-    {
-      "id": "ej-alameda-1",
-      "titulo": "La Alameda y la plaza de Compostela",
-      "lugar": "Alameda (Praza de Compostela)",
-      "anio": 1910, "aproximada": true,
-      "descripcion": "Foto de ejemplo. Aquí iría una vista de los jardines de la Alameda con los edificios de la burguesía viguesa al fondo.",
-      "lat": 42.23955, "lng": -8.72230,
-      "imagen": "", "miniatura": "",
-      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
-    },
-    {
-      "id": "ej-alameda-2",
-      "titulo": "Paseo en la Alameda",
-      "lugar": "Alameda (Praza de Compostela)",
-      "anio": 1935, "aproximada": true,
-      "descripcion": "Foto de ejemplo. Varias fotos en el mismo punto aparecen juntas en el panel, ordenadas por año.",
-      "lat": 42.23955, "lng": -8.72230,
-      "imagen": "", "miniatura": "",
-      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
-    },
-    {
-      "id": "ej-berbes-1",
-      "titulo": "Soportales del Berbés",
-      "lugar": "O Berbés",
-      "anio": 1900, "aproximada": true,
-      "descripcion": "Foto de ejemplo. El antiguo barrio marinero, con sus soportales a pie de mar antes de los rellenos del puerto.",
-      "lat": 42.23880, "lng": -8.72640,
-      "imagen": "", "miniatura": "",
-      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
-    },
-    {
-      "id": "ej-berbes-2",
-      "titulo": "Venta de pescado en el Berbés",
-      "lugar": "O Berbés",
-      "anio": 1925, "aproximada": true,
-      "descripcion": "Foto de ejemplo.",
-      "lat": 42.23880, "lng": -8.72640,
-      "imagen": "", "miniatura": "",
-      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
-    },
-    {
-      "id": "ej-colegiata",
-      "titulo": "Colegiata de Santa María",
-      "lugar": "Casco Vello · Colegiata",
-      "anio": 1915, "aproximada": true,
-      "descripcion": "Foto de ejemplo.",
-      "lat": 42.23930, "lng": -8.72530,
-      "imagen": "", "miniatura": "",
-      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
-    },
-    {
-      "id": "ej-portadosol",
-      "titulo": "La Puerta del Sol",
-      "lugar": "Porta do Sol",
-      "anio": 1920, "aproximada": true,
-      "descripcion": "Foto de ejemplo.",
-      "lat": 42.23700, "lng": -8.72300,
-      "imagen": "", "miniatura": "",
-      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
-    },
-    {
-      "id": "ej-principe",
-      "titulo": "Calle del Príncipe",
-      "lugar": "Rúa do Príncipe",
-      "anio": 1950, "aproximada": true,
-      "descripcion": "Foto de ejemplo.",
-      "lat": 42.23690, "lng": -8.72080,
-      "imagen": "", "miniatura": "",
-      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
-    },
-    {
-      "id": "ej-castro",
-      "titulo": "Vista desde el monte del Castro",
-      "lugar": "Monte do Castro",
-      "anio": null,
-      "descripcion": "Foto de ejemplo sin fecha conocida: aparece en el filtro «Sin fecha».",
-      "lat": 42.23350, "lng": -8.72450,
-      "imagen": "", "miniatura": "",
-      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
-    },
-    {
-      "id": "ej-garciabarbon",
-      "titulo": "Teatro García Barbón",
-      "lugar": "Teatro García Barbón",
-      "anio": 1930, "aproximada": true,
-      "descripcion": "Foto de ejemplo.",
-      "lat": 42.23740, "lng": -8.71810,
-      "imagen": "", "miniatura": "",
-      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
-    },
-    {
-      "id": "ej-estacion",
-      "titulo": "Estación de ferrocarril",
-      "lugar": "Estación de Urzáiz",
-      "anio": 1905, "aproximada": true,
-      "descripcion": "Foto de ejemplo.",
-      "lat": 42.23420, "lng": -8.71280,
-      "imagen": "", "miniatura": "",
-      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
-    },
-    {
-      "id": "ej-trasatlanticos",
-      "titulo": "Emigrantes en el muelle de trasatlánticos",
-      "lugar": "Muelle de Trasatlánticos",
-      "anio": 1920, "aproximada": true,
-      "descripcion": "Foto de ejemplo.",
-      "lat": 42.24100, "lng": -8.72350,
-      "imagen": "", "miniatura": "",
-      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
-    },
-    {
-      "id": "ej-bouzas",
-      "titulo": "Puerto de Bouzas",
-      "lugar": "Bouzas",
-      "anio": 1940, "aproximada": true,
-      "descripcion": "Foto de ejemplo.",
-      "lat": 42.23450, "lng": -8.75200,
-      "imagen": "", "miniatura": "",
-      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
-    },
-    {
-      "id": "ej-samil",
-      "titulo": "Bañistas en Samil",
-      "lugar": "Praia de Samil",
-      "anio": 1960, "aproximada": true,
-      "descripcion": "Foto de ejemplo.",
-      "lat": 42.21050, "lng": -8.77450,
-      "imagen": "", "miniatura": "",
-      "autor": "", "fuente": "", "url_fuente": "", "licencia": ""
-    }
-  ]
+ "fotos": [
+  {
+   "id": "commons-castro-thoman",
+   "titulo": "Vigo visto desde el Castro",
+   "lugar": "Monte do Castro",
+   "anio": 1930,
+   "aproximada": true,
+   "fecha": "Entre 1920 y 1940",
+   "descripcion": "Vista de la ciudad y de la ría desde el monte del Castro.",
+   "lat": 42.2335,
+   "lng": -8.7245,
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Fotograf%C3%ADa_antiga_de_Vigo_visto_dende_o_Castro.jpg/1280px-Fotograf%C3%ADa_antiga_de_Vigo_visto_dende_o_Castro.jpg",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Fotograf%C3%ADa_antiga_de_Vigo_visto_dende_o_Castro.jpg/500px-Fotograf%C3%ADa_antiga_de_Vigo_visto_dende_o_Castro.jpg",
+   "autor": "Thoman · Colección Seoane Prado",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Fotograf%C3%ADa_antiga_de_Vigo_visto_dende_o_Castro.jpg",
+   "licencia": "Dominio público (Public Domain Mark 1.0)"
+  },
+  {
+   "id": "commons-eth-lotse-1896",
+   "titulo": "Barca de prácticos junto a un barco",
+   "lugar": "Puerto de Vigo",
+   "anio": 1896,
+   "aproximada": false,
+   "fecha": "",
+   "descripcion": "Una pequeña embarcación de prácticos (Lotse) se acerca al costado de un barco en la ría. Ubicación aproximada: puerto de Vigo.",
+   "lat": 42.2425,
+   "lng": -8.724,
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/ETH-BIB-Lotse,_Vigo-Dia_247-01008.tif/lossy-page1-1280px-ETH-BIB-Lotse,_Vigo-Dia_247-01008.tif.jpg",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/ETH-BIB-Lotse,_Vigo-Dia_247-01008.tif/lossy-page1-500px-ETH-BIB-Lotse,_Vigo-Dia_247-01008.tif.jpg",
+   "autor": "ETH-Bibliothek Zürich, Bildarchiv",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:ETH-BIB-Lotse,_Vigo-Dia_247-01008.tif",
+   "licencia": "CC BY-SA 4.0"
+  },
+  {
+   "id": "commons-eth-lotse-1898",
+   "titulo": "Barca de prácticos en la ría",
+   "lugar": "Puerto de Vigo",
+   "anio": 1898,
+   "aproximada": false,
+   "fecha": "",
+   "descripcion": "Pequeña embarcación al costado de un barco, en el mar. Ubicación aproximada: puerto de Vigo.",
+   "lat": 42.2425,
+   "lng": -8.724,
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/ETH-BIB-Lotse,_Vigo-Dia_247-01488.tif/lossy-page1-1280px-ETH-BIB-Lotse,_Vigo-Dia_247-01488.tif.jpg",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/ETH-BIB-Lotse,_Vigo-Dia_247-01488.tif/lossy-page1-500px-ETH-BIB-Lotse,_Vigo-Dia_247-01488.tif.jpg",
+   "autor": "ETH-Bibliothek Zürich, Bildarchiv",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:ETH-BIB-Lotse,_Vigo-Dia_247-01488.tif",
+   "licencia": "CC BY-SA 4.0"
+  },
+  {
+   "id": "commons-vigo-1877",
+   "titulo": "Vista general de la ciudad y del puerto (grabado)",
+   "lugar": "Puerto de Vigo",
+   "anio": 1877,
+   "aproximada": false,
+   "fecha": "",
+   "descripcion": "Grabado publicado en La Ilustración Española y Americana (15/8/1877) a partir de una fotografía, con motivo de la visita del rey a Vigo. Reproducido de nuevo en La Ilustración Gallega y Asturiana en 1880.",
+   "lat": 42.2425,
+   "lng": -8.724,
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Vigo_en_1877.jpg/1280px-Vigo_en_1877.jpg",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Vigo_en_1877.jpg/500px-Vigo_en_1877.jpg",
+   "autor": "Nao · La Ilustración Española y Americana",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Vigo_en_1877.jpg",
+   "licencia": "Dominio público"
+  }
+ ]
 }

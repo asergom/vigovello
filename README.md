@@ -18,6 +18,7 @@ data/fotos.json            las fotos que salen en el mapa
 data/pendientes.json       fotos importadas que aún no tienen ubicación
 img/logo-vv.svg            logo (aquí no se guardan fotos)
 scripts/importar_commons.py  importa fotos antiguas de Wikimedia Commons
+CANDIDATAS.md              fotos encontradas pendientes de revisar
 ```
 
 ## Publicar en GitHub Pages
