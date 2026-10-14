@@ -186,6 +186,7 @@ class Ubicador:
 def convertir(p, fuente, hasta, ubicador, excluir=()):
     info = (p.get("imageinfo") or [{}])[0]
     if not info.get("mime", "").startswith("image/") or info.get("mime") == "image/svg+xml":
+        print(f"  [no imagen] {p.get('title')} | mime={info.get('mime')!r} | claves={sorted(info)[:8]}", flush=True)
         return None, "no es una imagen"
     m = info.get("extmetadata", {})
 
