@@ -1,0 +1,15 @@
+{
+  "_ayuda": "Fuentes para una importación puntual: fotos de Vigo del Archivo Nacional de los Países Bajos (Nationaal Archief, Anefo, Spaarnestad) publicadas en Wikimedia Commons.",
+  "hasta_anio": 1980,
+  "categorias": [],
+  "busquedas": [
+    { "texto": "Vigo incategory:Images_from_Nationaal_Archief", "antiguas": false, "solo_vigo": true },
+    { "texto": "Vigo Nationaal Archief", "antiguas": false, "solo_vigo": true },
+    { "texto": "Vigo Anefo", "antiguas": false, "solo_vigo": true },
+    { "texto": "Vigo Spaarnestad", "antiguas": false, "solo_vigo": true },
+    { "texto": "Vigo Spanje", "antiguas": false, "solo_vigo": true },
+    { "texto": "Vigo haven", "antiguas": false, "solo_vigo": true },
+    { "texto": "Vigo Bestanddeelnr", "antiguas": false, "solo_vigo": true }
+  ],
+  "excluir": ["plano de", "mapa de", "map of", "kaart", "escudo", "coat of arms", "pdf"]
+}
