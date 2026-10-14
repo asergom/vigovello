@@ -1,19 +1,23 @@
-/* VigoVello · estilo minimalista
-   Un solo color de acento (azul ría), neutros cálidos y líneas de 1px. */
+/* VigoVello · estilo minimalista oscuro
+   Fondos grafito, un solo color de acento (azul ría) y líneas de 1px. */
 :root {
-  --papel: #f7f6f3;        /* fondo */
-  --blanco: #ffffff;       /* superficies */
-  --papel-2: #efede8;      /* hundidos, marcadores de imagen */
-  --borde: #e2e0da;        /* todas las líneas */
-  --tinta: #1c1c1a;
-  --tinta-suave: #6e6d68;
-  --acento: #1e5a6b;       /* azul ría: logo, puntos, enlaces, botones */
-  --acento-suave: rgba(30, 90, 107, .1);
+  color-scheme: dark;
+  --papel: #121517;        /* fondo general */
+  --superficie: #1a1f22;   /* cabecera, paneles, ventanas */
+  --blanco: var(--superficie); /* alias: lo usa el editor */
+  --papel-2: #22282c;      /* hundidos, marcadores de imagen, campos */
+  --borde: #2f373c;        /* todas las líneas */
+  --tinta: #e8e5de;        /* texto principal */
+  --tinta-suave: #98a2a7;  /* texto secundario */
+  --acento: #5fb0c5;       /* azul ría, aclarado para fondo oscuro */
+  --acento-fuerte: #1e5a6b;/* azul del logo */
+  --acento-suave: rgba(95, 176, 197, .14);
+  --sobre-acento: #0d1214; /* texto sobre botones de acento */
   --radio: 8px;
   --cab-alto: 64px;
   --panel-ancho: 380px;
   --sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --serif: var(--sans);    /* una sola familia en toda la web */
+  --serif: var(--sans);
 }
 
 * { box-sizing: border-box; }
@@ -28,6 +32,7 @@ body {
 a { color: var(--acento); text-underline-offset: 2px; }
 button { font: inherit; color: inherit; cursor: pointer; }
 :focus-visible { outline: 2px solid var(--acento); outline-offset: 2px; }
+::selection { background: var(--acento-suave); }
 
 /* ---------- Cabecera ---------- */
 .cabecera {
@@ -35,7 +40,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   height: var(--cab-alto);
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
   padding: 0 20px;
-  background: var(--blanco);
+  background: var(--superficie);
   border-bottom: 1px solid var(--borde);
 }
 .marca { display: flex; align-items: center; gap: 12px; min-width: 0; }
@@ -46,10 +51,11 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .filtro { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--tinta-suave); }
 .filtro select {
   font: 500 13px var(--sans); color: var(--tinta);
-  background: var(--blanco) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%236e6d68' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 10px center;
+  background: var(--papel-2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%2398a2a7' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 10px center;
   border: 1px solid var(--borde); border-radius: var(--radio);
   padding: 6px 28px 6px 10px; appearance: none;
 }
+.filtro select option { background: var(--superficie); color: var(--tinta); }
 .contador { font-size: 13px; color: var(--tinta-suave); white-space: nowrap; font-variant-numeric: tabular-nums; }
 .btn-texto {
   background: none; border: 1px solid var(--borde); border-radius: var(--radio);
@@ -57,55 +63,83 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .btn-texto:hover { border-color: var(--acento); color: var(--acento); }
 
+/* ---------- Selector de idioma ---------- */
+.idioma { position: relative; }
+.btn-idioma {
+  display: flex; align-items: center; gap: 7px;
+  background: none; border: 1px solid var(--borde); border-radius: var(--radio);
+  padding: 5px 9px 5px 7px; font-size: 12px; font-weight: 600; letter-spacing: .04em;
+}
+.btn-idioma:hover, .btn-idioma[aria-expanded="true"] { border-color: var(--acento); }
+.btn-idioma .chevron { color: var(--tinta-suave); }
+.bandera { display: inline-flex; width: 21px; height: 14px; border-radius: 2px; overflow: hidden; flex: none; box-shadow: 0 0 0 1px rgba(255, 255, 255, .12); }
+.bandera svg { width: 100%; height: 100%; display: block; }
+.menu-idioma {
+  position: absolute; right: 0; top: calc(100% + 6px); z-index: 1100;
+  min-width: 170px; margin: 0; padding: 4px; list-style: none;
+  background: var(--superficie); border: 1px solid var(--borde); border-radius: var(--radio);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .45);
+}
+.menu-idioma[hidden] { display: none; }
+.menu-idioma button {
+  display: flex; align-items: center; gap: 10px; width: 100%;
+  padding: 8px 10px; border: 0; border-radius: 6px; background: none;
+  font-size: 13px; text-align: left;
+}
+.menu-idioma button:hover, .menu-idioma button:focus-visible { background: var(--papel-2); outline: none; }
+.menu-idioma button[aria-checked="true"] { color: var(--acento); font-weight: 600; }
+
 /* ---------- Mapa ---------- */
 #mapa {
   position: fixed; top: var(--cab-alto); left: 0; right: 0; bottom: 0;
-  background: var(--papel-2);
+  background: var(--papel);
   transition: right .2s ease;
 }
 body.con-panel #mapa { right: var(--panel-ancho); }
-/* Mapa base en gris: deja todo el color a los puntos */
-.teselas-gris { filter: grayscale(1) contrast(.92) brightness(1.06); }
-.leaflet-container { font-family: var(--sans); background: var(--papel-2); }
+/* Mapa base oscuro y sin color: deja todo el protagonismo a los puntos */
+.teselas-oscuras { filter: grayscale(1) invert(1) brightness(.82) contrast(.88); }
+.leaflet-container { font-family: var(--sans); background: var(--papel); }
 .leaflet-bar { border: 1px solid var(--borde) !important; box-shadow: none !important; border-radius: var(--radio) !important; overflow: hidden; }
-.leaflet-bar a { color: var(--tinta) !important; border-bottom-color: var(--borde) !important; }
-.leaflet-control-attribution { background: rgba(255, 255, 255, .8) !important; color: var(--tinta-suave); }
+.leaflet-bar a { background: var(--superficie) !important; color: var(--tinta) !important; border-bottom-color: var(--borde) !important; }
+.leaflet-bar a:hover { background: var(--papel-2) !important; }
+.leaflet-control-attribution { background: rgba(26, 31, 34, .85) !important; color: var(--tinta-suave); }
+.leaflet-control-attribution a { color: var(--acento); }
 
 .punto {
-  fill: var(--acento); fill-opacity: .85;
-  stroke: var(--blanco); stroke-opacity: 1;
+  fill: var(--acento); fill-opacity: .9;
+  stroke: var(--papel); stroke-opacity: 1;
   transition: fill-opacity .15s;
 }
 .punto:hover { fill-opacity: 1; }
 .leaflet-tooltip {
-  background: var(--tinta); color: var(--blanco); border: 0; border-radius: 6px;
-  font-size: 12px; padding: 4px 8px; box-shadow: none;
+  background: var(--tinta); color: var(--papel); border: 0; border-radius: 6px;
+  font-size: 12px; font-weight: 500; padding: 4px 8px; box-shadow: none;
 }
 .leaflet-tooltip-top::before { border-top-color: var(--tinta); }
 
-/* Puntos cuya ubicación no está confirmada: hueco y con borde discontinuo */
+/* Puntos cuya ubicación no está confirmada: huecos y con borde discontinuo */
 .punto.punto-sin-confirmar {
-  fill: var(--blanco); fill-opacity: 1;
+  fill: var(--papel); fill-opacity: .85;
   stroke: var(--acento); stroke-dasharray: 3 2;
 }
-.punto.punto-sin-confirmar:hover { fill: var(--acento-suave); }
-.punto-propuesta { fill: var(--tinta); fill-opacity: 1; stroke: var(--blanco); }
+.punto.punto-sin-confirmar:hover { fill: var(--acento-suave); fill-opacity: 1; }
+.punto-propuesta { fill: var(--tinta); fill-opacity: 1; stroke: var(--papel); }
 
 .leyenda {
   position: fixed; left: 12px; bottom: 28px; z-index: 800;
   display: flex; flex-direction: column; gap: 4px;
   padding: 8px 12px; font-size: 12px; color: var(--tinta-suave);
-  background: var(--blanco); border: 1px solid var(--borde); border-radius: var(--radio);
+  background: var(--superficie); border: 1px solid var(--borde); border-radius: var(--radio);
 }
-.leyenda span { display: flex; align-items: center; gap: 8px; }
+.leyenda > span { display: flex; align-items: center; gap: 8px; }
 .ley-punto { width: 10px; height: 10px; border-radius: 50%; background: var(--acento); display: inline-block; }
-.ley-punto.ley-sin { background: var(--blanco); border: 1.5px dashed var(--acento); }
+.ley-punto.ley-sin { background: transparent; border: 1.5px dashed var(--acento); }
 
 /* ---------- Panel ---------- */
 .panel {
   position: fixed; top: var(--cab-alto); right: 0; bottom: 0; z-index: 900;
   width: var(--panel-ancho);
-  background: var(--blanco);
+  background: var(--superficie);
   border-left: 1px solid var(--borde);
   overflow-y: auto;
   padding: 20px 20px 32px;
@@ -117,7 +151,7 @@ body.con-panel #mapa { right: var(--panel-ancho); }
 .btn-icono {
   flex: none; width: 32px; height: 32px; border-radius: 50%;
   display: grid; place-items: center;
-  background: var(--blanco); border: 1px solid var(--borde); font-size: 13px; line-height: 1;
+  background: var(--superficie); border: 1px solid var(--borde); font-size: 13px; line-height: 1;
 }
 .btn-icono:hover { border-color: var(--acento); color: var(--acento); }
 
@@ -132,7 +166,7 @@ body.con-panel #mapa { right: var(--panel-ancho); }
   transition: opacity .15s;
 }
 .miniatura .sin-imagen { display: flex; }
-.miniatura:hover img, .miniatura:hover .sin-imagen { opacity: .85; }
+.miniatura:hover img, .miniatura:hover .sin-imagen { opacity: .8; }
 .miniatura .pie { display: block; margin-top: 6px; font-size: 12px; color: var(--tinta-suave); font-variant-numeric: tabular-nums; }
 
 .sin-imagen {
@@ -147,21 +181,22 @@ body.con-panel #mapa { right: var(--panel-ancho); }
 /* ---------- Capas (visor y "acerca de") ---------- */
 .capa { position: fixed; inset: 0; z-index: 2000; display: grid; place-items: center; padding: 20px; }
 .capa[hidden] { display: none; }
-.capa-fondo { position: absolute; inset: 0; background: rgba(28, 28, 26, .72); }
+.capa-fondo { position: absolute; inset: 0; background: rgba(5, 7, 8, .8); }
 .capa-cerrar { position: absolute; top: 12px; right: 12px; z-index: 2; }
 
 .visor-caja {
   position: relative; margin: 0; width: min(1000px, 100%); max-height: 100%;
   display: grid; grid-template-columns: minmax(0, 1fr) 300px;
-  background: var(--blanco); border-radius: 12px; overflow: hidden;
+  background: var(--superficie); border: 1px solid var(--borde); border-radius: 12px; overflow: hidden;
 }
-.visor-imagen { background: var(--tinta); display: grid; place-items: center; min-height: 320px; }
+.visor-imagen { background: #0b0d0e; display: grid; place-items: center; min-height: 320px; }
 .visor-imagen img { display: block; max-width: 100%; max-height: 80vh; object-fit: contain; }
-.visor-imagen .sin-imagen { width: 100%; height: 100%; min-height: 420px; border: 0; border-radius: 0; }
+.visor-imagen .sin-imagen { width: 100%; height: 100%; min-height: 420px; border: 0; border-radius: 0; background: #0b0d0e; }
 .visor-caja figcaption { padding: 56px 24px 24px; overflow-y: auto; max-height: 80vh; }
 .visor-caja h3 { margin: 0 0 4px; font-size: 18px; font-weight: 600; letter-spacing: -.01em; line-height: 1.3; }
 .meta { margin: 0 0 14px; font-size: 13px; color: var(--acento); font-weight: 500; }
 #visor-desc { margin: 0; font-size: 14px; }
+#visor-desc[hidden] { display: none; }
 .aviso-ubicacion {
   display: inline-block; margin: -6px 0 14px; padding: 3px 10px;
   font-size: 12px; color: var(--tinta-suave);
@@ -181,7 +216,7 @@ body.con-panel #mapa { right: var(--panel-ancho); }
   position: absolute; top: 50%; transform: translateY(-50%); z-index: 2;
   width: 36px; height: 36px; border-radius: 50%;
   display: grid; place-items: center;
-  border: 1px solid var(--borde); background: var(--blanco);
+  border: 1px solid var(--borde); background: rgba(26, 31, 34, .9);
 }
 .visor-nav svg { width: 14px; height: 14px; }
 .visor-nav:hover { border-color: var(--acento); color: var(--acento); }
@@ -190,31 +225,34 @@ body.con-panel #mapa { right: var(--panel-ancho); }
 .visor-nav[hidden] { display: none; }
 
 .acerca-caja {
-  position: relative; width: min(500px, 100%);
-  background: var(--blanco); border-radius: 12px; padding: 28px;
+  position: relative; width: min(520px, 100%);
+  background: var(--superficie); border: 1px solid var(--borde); border-radius: 12px; padding: 28px;
 }
 .acerca-caja h2 { margin: 0 0 12px; font-size: 18px; font-weight: 600; letter-spacing: -.01em; }
-.acerca-caja p { font-size: 14px; }
+.acerca-caja p { font-size: 14px; color: var(--tinta); }
 
 /* ---------- Proponer ubicación ---------- */
 .propuesta {
   position: fixed; z-index: 1500; top: calc(var(--cab-alto) + 12px); left: 50%; transform: translateX(-50%);
   width: min(480px, calc(100% - 32px));
-  background: var(--blanco); border: 1px solid var(--borde); border-radius: 12px; padding: 14px 16px;
+  background: var(--superficie); border: 1px solid var(--borde); border-radius: 12px; padding: 14px 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .45);
 }
 .propuesta[hidden] { display: none; }
 .propuesta > p { margin: 0 0 10px; font-size: 14px; font-weight: 500; }
 .propuesta-campo { display: block; font-size: 12px; color: var(--tinta-suave); }
 .propuesta-campo textarea {
   display: block; width: 100%; margin-top: 4px; padding: 7px 9px; resize: vertical;
-  font: 14px var(--sans); color: var(--tinta); border: 1px solid var(--borde); border-radius: var(--radio);
+  font: 14px var(--sans); color: var(--tinta); background: var(--papel-2);
+  border: 1px solid var(--borde); border-radius: var(--radio);
 }
 .propuesta-nota { margin: 8px 0 0; font-size: 12px; color: var(--tinta-suave); }
 .propuesta-botones { display: flex; justify-content: flex-end; gap: 8px; margin-top: 12px; }
 .btn-principal {
-  border: 1px solid var(--acento); background: var(--acento); color: var(--blanco);
-  border-radius: var(--radio); padding: 6px 14px; font-size: 13px; font-weight: 500;
+  border: 1px solid var(--acento); background: var(--acento); color: var(--sobre-acento);
+  border-radius: var(--radio); padding: 6px 14px; font-size: 13px; font-weight: 600;
 }
+.btn-principal:hover { filter: brightness(1.08); }
 #propuesta-detalle[hidden] ~ .propuesta-botones .btn-principal { opacity: .4; pointer-events: none; }
 body.proponiendo #mapa { cursor: crosshair; }
 body.proponiendo .leaflet-container { cursor: crosshair; }
@@ -225,7 +263,7 @@ body.proponiendo .leaflet-container { cursor: crosshair; }
   .cabecera { flex-direction: column; align-items: stretch; justify-content: center; gap: 8px; padding: 10px 16px; }
   .logo { width: 32px; height: 32px; }
   .controles { justify-content: space-between; gap: 8px; }
-  .contador { font-size: 12px; }
+  .contador { font-size: 12px; overflow: hidden; text-overflow: ellipsis; min-width: 0; flex: 1; }
   .leyenda { bottom: 20px; }
   body.con-panel .leyenda { display: none; }
   .filtro span { display: none; }
@@ -238,4 +276,7 @@ body.proponiendo .leaflet-container { cursor: crosshair; }
   .visor-caja figcaption { padding: 16px 18px 20px; max-height: none; }
   .visor-nav { top: 130px; }
   .visor-sig { left: auto; right: 12px; }
+}
+@media (max-width: 400px) {
+  .contador { display: none; }
 }

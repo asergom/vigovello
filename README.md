@@ -14,6 +14,8 @@ editor.html                herramienta para situar fotos en el mapa
 css/estilo.css             estilos
 js/config.js               ajustes (centro del mapa, enlace al repo…)
 js/app.js                  lógica del mapa, panel y visor
+js/i18n.js                 idiomas de la web (es, gl, en, pt, fr): textos, banderas y nombres de lugar
+scripts/textos_fotos.py    título y descripción de cada foto en los cinco idiomas
 data/fotos.json            las fotos que salen en el mapa
 img/logo-vv.svg            logo (aquí no se guardan fotos)
 scripts/importar_commons.py  importa fotos antiguas de Wikimedia Commons
@@ -102,6 +104,15 @@ Algunas webs no permiten mostrar sus imágenes desde otros sitios. Si una imagen
 `original` es opcional: si la imagen reducida no carga, la web lo intenta con esta dirección.
 
 `fecha` es opcional: si está, se muestra tal cual («verano de 1924», «1910–1915»); si no, se usa `anio`.
+
+## Idiomas
+
+La web está en español, gallego, inglés, portugués y francés. El selector con la bandera, arriba a la derecha, cambia **todo** al idioma elegido: menús, avisos, fechas, licencias, nombres de lugar genéricos y los títulos y descripciones de las fotos. Al entrar se usa el idioma del navegador, y la elección se recuerda.
+
+- Los textos de la interfaz están en `js/i18n.js`.
+- Los títulos y descripciones de cada foto están en `scripts/textos_fotos.py`. Tras editarlo, ejecuta `python3 scripts/textos_fotos.py` para volcarlos en `data/fotos.json` (campo `textos`).
+- **Cada foto nueva necesita sus textos en los cinco idiomas.** Si le faltan, la web mostrará el título original, que puede estar en otro idioma.
+- Los topónimos oficiales (Porta do Sol, O Berbés, Rúa do Príncipe…) no se traducen.
 
 ## Ubicaciones sin confirmar y propuestas de los visitantes
 

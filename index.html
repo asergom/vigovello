@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>VigoVello · El Vigo de antes en el mapa</title>
-  <meta name="description" content="Mapa de fotografías históricas de Vigo: recorre la ciudad de antes calle a calle.">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#121517">
+  <title>VigoVello</title>
+  <meta name="description" content="">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -15,31 +17,37 @@
 <body>
   <header class="cabecera">
     <div class="marca">
-      <img class="logo" src="img/logo-vv.svg" alt="" width="44" height="44">
+      <img class="logo" src="img/logo-vv.svg" alt="" width="36" height="36">
       <div>
-      <h1>VigoVello</h1>
-      <p class="subtitulo">La ciudad de antes, en su sitio</p>
+        <h1>VigoVello</h1>
+        <p class="subtitulo" data-i18n="subtitulo"></p>
       </div>
     </div>
     <div class="controles">
       <label class="filtro" for="filtro-decada">
-        <span>Época</span>
-        <select id="filtro-decada">
-          <option value="">Todas</option>
-        </select>
+        <span data-i18n="epoca"></span>
+        <select id="filtro-decada"></select>
       </label>
       <span id="contador" class="contador" aria-live="polite"></span>
-      <button id="btn-acerca" class="btn-texto" type="button">Acerca de</button>
+      <button id="btn-acerca" class="btn-texto" type="button" data-i18n="acerca"></button>
+      <div class="idioma">
+        <button id="btn-idioma" class="btn-idioma" type="button" aria-haspopup="true" aria-expanded="false">
+          <span class="bandera" id="idioma-bandera"></span>
+          <span id="idioma-codigo" class="idioma-codigo"></span>
+          <svg class="chevron" viewBox="0 0 10 6" width="10" height="6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <ul id="menu-idioma" class="menu-idioma" role="menu" hidden></ul>
+      </div>
     </div>
   </header>
 
-  <main id="mapa" aria-label="Mapa de Vigo con fotografías históricas"></main>
+  <main id="mapa" data-i18n-aria="mapa_aria"></main>
 
   <!-- Panel lateral: fotos de un lugar -->
   <aside id="panel" class="panel" hidden aria-labelledby="panel-titulo">
     <div class="panel-cab">
       <h2 id="panel-titulo"></h2>
-      <button id="panel-cerrar" class="btn-icono" type="button" aria-label="Cerrar"><svg viewBox="0 0 14 14" width="12" height="12" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      <button id="panel-cerrar" class="btn-icono" type="button" data-i18n-aria="cerrar"><svg viewBox="0 0 14 14" width="12" height="12" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
     </div>
     <p id="panel-resumen" class="panel-resumen"></p>
     <ul id="panel-rejilla" class="rejilla"></ul>
@@ -49,18 +57,18 @@
   <div id="visor" class="capa" hidden role="dialog" aria-modal="true" aria-labelledby="visor-titulo">
     <div class="capa-fondo" data-cerrar></div>
     <figure class="visor-caja">
-      <button class="btn-icono capa-cerrar" type="button" aria-label="Cerrar" data-cerrar><svg viewBox="0 0 14 14" width="12" height="12" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
-      <button class="visor-nav visor-ant" type="button" aria-label="Foto anterior"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M9 2L4 7l5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-      <button class="visor-nav visor-sig" type="button" aria-label="Foto siguiente"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M5 2l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="btn-icono capa-cerrar" type="button" data-i18n-aria="cerrar" data-cerrar><svg viewBox="0 0 14 14" width="12" height="12" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      <button class="visor-nav visor-ant" type="button" data-i18n-aria="anterior"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M9 2L4 7l5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="visor-nav visor-sig" type="button" data-i18n-aria="siguiente"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M5 2l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       <div class="visor-imagen" id="visor-imagen"></div>
       <figcaption>
         <h3 id="visor-titulo"></h3>
         <p id="visor-meta" class="meta"></p>
         <p id="visor-ubicacion" class="aviso-ubicacion" hidden></p>
         <p id="visor-desc"></p>
-        <button id="btn-proponer" class="btn-texto btn-proponer" type="button">Proponer ubicación</button>
+        <button id="btn-proponer" class="btn-texto btn-proponer" type="button"></button>
         <p id="visor-credito" class="credito"></p>
-        <a id="visor-origen" class="enlace-origen" target="_blank" rel="noopener" hidden>Ver en su web original <svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a id="visor-origen" class="enlace-origen" target="_blank" rel="noopener" hidden><span data-i18n="ver_original"></span> <svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </figcaption>
     </figure>
   </div>
@@ -69,36 +77,35 @@
   <div id="propuesta" class="propuesta" hidden role="dialog" aria-labelledby="propuesta-texto">
     <p id="propuesta-texto"></p>
     <div id="propuesta-detalle" hidden>
-      <label class="propuesta-campo">Comentario (opcional): ¿qué te hace pensar que es aquí?
+      <label class="propuesta-campo"><span data-i18n="prop_comentario"></span>
         <textarea id="propuesta-comentario" rows="2"></textarea></label>
-      <p class="propuesta-nota">Se abrirá GitHub para enviar la propuesta (hace falta una cuenta gratuita). La revisaremos antes de cambiar el mapa.</p>
+      <p class="propuesta-nota" data-i18n="prop_nota"></p>
     </div>
     <div class="propuesta-botones">
-      <button id="propuesta-cancelar" class="btn-texto" type="button">Cancelar</button>
-      <button id="propuesta-enviar" class="btn-principal" type="button">Enviar propuesta</button>
+      <button id="propuesta-cancelar" class="btn-texto" type="button" data-i18n="cancelar"></button>
+      <button id="propuesta-enviar" class="btn-principal" type="button" data-i18n="enviar"></button>
     </div>
   </div>
 
   <!-- Leyenda -->
   <div class="leyenda" aria-hidden="true">
-    <span><i class="ley-punto"></i>Ubicación conocida</span>
-    <span><i class="ley-punto ley-sin"></i>Sin confirmar</span>
+    <span><i class="ley-punto"></i><span data-i18n="ley_conocida"></span></span>
+    <span><i class="ley-punto ley-sin"></i><span data-i18n="ley_sin"></span></span>
   </div>
 
   <!-- Acerca de -->
   <div id="acerca" class="capa" hidden role="dialog" aria-modal="true" aria-labelledby="acerca-titulo">
     <div class="capa-fondo" data-cerrar></div>
     <div class="acerca-caja">
-      <button class="btn-icono capa-cerrar" type="button" aria-label="Cerrar" data-cerrar><svg viewBox="0 0 14 14" width="12" height="12" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
-      <h2 id="acerca-titulo">Acerca de VigoVello</h2>
-      <p>Un mapa de fotografías históricas de Vigo, inspirado en <a href="https://www.oldnyc.org" target="_blank" rel="noopener">OldNYC</a>. Cada punto del mapa es un lugar; púlsalo para ver las fotos tomadas allí.</p>
-      <p>VigoVello no almacena ninguna fotografía: es un visor. Cada imagen se carga directamente desde la web donde está alojada (archivos, bibliotecas, Wikimedia Commons…), que se indica junto a la foto con su autor y licencia.</p>
-      <p>¿Conoces mejor un lugar o has visto una foto mal situada? <a id="enlace-repo" href="#" target="_blank" rel="noopener">Colabora en el proyecto</a>.</p>
+      <button class="btn-icono capa-cerrar" type="button" data-i18n-aria="cerrar" data-cerrar><svg viewBox="0 0 14 14" width="12" height="12" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      <h2 id="acerca-titulo" data-i18n="acerca_titulo"></h2>
+      <div id="acerca-cuerpo"></div>
     </div>
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
