@@ -98,3 +98,9 @@ Usa solo fotos de dominio público, con licencia libre o con permiso expreso de 
 ## Créditos
 
 Mapa base © colaboradores de OpenStreetMap. Mapa interactivo con [Leaflet](https://leafletjs.com). Idea original: [OldNYC](https://www.oldnyc.org), de Dan Vanderkam.
+
+## Licencia
+
+El código, el diseño y el logo de VigoVello se publican con licencia [MIT](LICENSE).
+
+Las fotografías **no** están cubiertas por esa licencia: cada una conserva la suya (dominio público, Creative Commons…), que se indica junto a la imagen en la web y en `data/fotos.json`.
