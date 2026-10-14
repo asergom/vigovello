@@ -221,6 +221,8 @@
     'Muelle de Trasatlánticos': { es: 'Muelle de Trasatlánticos', gl: 'Peirao de Transatlánticos', en: 'Ocean liner pier', pt: 'Cais dos Transatlânticos', fr: 'Quai des transatlantiques' },
     'Teatro García Barbón': { es: 'Teatro García Barbón', gl: 'Teatro García Barbón', en: 'García Barbón Theatre', pt: 'Teatro García Barbón', fr: 'Théâtre García Barbón' },
     'Estación de ferrocarril': { es: 'Estación de ferrocarril', gl: 'Estación de ferrocarril', en: 'Railway station', pt: 'Estação ferroviária', fr: 'Gare ferroviaire' },
+    'Teatro Tamberlik': { es: 'Teatro Tamberlik', gl: 'Teatro Tamberlik', en: 'Tamberlik Theatre', pt: 'Teatro Tamberlik', fr: 'Théâtre Tamberlik' },
+    'Teatro Rosalía': { es: 'Teatro Rosalía', gl: 'Teatro Rosalía', en: 'Rosalía Theatre', pt: 'Teatro Rosalía', fr: 'Théâtre Rosalía' },
     'Real Club Náutico': { es: 'Real Club Náutico', gl: 'Real Club Náutico', en: 'Royal Yacht Club', pt: 'Real Clube Náutico', fr: 'Real Club Náutico' },
     'Casco Vello': { es: 'Casco Vello', gl: 'Casco Vello', en: 'Old Town (Casco Vello)', pt: 'Casco Vello (centro histórico)', fr: 'Vieille ville (Casco Vello)' },
     'Monte do Castro': { es: 'Monte do Castro', gl: 'Monte do Castro', en: 'O Castro hill', pt: 'Monte do Castro', fr: 'Colline du Castro' },

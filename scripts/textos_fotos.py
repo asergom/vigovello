@@ -522,6 +522,114 @@ T = {
  "The steamer De Lasalle seen from the Highland Chieftain", "",
  "O vapor De Lasalle visto do Highland Chieftain", "",
  "Le vapeur De Lasalle vu depuis le Highland Chieftain", ""),
+"commons-65407623": (
+ "Recogiendo algas (ilustración)", "Ilustración de Serafín Avendaño en Blanco y Negro, 1906.",
+ "Recollendo algas (ilustración)", "Ilustración de Serafín Avendaño en Blanco y Negro, 1906.",
+ "Gathering seaweed (illustration)", "Illustration by Serafín Avendaño in Blanco y Negro, 1906.",
+ "Apanhando algas (ilustração)", "Ilustração de Serafín Avendaño em Blanco y Negro, 1906.",
+ "Ramassage d'algues (illustration)", "Illustration de Serafín Avendaño dans Blanco y Negro, 1906."),
+"commons-70045502": (
+ "Escollera de Bouzas (ilustración)", "Ilustración de Serafín Avendaño en Blanco y Negro, 1907.",
+ "Escolleira de Bouzas (ilustración)", "Ilustración de Serafín Avendaño en Blanco y Negro, 1907.",
+ "Bouzas breakwater (illustration)", "Illustration by Serafín Avendaño in Blanco y Negro, 1907.",
+ "Molhe de Bouzas (ilustração)", "Ilustração de Serafín Avendaño em Blanco y Negro, 1907.",
+ "Digue de Bouzas (illustration)", "Illustration de Serafín Avendaño dans Blanco y Negro, 1907."),
+"commons-141855010": (
+ "El equipo de fútbol de Vigo, 1909", "Fotografía de Cifuentes publicada en Blanco y Negro.",
+ "O equipo de fútbol de Vigo, 1909", "Fotografía de Cifuentes publicada en Blanco y Negro.",
+ "Vigo football team, 1909", "Photograph by Cifuentes published in Blanco y Negro.",
+ "A equipa de futebol de Vigo, 1909", "Fotografia de Cifuentes publicada em Blanco y Negro.",
+ "L'équipe de football de Vigo, 1909", "Photographie de Cifuentes publiée dans Blanco y Negro."),
+"commons-57829083": (
+ "Mitin de Falange en el teatro Tamberlik, 1936", "Intervención de Manuel Castro Prena el 27 de diciembre de 1936. Publicada en Vida Gallega.",
+ "Mitin de Falange no teatro Tamberlik, 1936", "Intervención de Manuel Castro Prena o 27 de decembro de 1936. Publicada en Vida Gallega.",
+ "Falange rally at the Tamberlik theatre, 1936", "Speech by Manuel Castro Prena on 27 December 1936. Published in Vida Gallega.",
+ "Comício da Falange no teatro Tamberlik, 1936", "Intervenção de Manuel Castro Prena em 27 de dezembro de 1936. Publicada em Vida Gallega.",
+ "Meeting de la Phalange au théâtre Tamberlik, 1936", "Discours de Manuel Castro Prena le 27 décembre 1936. Publié dans Vida Gallega."),
+"commons-57829339": (
+ "Jesús Suevos en el teatro Tamberlik, 1936", "Mitin de Falange del 27 de diciembre de 1936. Publicada en Vida Gallega.",
+ "Jesús Suevos no teatro Tamberlik, 1936", "Mitin de Falange do 27 de decembro de 1936. Publicada en Vida Gallega.",
+ "Jesús Suevos at the Tamberlik theatre, 1936", "Falange rally on 27 December 1936. Published in Vida Gallega.",
+ "Jesús Suevos no teatro Tamberlik, 1936", "Comício da Falange de 27 de dezembro de 1936. Publicada em Vida Gallega.",
+ "Jesús Suevos au théâtre Tamberlik, 1936", "Meeting de la Phalange du 27 décembre 1936. Publié dans Vida Gallega."),
+"commons-112220461": (
+ "Recibimiento a Gumersindo Busto, 1909", "Gumersindo Busto con los directores de El Noticiero de Vigo y La Voz de Vigo al desembarcar de América.",
+ "Recibimento a Gumersindo Busto, 1909", "Gumersindo Busto cos directores de El Noticiero de Vigo e La Voz de Vigo ao desembarcar de América.",
+ "Welcome for Gumersindo Busto, 1909", "Gumersindo Busto with the editors of El Noticiero de Vigo and La Voz de Vigo on landing from America.",
+ "Receção a Gumersindo Busto, 1909", "Gumersindo Busto com os diretores de El Noticiero de Vigo e La Voz de Vigo ao desembarcar da América.",
+ "Accueil de Gumersindo Busto, 1909", "Gumersindo Busto avec les directeurs d'El Noticiero de Vigo et de La Voz de Vigo à son retour d'Amérique."),
+"commons-157226212": (
+ "Entrada del teatro Rosalía, 1908", "Mitin del Partido Liberal el 8 de diciembre de 1908. Publicada en Vida Gallega.",
+ "Entrada do teatro Rosalía, 1908", "Mitin do Partido Liberal o 8 de decembro de 1908. Publicada en Vida Gallega.",
+ "Entrance to the Rosalía theatre, 1908", "Liberal Party rally on 8 December 1908. Published in Vida Gallega.",
+ "Entrada do teatro Rosalía, 1908", "Comício do Partido Liberal em 8 de dezembro de 1908. Publicada em Vida Gallega.",
+ "Entrée du théâtre Rosalía, 1908", "Meeting du Parti libéral le 8 décembre 1908. Publié dans Vida Gallega."),
+"commons-157227895": (
+ "El Vigo Foot-ball Club, 1909", "Publicada en Vida Gallega.",
+ "O Vigo Foot-ball Club, 1909", "Publicada en Vida Gallega.",
+ "Vigo Foot-ball Club, 1909", "Published in Vida Gallega.",
+ "O Vigo Foot-ball Club, 1909", "Publicada em Vida Gallega.",
+ "Le Vigo Foot-ball Club, 1909", "Publiée dans Vida Gallega."),
+"commons-157536293": (
+ "El Real Club Fortuna, 1908", "El equipo de fútbol en agosto de 1908. Publicada en Vida Gallega.",
+ "O Real Club Fortuna, 1908", "O equipo de fútbol en agosto de 1908. Publicada en Vida Gallega.",
+ "Real Club Fortuna, 1908", "The football team in August 1908. Published in Vida Gallega.",
+ "O Real Club Fortuna, 1908", "A equipa de futebol em agosto de 1908. Publicada em Vida Gallega.",
+ "Le Real Club Fortuna, 1908", "L'équipe de football en août 1908. Publiée dans Vida Gallega."),
+"commons-157537288": (
+ "Comida en el Hotel Universal, 1909", "Jugadores del Real Club Fortuna y del FC Porto comen juntos en Vigo. Publicada en Vida Gallega.",
+ "Xantar no Hotel Universal, 1909", "Xogadores do Real Club Fortuna e do FC Porto comen xuntos en Vigo. Publicada en Vida Gallega.",
+ "Lunch at the Hotel Universal, 1909", "Players from Real Club Fortuna and FC Porto eat together in Vigo. Published in Vida Gallega.",
+ "Almoço no Hotel Universal, 1909", "Jogadores do Real Club Fortuna e do FC Porto almoçam juntos em Vigo. Publicada em Vida Gallega.",
+ "Repas à l'Hôtel Universal, 1909", "Des joueurs du Real Club Fortuna et du FC Porto déjeunent ensemble à Vigo. Publiée dans Vida Gallega."),
+"commons-157554943": (
+ "Partido en el campo de Bouzas, 1909", "Encuentro amistoso entre el Real Club Fortuna y el Galicia FC. Publicada en Vida Gallega.",
+ "Partido no campo de Bouzas, 1909", "Encontro amigable entre o Real Club Fortuna e o Galicia FC. Publicada en Vida Gallega.",
+ "Match at the Bouzas ground, 1909", "Friendly between Real Club Fortuna and Galicia FC. Published in Vida Gallega.",
+ "Jogo no campo de Bouzas, 1909", "Encontro amigável entre o Real Club Fortuna e o Galicia FC. Publicada em Vida Gallega.",
+ "Match au terrain de Bouzas, 1909", "Rencontre amicale entre le Real Club Fortuna et le Galicia FC. Publiée dans Vida Gallega."),
+"commons-157805155": (
+ "El primer tobogán de Galicia, 1909", "Publicada en Vida Gallega.",
+ "O primeiro tobogán de Galicia, 1909", "Publicada en Vida Gallega.",
+ "Galicia's first toboggan slide, 1909", "Published in Vida Gallega.",
+ "O primeiro tobogã da Galiza, 1909", "Publicada em Vida Gallega.",
+ "Le premier toboggan de Galice, 1909", "Publiée dans Vida Gallega."),
+"commons-158008149": (
+ "Homenaje fúnebre a José García Barbón, 1909", "Acto en la Porta do Sol en marzo de 1909. Publicada en Vida Gallega.",
+ "Homenaxe fúnebre a Xosé García Barbón, 1909", "Acto na Porta do Sol en marzo de 1909. Publicada en Vida Gallega.",
+ "Funeral tribute to José García Barbón, 1909", "Ceremony at Porta do Sol in March 1909. Published in Vida Gallega.",
+ "Homenagem fúnebre a José García Barbón, 1909", "Ato na Porta do Sol em março de 1909. Publicada em Vida Gallega.",
+ "Hommage funèbre à José García Barbón, 1909", "Cérémonie à la Porta do Sol en mars 1909. Publiée dans Vida Gallega."),
+"commons-158008650": (
+ "Emilia Pardo Bazán en el Pazo da Pastora, 1909", "La escritora durante su visita a Vigo. Publicada en Vida Gallega.",
+ "Emilia Pardo Bazán no Pazo da Pastora, 1909", "A escritora durante a súa visita a Vigo. Publicada en Vida Gallega.",
+ "Emilia Pardo Bazán at the Pazo da Pastora, 1909", "The writer during her visit to Vigo. Published in Vida Gallega.",
+ "Emilia Pardo Bazán no Pazo da Pastora, 1909", "A escritora durante a sua visita a Vigo. Publicada em Vida Gallega.",
+ "Emilia Pardo Bazán au Pazo da Pastora, 1909", "L'écrivaine lors de sa visite à Vigo. Publiée dans Vida Gallega."),
+"commons-158008651": (
+ "Emilia Pardo Bazán en el Pazo da Pastora, 1909 (II)", "La escritora durante su visita a Vigo. Publicada en Vida Gallega.",
+ "Emilia Pardo Bazán no Pazo da Pastora, 1909 (II)", "A escritora durante a súa visita a Vigo. Publicada en Vida Gallega.",
+ "Emilia Pardo Bazán at the Pazo da Pastora, 1909 (II)", "The writer during her visit to Vigo. Published in Vida Gallega.",
+ "Emilia Pardo Bazán no Pazo da Pastora, 1909 (II)", "A escritora durante a sua visita a Vigo. Publicada em Vida Gallega.",
+ "Emilia Pardo Bazán au Pazo da Pastora, 1909 (II)", "L'écrivaine lors de sa visite à Vigo. Publiée dans Vida Gallega."),
+"commons-158008652": (
+ "Emilia Pardo Bazán en el Pazo da Pastora, 1909 (III)", "La escritora durante su visita a Vigo. Publicada en Vida Gallega.",
+ "Emilia Pardo Bazán no Pazo da Pastora, 1909 (III)", "A escritora durante a súa visita a Vigo. Publicada en Vida Gallega.",
+ "Emilia Pardo Bazán at the Pazo da Pastora, 1909 (III)", "The writer during her visit to Vigo. Published in Vida Gallega.",
+ "Emilia Pardo Bazán no Pazo da Pastora, 1909 (III)", "A escritora durante a sua visita a Vigo. Publicada em Vida Gallega.",
+ "Emilia Pardo Bazán au Pazo da Pastora, 1909 (III)", "L'écrivaine lors de sa visite à Vigo. Publiée dans Vida Gallega."),
+"commons-31867629": (
+ "El Vigo Foot Ball Club, 1912", "Primer equipo del club en septiembre de 1912, antecedente lejano del Celta de Vigo.",
+ "O Vigo Foot Ball Club, 1912", "Primeiro equipo do club en setembro de 1912, antecedente afastado do Celta de Vigo.",
+ "Vigo Foot Ball Club, 1912", "The club's first team in September 1912, a distant forerunner of Celta de Vigo.",
+ "O Vigo Foot Ball Club, 1912", "Primeira equipa do clube em setembro de 1912, antecessora longínqua do Celta de Vigo.",
+ "Le Vigo Foot Ball Club, 1912", "Première équipe du club en septembre 1912, lointain ancêtre du Celta de Vigo."),
+"commons-151618980": (
+ "Monumento a los repatriados (escultura)", "Obra de Julio González Pola, publicada en la revista La Esfera, 1929.",
+ "Monumento aos repatriados (escultura)", "Obra de Julio González Pola, publicada na revista La Esfera, 1929.",
+ "Monument to the repatriated (sculpture)", "Work by Julio González Pola, published in La Esfera magazine, 1929.",
+ "Monumento aos repatriados (escultura)", "Obra de Julio González Pola, publicada na revista La Esfera, 1929.",
+ "Monument aux rapatriés (sculpture)", "Œuvre de Julio González Pola, publiée dans la revue La Esfera, 1929."),
 }
 
 # Ubicaciones corregidas a mano (el importador las había asignado por palabras sueltas)
@@ -535,6 +643,15 @@ UBICACIONES = {
     "commons-57430182": ("Real Club Náutico", 42.24050, -8.72300, "aproximada"),
     "commons-196084836": ("O Calvario", 42.22700, -8.70500, "aproximada"),
     "commons-76844617": ("Vigo (sin ubicar)", *CENTRO, "sin_confirmar"),
+    # Revistas ilustradas (importación de octubre de 2026)
+    "commons-65407623": ("Ría de Vigo", 42.24900, -8.74300, "sin_confirmar"),
+    "commons-57829083": ("Teatro Tamberlik", 42.23720, -8.72050, "sin_confirmar"),  # "Castro" era un apellido
+    "commons-57829339": ("Teatro Tamberlik", 42.23720, -8.72050, "sin_confirmar"),
+    "commons-112220461": ("Puerto de Vigo", 42.24250, -8.72400, "sin_confirmar"),
+    "commons-157226212": ("Teatro Rosalía", 42.23660, -8.72120, "sin_confirmar"),
+    "commons-158008650": ("Vigo (sin ubicar)", *CENTRO, "sin_confirmar"),
+    "commons-158008651": ("Vigo (sin ubicar)", *CENTRO, "sin_confirmar"),
+    "commons-158008652": ("Vigo (sin ubicar)", *CENTRO, "sin_confirmar"),
 }
 
 LENGUAS = ["es", "gl", "en", "pt", "fr"]

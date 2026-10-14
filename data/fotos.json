@@ -3471,6 +3471,744 @@
      "descripcion": ""
     }
    }
+  },
+  {
+   "id": "commons-65407623",
+   "titulo": "Recogiendo algas (ilustración)",
+   "lugar": "Ría de Vigo",
+   "anio": 1906,
+   "aproximada": false,
+   "descripcion": "Ilustración de Serafín Avendaño en Blanco y Negro, 1906.",
+   "lat": 42.249,
+   "lng": -8.743,
+   "ubicacion": "sin_confirmar",
+   "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/1906-04-21%2C_Blanco_y_Negro%2C_Recogiendo_algas%2C_Avenda%C3%B1o.jpg/1280px-1906-04-21%2C_Blanco_y_Negro%2C_Recogiendo_algas%2C_Avenda%C3%B1o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "miniatura": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/1906-04-21%2C_Blanco_y_Negro%2C_Recogiendo_algas%2C_Avenda%C3%B1o.jpg/500px-1906-04-21%2C_Blanco_y_Negro%2C_Recogiendo_algas%2C_Avenda%C3%B1o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/5/56/1906-04-21%2C_Blanco_y_Negro%2C_Recogiendo_algas%2C_Avenda%C3%B1o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "Serafín Avendaño",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:1906-04-21,_Blanco_y_Negro,_Recogiendo_algas,_Avenda%C3%B1o.jpg",
+   "licencia": "PD",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Recogiendo algas (ilustración)",
+     "descripcion": "Ilustración de Serafín Avendaño en Blanco y Negro, 1906."
+    },
+    "gl": {
+     "titulo": "Recollendo algas (ilustración)",
+     "descripcion": "Ilustración de Serafín Avendaño en Blanco y Negro, 1906."
+    },
+    "en": {
+     "titulo": "Gathering seaweed (illustration)",
+     "descripcion": "Illustration by Serafín Avendaño in Blanco y Negro, 1906."
+    },
+    "pt": {
+     "titulo": "Apanhando algas (ilustração)",
+     "descripcion": "Ilustração de Serafín Avendaño em Blanco y Negro, 1906."
+    },
+    "fr": {
+     "titulo": "Ramassage d'algues (illustration)",
+     "descripcion": "Illustration de Serafín Avendaño dans Blanco y Negro, 1906."
+    }
+   }
+  },
+  {
+   "id": "commons-70045502",
+   "titulo": "Escollera de Bouzas (ilustración)",
+   "lugar": "Bouzas",
+   "anio": 1907,
+   "aproximada": false,
+   "descripcion": "Ilustración de Serafín Avendaño en Blanco y Negro, 1907.",
+   "lat": 42.2345,
+   "lng": -8.752,
+   "ubicacion": "aproximada",
+   "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/1907-06-01%2C_Blanco_y_Negro%2C_Vigo%2C_Escollera_de_Bouzas%2C_Avenda%C3%B1o.jpg/1280px-1907-06-01%2C_Blanco_y_Negro%2C_Vigo%2C_Escollera_de_Bouzas%2C_Avenda%C3%B1o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "miniatura": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/1907-06-01%2C_Blanco_y_Negro%2C_Vigo%2C_Escollera_de_Bouzas%2C_Avenda%C3%B1o.jpg/500px-1907-06-01%2C_Blanco_y_Negro%2C_Vigo%2C_Escollera_de_Bouzas%2C_Avenda%C3%B1o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/f/f4/1907-06-01%2C_Blanco_y_Negro%2C_Vigo%2C_Escollera_de_Bouzas%2C_Avenda%C3%B1o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "Serafín Avendaño",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:1907-06-01,_Blanco_y_Negro,_Vigo,_Escollera_de_Bouzas,_Avenda%C3%B1o.jpg",
+   "licencia": "PD",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Escollera de Bouzas (ilustración)",
+     "descripcion": "Ilustración de Serafín Avendaño en Blanco y Negro, 1907."
+    },
+    "gl": {
+     "titulo": "Escolleira de Bouzas (ilustración)",
+     "descripcion": "Ilustración de Serafín Avendaño en Blanco y Negro, 1907."
+    },
+    "en": {
+     "titulo": "Bouzas breakwater (illustration)",
+     "descripcion": "Illustration by Serafín Avendaño in Blanco y Negro, 1907."
+    },
+    "pt": {
+     "titulo": "Molhe de Bouzas (ilustração)",
+     "descripcion": "Ilustração de Serafín Avendaño em Blanco y Negro, 1907."
+    },
+    "fr": {
+     "titulo": "Digue de Bouzas (illustration)",
+     "descripcion": "Illustration de Serafín Avendaño dans Blanco y Negro, 1907."
+    }
+   }
+  },
+  {
+   "id": "commons-141855010",
+   "titulo": "El equipo de fútbol de Vigo, 1909",
+   "lugar": "Vigo (sin ubicar)",
+   "anio": 1909,
+   "aproximada": false,
+   "descripcion": "Fotografía de Cifuentes publicada en Blanco y Negro.",
+   "lat": 42.237,
+   "lng": -8.7215,
+   "ubicacion": "sin_confirmar",
+   "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/1909-04-10%2C_Blanco_y_Negro%2C_El_equipo_de_Vigo%2C_Cifuentes.jpg/1280px-1909-04-10%2C_Blanco_y_Negro%2C_El_equipo_de_Vigo%2C_Cifuentes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "miniatura": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/1909-04-10%2C_Blanco_y_Negro%2C_El_equipo_de_Vigo%2C_Cifuentes.jpg/500px-1909-04-10%2C_Blanco_y_Negro%2C_El_equipo_de_Vigo%2C_Cifuentes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/0/07/1909-04-10%2C_Blanco_y_Negro%2C_El_equipo_de_Vigo%2C_Cifuentes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "Ramón Cifuentes",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:1909-04-10,_Blanco_y_Negro,_El_equipo_de_Vigo,_Cifuentes.jpg",
+   "licencia": "PD",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "El equipo de fútbol de Vigo, 1909",
+     "descripcion": "Fotografía de Cifuentes publicada en Blanco y Negro."
+    },
+    "gl": {
+     "titulo": "O equipo de fútbol de Vigo, 1909",
+     "descripcion": "Fotografía de Cifuentes publicada en Blanco y Negro."
+    },
+    "en": {
+     "titulo": "Vigo football team, 1909",
+     "descripcion": "Photograph by Cifuentes published in Blanco y Negro."
+    },
+    "pt": {
+     "titulo": "A equipa de futebol de Vigo, 1909",
+     "descripcion": "Fotografia de Cifuentes publicada em Blanco y Negro."
+    },
+    "fr": {
+     "titulo": "L'équipe de football de Vigo, 1909",
+     "descripcion": "Photographie de Cifuentes publiée dans Blanco y Negro."
+    }
+   }
+  },
+  {
+   "id": "commons-57829083",
+   "titulo": "Mitin de Falange en el teatro Tamberlik, 1936",
+   "lugar": "Teatro Tamberlik",
+   "anio": 1936,
+   "aproximada": false,
+   "descripcion": "Intervención de Manuel Castro Prena el 27 de diciembre de 1936. Publicada en Vida Gallega.",
+   "lat": 42.2372,
+   "lng": -8.7205,
+   "ubicacion": "sin_confirmar",
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/8/80/Manuel_Castro_Prena_no_mitin_de_Falange_de_Vigo_27-12-1936.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/8/80/Manuel_Castro_Prena_no_mitin_de_Falange_de_Vigo_27-12-1936.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/8/80/Manuel_Castro_Prena_no_mitin_de_Falange_de_Vigo_27-12-1936.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "Vida Gallega",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Manuel_Castro_Prena_no_mitin_de_Falange_de_Vigo_27-12-1936.jpg",
+   "licencia": "PD",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Mitin de Falange en el teatro Tamberlik, 1936",
+     "descripcion": "Intervención de Manuel Castro Prena el 27 de diciembre de 1936. Publicada en Vida Gallega."
+    },
+    "gl": {
+     "titulo": "Mitin de Falange no teatro Tamberlik, 1936",
+     "descripcion": "Intervención de Manuel Castro Prena o 27 de decembro de 1936. Publicada en Vida Gallega."
+    },
+    "en": {
+     "titulo": "Falange rally at the Tamberlik theatre, 1936",
+     "descripcion": "Speech by Manuel Castro Prena on 27 December 1936. Published in Vida Gallega."
+    },
+    "pt": {
+     "titulo": "Comício da Falange no teatro Tamberlik, 1936",
+     "descripcion": "Intervenção de Manuel Castro Prena em 27 de dezembro de 1936. Publicada em Vida Gallega."
+    },
+    "fr": {
+     "titulo": "Meeting de la Phalange au théâtre Tamberlik, 1936",
+     "descripcion": "Discours de Manuel Castro Prena le 27 décembre 1936. Publié dans Vida Gallega."
+    }
+   }
+  },
+  {
+   "id": "commons-57829339",
+   "titulo": "Jesús Suevos en el teatro Tamberlik, 1936",
+   "lugar": "Teatro Tamberlik",
+   "anio": 1936,
+   "aproximada": false,
+   "descripcion": "Mitin de Falange del 27 de diciembre de 1936. Publicada en Vida Gallega.",
+   "lat": 42.2372,
+   "lng": -8.7205,
+   "ubicacion": "sin_confirmar",
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/9/99/Jes%C3%BAs_Suevos_nun_mitin_de_Falange._Vigo_27-12-1936.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/9/99/Jes%C3%BAs_Suevos_nun_mitin_de_Falange._Vigo_27-12-1936.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/9/99/Jes%C3%BAs_Suevos_nun_mitin_de_Falange._Vigo_27-12-1936.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "Vida Gallega",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Jes%C3%BAs_Suevos_nun_mitin_de_Falange._Vigo_27-12-1936.jpg",
+   "licencia": "PD",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Jesús Suevos en el teatro Tamberlik, 1936",
+     "descripcion": "Mitin de Falange del 27 de diciembre de 1936. Publicada en Vida Gallega."
+    },
+    "gl": {
+     "titulo": "Jesús Suevos no teatro Tamberlik, 1936",
+     "descripcion": "Mitin de Falange do 27 de decembro de 1936. Publicada en Vida Gallega."
+    },
+    "en": {
+     "titulo": "Jesús Suevos at the Tamberlik theatre, 1936",
+     "descripcion": "Falange rally on 27 December 1936. Published in Vida Gallega."
+    },
+    "pt": {
+     "titulo": "Jesús Suevos no teatro Tamberlik, 1936",
+     "descripcion": "Comício da Falange de 27 de dezembro de 1936. Publicada em Vida Gallega."
+    },
+    "fr": {
+     "titulo": "Jesús Suevos au théâtre Tamberlik, 1936",
+     "descripcion": "Meeting de la Phalange du 27 décembre 1936. Publié dans Vida Gallega."
+    }
+   }
+  },
+  {
+   "id": "commons-112220461",
+   "titulo": "Recibimiento a Gumersindo Busto, 1909",
+   "lugar": "Puerto de Vigo",
+   "anio": 1909,
+   "aproximada": false,
+   "descripcion": "Gumersindo Busto con los directores de El Noticiero de Vigo y La Voz de Vigo al desembarcar de América.",
+   "lat": 42.2425,
+   "lng": -8.724,
+   "ubicacion": "sin_confirmar",
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/5/57/Gumersindo_Busto_y_los_directores_del_Noticiero_de_Vigo_y_La_Voz_de_Vigo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/5/57/Gumersindo_Busto_y_los_directores_del_Noticiero_de_Vigo_y_La_Voz_de_Vigo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/5/57/Gumersindo_Busto_y_los_directores_del_Noticiero_de_Vigo_y_La_Voz_de_Vigo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Gumersindo_Busto_y_los_directores_del_Noticiero_de_Vigo_y_La_Voz_de_Vigo.jpg",
+   "licencia": "PD",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Recibimiento a Gumersindo Busto, 1909",
+     "descripcion": "Gumersindo Busto con los directores de El Noticiero de Vigo y La Voz de Vigo al desembarcar de América."
+    },
+    "gl": {
+     "titulo": "Recibimento a Gumersindo Busto, 1909",
+     "descripcion": "Gumersindo Busto cos directores de El Noticiero de Vigo e La Voz de Vigo ao desembarcar de América."
+    },
+    "en": {
+     "titulo": "Welcome for Gumersindo Busto, 1909",
+     "descripcion": "Gumersindo Busto with the editors of El Noticiero de Vigo and La Voz de Vigo on landing from America."
+    },
+    "pt": {
+     "titulo": "Receção a Gumersindo Busto, 1909",
+     "descripcion": "Gumersindo Busto com os diretores de El Noticiero de Vigo e La Voz de Vigo ao desembarcar da América."
+    },
+    "fr": {
+     "titulo": "Accueil de Gumersindo Busto, 1909",
+     "descripcion": "Gumersindo Busto avec les directeurs d'El Noticiero de Vigo et de La Voz de Vigo à son retour d'Amérique."
+    }
+   }
+  },
+  {
+   "id": "commons-157226212",
+   "titulo": "Entrada del teatro Rosalía, 1908",
+   "lugar": "Teatro Rosalía",
+   "anio": 1908,
+   "aproximada": false,
+   "descripcion": "Mitin del Partido Liberal el 8 de diciembre de 1908. Publicada en Vida Gallega.",
+   "lat": 42.2366,
+   "lng": -8.7212,
+   "ubicacion": "sin_confirmar",
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/7/78/Teatro_Rosalia_1908.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/7/78/Teatro_Rosalia_1908.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/7/78/Teatro_Rosalia_1908.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "Vida Gallega",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Teatro_Rosalia_1908.png",
+   "licencia": "CC0",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Entrada del teatro Rosalía, 1908",
+     "descripcion": "Mitin del Partido Liberal el 8 de diciembre de 1908. Publicada en Vida Gallega."
+    },
+    "gl": {
+     "titulo": "Entrada do teatro Rosalía, 1908",
+     "descripcion": "Mitin do Partido Liberal o 8 de decembro de 1908. Publicada en Vida Gallega."
+    },
+    "en": {
+     "titulo": "Entrance to the Rosalía theatre, 1908",
+     "descripcion": "Liberal Party rally on 8 December 1908. Published in Vida Gallega."
+    },
+    "pt": {
+     "titulo": "Entrada do teatro Rosalía, 1908",
+     "descripcion": "Comício do Partido Liberal em 8 de dezembro de 1908. Publicada em Vida Gallega."
+    },
+    "fr": {
+     "titulo": "Entrée du théâtre Rosalía, 1908",
+     "descripcion": "Meeting du Parti libéral le 8 décembre 1908. Publié dans Vida Gallega."
+    }
+   }
+  },
+  {
+   "id": "commons-157227895",
+   "titulo": "El Vigo Foot-ball Club, 1909",
+   "lugar": "Vigo (sin ubicar)",
+   "anio": 1909,
+   "aproximada": false,
+   "descripcion": "Publicada en Vida Gallega.",
+   "lat": 42.237,
+   "lng": -8.7215,
+   "ubicacion": "sin_confirmar",
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Vigofc.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Vigofc.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Vigofc.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "Vida Gallega",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Vigofc.png",
+   "licencia": "CC0",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "El Vigo Foot-ball Club, 1909",
+     "descripcion": "Publicada en Vida Gallega."
+    },
+    "gl": {
+     "titulo": "O Vigo Foot-ball Club, 1909",
+     "descripcion": "Publicada en Vida Gallega."
+    },
+    "en": {
+     "titulo": "Vigo Foot-ball Club, 1909",
+     "descripcion": "Published in Vida Gallega."
+    },
+    "pt": {
+     "titulo": "O Vigo Foot-ball Club, 1909",
+     "descripcion": "Publicada em Vida Gallega."
+    },
+    "fr": {
+     "titulo": "Le Vigo Foot-ball Club, 1909",
+     "descripcion": "Publiée dans Vida Gallega."
+    }
+   }
+  },
+  {
+   "id": "commons-157536293",
+   "titulo": "El Real Club Fortuna, 1908",
+   "lugar": "Vigo (sin ubicar)",
+   "anio": 1909,
+   "aproximada": false,
+   "descripcion": "El equipo de fútbol en agosto de 1908. Publicada en Vida Gallega.",
+   "lat": 42.237,
+   "lng": -8.7215,
+   "ubicacion": "sin_confirmar",
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/e/e3/FortunaVigo1908.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/e/e3/FortunaVigo1908.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/e/e3/FortunaVigo1908.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "Vida Gallega",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:FortunaVigo1908.png",
+   "licencia": "PD",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "El Real Club Fortuna, 1908",
+     "descripcion": "El equipo de fútbol en agosto de 1908. Publicada en Vida Gallega."
+    },
+    "gl": {
+     "titulo": "O Real Club Fortuna, 1908",
+     "descripcion": "O equipo de fútbol en agosto de 1908. Publicada en Vida Gallega."
+    },
+    "en": {
+     "titulo": "Real Club Fortuna, 1908",
+     "descripcion": "The football team in August 1908. Published in Vida Gallega."
+    },
+    "pt": {
+     "titulo": "O Real Club Fortuna, 1908",
+     "descripcion": "A equipa de futebol em agosto de 1908. Publicada em Vida Gallega."
+    },
+    "fr": {
+     "titulo": "Le Real Club Fortuna, 1908",
+     "descripcion": "L'équipe de football en août 1908. Publiée dans Vida Gallega."
+    }
+   }
+  },
+  {
+   "id": "commons-157537288",
+   "titulo": "Comida en el Hotel Universal, 1909",
+   "lugar": "Vigo (sin ubicar)",
+   "anio": 1909,
+   "aproximada": false,
+   "descripcion": "Jugadores del Real Club Fortuna y del FC Porto comen juntos en Vigo. Publicada en Vida Gallega.",
+   "lat": 42.237,
+   "lng": -8.7215,
+   "ubicacion": "sin_confirmar",
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Captura_de_pantalla_de_2025-01-04_20-38-39.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Captura_de_pantalla_de_2025-01-04_20-38-39.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Captura_de_pantalla_de_2025-01-04_20-38-39.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "Vida Gallega",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Captura_de_pantalla_de_2025-01-04_20-38-39.png",
+   "licencia": "CC0",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Comida en el Hotel Universal, 1909",
+     "descripcion": "Jugadores del Real Club Fortuna y del FC Porto comen juntos en Vigo. Publicada en Vida Gallega."
+    },
+    "gl": {
+     "titulo": "Xantar no Hotel Universal, 1909",
+     "descripcion": "Xogadores do Real Club Fortuna e do FC Porto comen xuntos en Vigo. Publicada en Vida Gallega."
+    },
+    "en": {
+     "titulo": "Lunch at the Hotel Universal, 1909",
+     "descripcion": "Players from Real Club Fortuna and FC Porto eat together in Vigo. Published in Vida Gallega."
+    },
+    "pt": {
+     "titulo": "Almoço no Hotel Universal, 1909",
+     "descripcion": "Jogadores do Real Club Fortuna e do FC Porto almoçam juntos em Vigo. Publicada em Vida Gallega."
+    },
+    "fr": {
+     "titulo": "Repas à l'Hôtel Universal, 1909",
+     "descripcion": "Des joueurs du Real Club Fortuna et du FC Porto déjeunent ensemble à Vigo. Publiée dans Vida Gallega."
+    }
+   }
+  },
+  {
+   "id": "commons-157554943",
+   "titulo": "Partido en el campo de Bouzas, 1909",
+   "lugar": "Bouzas",
+   "anio": 1909,
+   "aproximada": false,
+   "descripcion": "Encuentro amistoso entre el Real Club Fortuna y el Galicia FC. Publicada en Vida Gallega.",
+   "lat": 42.2345,
+   "lng": -8.752,
+   "ubicacion": "aproximada",
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Galicia_-_Fortuna_1909.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Galicia_-_Fortuna_1909.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Galicia_-_Fortuna_1909.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "Vida Gallega",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Galicia_-_Fortuna_1909.png",
+   "licencia": "CC0",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Partido en el campo de Bouzas, 1909",
+     "descripcion": "Encuentro amistoso entre el Real Club Fortuna y el Galicia FC. Publicada en Vida Gallega."
+    },
+    "gl": {
+     "titulo": "Partido no campo de Bouzas, 1909",
+     "descripcion": "Encontro amigable entre o Real Club Fortuna e o Galicia FC. Publicada en Vida Gallega."
+    },
+    "en": {
+     "titulo": "Match at the Bouzas ground, 1909",
+     "descripcion": "Friendly between Real Club Fortuna and Galicia FC. Published in Vida Gallega."
+    },
+    "pt": {
+     "titulo": "Jogo no campo de Bouzas, 1909",
+     "descripcion": "Encontro amigável entre o Real Club Fortuna e o Galicia FC. Publicada em Vida Gallega."
+    },
+    "fr": {
+     "titulo": "Match au terrain de Bouzas, 1909",
+     "descripcion": "Rencontre amicale entre le Real Club Fortuna et le Galicia FC. Publiée dans Vida Gallega."
+    }
+   }
+  },
+  {
+   "id": "commons-157805155",
+   "titulo": "El primer tobogán de Galicia, 1909",
+   "lugar": "Vigo (sin ubicar)",
+   "anio": 1909,
+   "aproximada": false,
+   "descripcion": "Publicada en Vida Gallega.",
+   "lat": 42.237,
+   "lng": -8.7215,
+   "ubicacion": "sin_confirmar",
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Tobogan_Vigo_1909.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Tobogan_Vigo_1909.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Tobogan_Vigo_1909.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "Vida Gallega",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Tobogan_Vigo_1909.png",
+   "licencia": "PD",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "El primer tobogán de Galicia, 1909",
+     "descripcion": "Publicada en Vida Gallega."
+    },
+    "gl": {
+     "titulo": "O primeiro tobogán de Galicia, 1909",
+     "descripcion": "Publicada en Vida Gallega."
+    },
+    "en": {
+     "titulo": "Galicia's first toboggan slide, 1909",
+     "descripcion": "Published in Vida Gallega."
+    },
+    "pt": {
+     "titulo": "O primeiro tobogã da Galiza, 1909",
+     "descripcion": "Publicada em Vida Gallega."
+    },
+    "fr": {
+     "titulo": "Le premier toboggan de Galice, 1909",
+     "descripcion": "Publiée dans Vida Gallega."
+    }
+   }
+  },
+  {
+   "id": "commons-158008149",
+   "titulo": "Homenaje fúnebre a José García Barbón, 1909",
+   "lugar": "Porta do Sol",
+   "anio": 1909,
+   "aproximada": false,
+   "descripcion": "Acto en la Porta do Sol en marzo de 1909. Publicada en Vida Gallega.",
+   "lat": 42.237,
+   "lng": -8.723,
+   "ubicacion": "aproximada",
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Acto_f%C3%BAnebre_en_homenaxe_a_Xos%C3%A9_Garc%C3%ADa_Barb%C3%B3n_na_Porta_do_Sol_de_Vigo%2C_marzo_de_1909.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Acto_f%C3%BAnebre_en_homenaxe_a_Xos%C3%A9_Garc%C3%ADa_Barb%C3%B3n_na_Porta_do_Sol_de_Vigo%2C_marzo_de_1909.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Acto_f%C3%BAnebre_en_homenaxe_a_Xos%C3%A9_Garc%C3%ADa_Barb%C3%B3n_na_Porta_do_Sol_de_Vigo%2C_marzo_de_1909.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "Vida Gallega",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Acto_f%C3%BAnebre_en_homenaxe_a_Xos%C3%A9_Garc%C3%ADa_Barb%C3%B3n_na_Porta_do_Sol_de_Vigo,_marzo_de_1909.png",
+   "licencia": "CC0",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Homenaje fúnebre a José García Barbón, 1909",
+     "descripcion": "Acto en la Porta do Sol en marzo de 1909. Publicada en Vida Gallega."
+    },
+    "gl": {
+     "titulo": "Homenaxe fúnebre a Xosé García Barbón, 1909",
+     "descripcion": "Acto na Porta do Sol en marzo de 1909. Publicada en Vida Gallega."
+    },
+    "en": {
+     "titulo": "Funeral tribute to José García Barbón, 1909",
+     "descripcion": "Ceremony at Porta do Sol in March 1909. Published in Vida Gallega."
+    },
+    "pt": {
+     "titulo": "Homenagem fúnebre a José García Barbón, 1909",
+     "descripcion": "Ato na Porta do Sol em março de 1909. Publicada em Vida Gallega."
+    },
+    "fr": {
+     "titulo": "Hommage funèbre à José García Barbón, 1909",
+     "descripcion": "Cérémonie à la Porta do Sol en mars 1909. Publiée dans Vida Gallega."
+    }
+   }
+  },
+  {
+   "id": "commons-158008650",
+   "titulo": "Emilia Pardo Bazán en el Pazo da Pastora, 1909",
+   "lugar": "Vigo (sin ubicar)",
+   "anio": 1909,
+   "aproximada": false,
+   "descripcion": "La escritora durante su visita a Vigo. Publicada en Vida Gallega.",
+   "lat": 42.237,
+   "lng": -8.7215,
+   "ubicacion": "sin_confirmar",
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/7/70/Emilia_Pardo_Baz%C3%A1n_no_Pazo_da_Pastora%2C_Vigo%2C_1909_%281%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/7/70/Emilia_Pardo_Baz%C3%A1n_no_Pazo_da_Pastora%2C_Vigo%2C_1909_%281%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/7/70/Emilia_Pardo_Baz%C3%A1n_no_Pazo_da_Pastora%2C_Vigo%2C_1909_%281%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "Vida Gallega",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Emilia_Pardo_Baz%C3%A1n_no_Pazo_da_Pastora,_Vigo,_1909_(1).png",
+   "licencia": "CC0",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Emilia Pardo Bazán en el Pazo da Pastora, 1909",
+     "descripcion": "La escritora durante su visita a Vigo. Publicada en Vida Gallega."
+    },
+    "gl": {
+     "titulo": "Emilia Pardo Bazán no Pazo da Pastora, 1909",
+     "descripcion": "A escritora durante a súa visita a Vigo. Publicada en Vida Gallega."
+    },
+    "en": {
+     "titulo": "Emilia Pardo Bazán at the Pazo da Pastora, 1909",
+     "descripcion": "The writer during her visit to Vigo. Published in Vida Gallega."
+    },
+    "pt": {
+     "titulo": "Emilia Pardo Bazán no Pazo da Pastora, 1909",
+     "descripcion": "A escritora durante a sua visita a Vigo. Publicada em Vida Gallega."
+    },
+    "fr": {
+     "titulo": "Emilia Pardo Bazán au Pazo da Pastora, 1909",
+     "descripcion": "L'écrivaine lors de sa visite à Vigo. Publiée dans Vida Gallega."
+    }
+   }
+  },
+  {
+   "id": "commons-158008651",
+   "titulo": "Emilia Pardo Bazán en el Pazo da Pastora, 1909 (II)",
+   "lugar": "Vigo (sin ubicar)",
+   "anio": 1909,
+   "aproximada": false,
+   "descripcion": "La escritora durante su visita a Vigo. Publicada en Vida Gallega.",
+   "lat": 42.237,
+   "lng": -8.7215,
+   "ubicacion": "sin_confirmar",
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Emilia_Pardo_Baz%C3%A1n_no_Pazo_da_Pastora%2C_Vigo%2C_1909_%283%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Emilia_Pardo_Baz%C3%A1n_no_Pazo_da_Pastora%2C_Vigo%2C_1909_%283%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Emilia_Pardo_Baz%C3%A1n_no_Pazo_da_Pastora%2C_Vigo%2C_1909_%283%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "Vida Gallega",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Emilia_Pardo_Baz%C3%A1n_no_Pazo_da_Pastora,_Vigo,_1909_(3).png",
+   "licencia": "CC0",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Emilia Pardo Bazán en el Pazo da Pastora, 1909 (II)",
+     "descripcion": "La escritora durante su visita a Vigo. Publicada en Vida Gallega."
+    },
+    "gl": {
+     "titulo": "Emilia Pardo Bazán no Pazo da Pastora, 1909 (II)",
+     "descripcion": "A escritora durante a súa visita a Vigo. Publicada en Vida Gallega."
+    },
+    "en": {
+     "titulo": "Emilia Pardo Bazán at the Pazo da Pastora, 1909 (II)",
+     "descripcion": "The writer during her visit to Vigo. Published in Vida Gallega."
+    },
+    "pt": {
+     "titulo": "Emilia Pardo Bazán no Pazo da Pastora, 1909 (II)",
+     "descripcion": "A escritora durante a sua visita a Vigo. Publicada em Vida Gallega."
+    },
+    "fr": {
+     "titulo": "Emilia Pardo Bazán au Pazo da Pastora, 1909 (II)",
+     "descripcion": "L'écrivaine lors de sa visite à Vigo. Publiée dans Vida Gallega."
+    }
+   }
+  },
+  {
+   "id": "commons-158008652",
+   "titulo": "Emilia Pardo Bazán en el Pazo da Pastora, 1909 (III)",
+   "lugar": "Vigo (sin ubicar)",
+   "anio": 1909,
+   "aproximada": false,
+   "descripcion": "La escritora durante su visita a Vigo. Publicada en Vida Gallega.",
+   "lat": 42.237,
+   "lng": -8.7215,
+   "ubicacion": "sin_confirmar",
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Emilia_Pardo_Baz%C3%A1n_no_Pazo_da_Pastora%2C_Vigo%2C_1909_%282%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Emilia_Pardo_Baz%C3%A1n_no_Pazo_da_Pastora%2C_Vigo%2C_1909_%282%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Emilia_Pardo_Baz%C3%A1n_no_Pazo_da_Pastora%2C_Vigo%2C_1909_%282%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "Vida Gallega",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Emilia_Pardo_Baz%C3%A1n_no_Pazo_da_Pastora,_Vigo,_1909_(2).png",
+   "licencia": "CC0",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Emilia Pardo Bazán en el Pazo da Pastora, 1909 (III)",
+     "descripcion": "La escritora durante su visita a Vigo. Publicada en Vida Gallega."
+    },
+    "gl": {
+     "titulo": "Emilia Pardo Bazán no Pazo da Pastora, 1909 (III)",
+     "descripcion": "A escritora durante a súa visita a Vigo. Publicada en Vida Gallega."
+    },
+    "en": {
+     "titulo": "Emilia Pardo Bazán at the Pazo da Pastora, 1909 (III)",
+     "descripcion": "The writer during her visit to Vigo. Published in Vida Gallega."
+    },
+    "pt": {
+     "titulo": "Emilia Pardo Bazán no Pazo da Pastora, 1909 (III)",
+     "descripcion": "A escritora durante a sua visita a Vigo. Publicada em Vida Gallega."
+    },
+    "fr": {
+     "titulo": "Emilia Pardo Bazán au Pazo da Pastora, 1909 (III)",
+     "descripcion": "L'écrivaine lors de sa visite à Vigo. Publiée dans Vida Gallega."
+    }
+   }
+  },
+  {
+   "id": "commons-31867629",
+   "titulo": "El Vigo Foot Ball Club, 1912",
+   "lugar": "Vigo (sin ubicar)",
+   "anio": 1912,
+   "aproximada": false,
+   "descripcion": "Primer equipo del club en septiembre de 1912, antecedente lejano del Celta de Vigo.",
+   "lat": 42.237,
+   "lng": -8.7215,
+   "ubicacion": "sin_confirmar",
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/3/35/Vigo_Foot_Ball_Club.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/3/35/Vigo_Foot_Ball_Club.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/3/35/Vigo_Foot_Ball_Club.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Vigo_Foot_Ball_Club.png",
+   "licencia": "PD",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "El Vigo Foot Ball Club, 1912",
+     "descripcion": "Primer equipo del club en septiembre de 1912, antecedente lejano del Celta de Vigo."
+    },
+    "gl": {
+     "titulo": "O Vigo Foot Ball Club, 1912",
+     "descripcion": "Primeiro equipo do club en setembro de 1912, antecedente afastado do Celta de Vigo."
+    },
+    "en": {
+     "titulo": "Vigo Foot Ball Club, 1912",
+     "descripcion": "The club's first team in September 1912, a distant forerunner of Celta de Vigo."
+    },
+    "pt": {
+     "titulo": "O Vigo Foot Ball Club, 1912",
+     "descripcion": "Primeira equipa do clube em setembro de 1912, antecessora longínqua do Celta de Vigo."
+    },
+    "fr": {
+     "titulo": "Le Vigo Foot Ball Club, 1912",
+     "descripcion": "Première équipe du club en septembre 1912, lointain ancêtre du Celta de Vigo."
+    }
+   }
+  },
+  {
+   "id": "commons-151618980",
+   "titulo": "Monumento a los repatriados (escultura)",
+   "lugar": "Vigo (sin ubicar)",
+   "anio": 1929,
+   "aproximada": false,
+   "descripcion": "Obra de Julio González Pola, publicada en la revista La Esfera, 1929.",
+   "lat": 42.237,
+   "lng": -8.7215,
+   "ubicacion": "sin_confirmar",
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/4/41/Julio_Gonzalez_Pola_-_La_Esfera_-_Vigo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/4/41/Julio_Gonzalez_Pola_-_La_Esfera_-_Vigo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/4/41/Julio_Gonzalez_Pola_-_La_Esfera_-_Vigo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Julio_Gonzalez_Pola_-_La_Esfera_-_Vigo.jpg",
+   "licencia": "CC BY 4.0",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Monumento a los repatriados (escultura)",
+     "descripcion": "Obra de Julio González Pola, publicada en la revista La Esfera, 1929."
+    },
+    "gl": {
+     "titulo": "Monumento aos repatriados (escultura)",
+     "descripcion": "Obra de Julio González Pola, publicada na revista La Esfera, 1929."
+    },
+    "en": {
+     "titulo": "Monument to the repatriated (sculpture)",
+     "descripcion": "Work by Julio González Pola, published in La Esfera magazine, 1929."
+    },
+    "pt": {
+     "titulo": "Monumento aos repatriados (escultura)",
+     "descripcion": "Obra de Julio González Pola, publicada na revista La Esfera, 1929."
+    },
+    "fr": {
+     "titulo": "Monument aux rapatriés (sculpture)",
+     "descripcion": "Œuvre de Julio González Pola, publiée dans la revue La Esfera, 1929."
+    }
+   }
   }
  ]
 }
