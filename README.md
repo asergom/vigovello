@@ -20,7 +20,6 @@ scripts/importar_commons.py  importa fotos antiguas de Wikimedia Commons
 scripts/fuentes.json       colecciones de Commons que se importan
 scripts/lugares.json       lugares de Vigo para situar fotos sin coordenadas
 data/excluidas.json        fotos retiradas que no deben volver a importarse
-.github/workflows/         importación automática semanal
 CANDIDATAS.md              fotos encontradas pendientes de revisar
 ```
 
@@ -42,18 +41,15 @@ y abre <http://localhost:8000>.
 
 ## Añadir fotos
 
-### Automáticamente desde Wikimedia Commons
+### Desde Wikimedia Commons
 
-Una tarea de GitHub Actions ([`importar.yml`](.github/workflows/importar.yml)) ejecuta `scripts/importar_commons.py`. Lo hace cada lunes, cada vez que cambian las fuentes o los lugares, y también a mano desde **Actions → Importar fotos de Wikimedia Commons → Run workflow**. La tarea:
+`scripts/importar_commons.py` importa fotos de las colecciones de [`scripts/fuentes.json`](scripts/fuentes.json). Se ejecuta a mano, solo cuando se decida:
 
-1. Recorre las categorías y búsquedas de [`scripts/fuentes.json`](scripts/fuentes.json). Para añadir una colección, se añade ahí.
-2. **Solo acepta licencias libres:** dominio público, CC0, CC BY y CC BY-SA. Descarta las «no comercial» (NC), «sin derivadas» (ND) y las desconocidas.
-3. Descarta las fotos posteriores a 1980. En colecciones que no son históricas en su totalidad, descarta también las que no tienen fecha.
-4. Sitúa cada foto:
-   - con sus coordenadas de Commons si las tiene (`confirmada`);
-   - si no, buscando un lugar de [`scripts/lugares.json`](scripts/lugares.json) en su título, descripción y categorías (`aproximada`);
-   - si no, en un punto por defecto con la etiqueta «Ubicación sin confirmar» (`sin_confirmar`).
-5. Solo añade fotos nuevas. **Nunca modifica las que ya están**, así que las correcciones manuales se conservan.
+1. **Licencias:** solo acepta dominio público, CC0, CC BY y CC BY-SA. Descarta las «no comercial» (NC), «sin derivadas» (ND) y las desconocidas.
+2. **Fechas:** descarta las fotos posteriores a 1980.
+3. **Documentos:** descarta prensa, esquelas, actas y planos.
+4. **Ubicación:** sitúa cada foto con sus coordenadas, con un lugar reconocido de [`scripts/lugares.json`](scripts/lugares.json) o, si no, en un punto orientativo con la etiqueta «Ubicación sin confirmar».
+5. **Fotos existentes:** no modifica las que ya están en el mapa.
 
 Para retirar una foto y que no vuelva a importarse, bórrala de `data/fotos.json` y añade la dirección de su ficha a `data/excluidas.json`:
 
