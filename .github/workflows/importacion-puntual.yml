@@ -1,0 +1,34 @@
+name: Importación puntual (Europeana)
+
+# Tarea temporal: solo se ejecuta a mano y se borrará tras usarla.
+# No publica nada: deja las fotos encontradas y el registro en la rama
+# "importacion-europeana" para revisarlas antes de incorporarlas.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  importar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Buscar fotos en Europeana
+        continue-on-error: true
+        run: |
+          mkdir -p importacion
+          set -o pipefail
+          python3 -u scripts/importar_europeana.py --salida importacion/resultado.json 2>&1 | tee importacion/registro.txt
+      - name: Guardar resultado en una rama aparte
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git checkout -b importacion-europeana
+          git add -f importacion/
+          git commit -m "Resultado de la importación puntual de Europeana"
+          git push -f origin importacion-europeana

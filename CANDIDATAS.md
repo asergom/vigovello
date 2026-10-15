@@ -15,25 +15,46 @@ Las fotos de Wikimedia Commons de los apartados anteriores se han añadido al ma
 
 **Cine Royalty (Archivo Pacheco):** licencia CC BY-SA 4.0 confirmada en su ficha.
 
-Desde ahora, las fotos de Wikimedia Commons se incorporan automáticamente cada semana (ver README). Este listado queda para fuentes externas a Commons.
+Las nuevas fotos de Wikimedia Commons se incorporan con el importador, que se ejecuta a mano (ver README). Este listado queda para lo que no se puede importar así.
 
-## Pendientes de subir a Wikimedia Commons
+## Lista de tareas pendientes
 
-Fotos con licencia libre confirmada que no están en Commons. Para que la web pueda mostrarlas hace falta una dirección de imagen permanente, así que se suben todas juntas al terminar la búsqueda de fuentes. Al subirlas, pon como fuente el enlace permanente y la licencia indicada. Después, pasa a Claude los enlaces de Commons para añadirlas al mapa.
+Todo lo que queda por hacer fuera del importador, para resolverlo al terminar la búsqueda de fuentes.
+
+### 1. Subir a Wikimedia Commons (licencia libre confirmada)
+
+Para que la web pueda mostrarlas hace falta una dirección de imagen permanente. Al subirlas, pon como fuente el enlace permanente y la licencia indicada; después, pasa a Claude los enlaces de Commons para añadirlas al mapa.
 
 | Foto | Fecha | Lugar | Licencia según la fuente | Enlace permanente |
 |---|---|---|---|---|
 | Mundial 1982: Italia–Polonia (0-0). Cabrini (n.º 4), Boniek y el portero Zoff. Spaarnestad Photo, fotógrafo desconocido. Nationaal Archief, inventario 7.000SPABB / 36572 | 14/06/1982 | Estadio de Balaídos | «Rechtenvrij» (libre de derechos) | http://hdl.handle.net/10648/35429da6-2819-a382-e063-6df0900a6686 |
 
-## Pendientes de decidir: fotos del archivo de la ETH de Zúrich que no están en Commons
+### 2. Comprobar la licencia y, si es libre, subir a Commons
 
-Encontradas el 14/10/2026 en el buscador [E-Pics](https://e-pics3.ethz.ch/en/home_en/) de la ETH-Bibliothek. Los enlaces a las miniaturas caducaban esa misma noche, así que se guarda el número de inventario: basta con buscarlo en E-Pics para encontrar la ficha.
-
-| N.º de inventario | Qué se sabe | Qué falta |
+| Qué | Dónde | Qué hacer |
 |---|---|---|
-| Dia 298-05341 | Serie de diapositivas; las de la ETH suelen tener CC BY-SA 4.0 | Título, fecha, licencia y lugar. Si es libre, habría que subirla a Wikimedia Commons para tener una dirección permanente. |
-| Fel 045353 | Miniatura con marca de agua: probablemente derechos reservados | Confirmar el campo de derechos; si no es libre, pedir permiso a la ETH o descartarla. |
-| Fel 045354 | Miniatura con marca de agua: probablemente derechos reservados | Ídem. |
+| ETH Zúrich, Dia 298-05341 | Buscar el número en [E-Pics](https://e-pics3.ethz.ch/en/home_en/) | Mirar título, fecha y licencia. Las diapositivas de la ETH suelen ser CC BY-SA 4.0. |
+| ETH Zúrich, Fel 045353 y Fel 045354 | Ídem | Miniaturas con marca de agua: probablemente con derechos. Confirmar; si no son libres, descartar o pedir permiso a la ETH. |
+| Fotos estereoscópicas de Vigo hacia 1900, de Aurelio Paz dos Reis (Príncipe, Porta do Sol, Praza da Constitución, Campo de Granada, el Castro, A Laxe) | [Centro Português de Fotografia](https://cpf.pt/), referencias «PT-CPF-APR». Descritas en [este artículo de VigoÉ](https://www.vigoe.es/vigo/mas-vigo/las-increibles-fotos-estereoscopicas-del-vigo-de-1900/) | El autor murió en 1931, así que deberían ser de dominio público. Revisar las condiciones de uso del CPF. |
+| Fotos de Vigo del Nationaal Archief no publicadas en Commons | [Buscador de fotos libres](https://nationaalarchief.nl/onderzoeken/zoeken?activeTab=photos&qf_nao_download=Direct%20beschikbaar&rm=gallery), buscar «Vigo» | Valen las que tengan botón de descarga y digan «CC0», «Public Domain» o «Rechtenvrij». |
+| Revistas ilustradas antiguas no publicadas en Commons | [Hemeroteca Digital](https://hemerotecadigital.bne.es/) y [Biblioteca Digital Hispánica](https://bdh.bne.es/) de la BNE | Buscar «Vigo» en *La Ilustración Española y Americana*, *Blanco y Negro*, *Nuevo Mundo*… Valen las obras en dominio público. |
+
+### 3. Pedir permiso (fuentes con derechos)
+
+| Fuente | Contacto | Notas |
+|---|---|---|
+| Archivo Pacheco y [Postais históricas municipais](https://postaishistoricasmunicipais.vigo.org/es/) | Concello de Vigo | El gran archivo visual de la ciudad. Claude puede redactar el correo de solicitud. Algunas fotos del Archivo Pacheco ya están en Commons con CC BY-SA 4.0. |
+| [Postales de la Deputación de Pontevedra](https://arquivos.depo.gal/es/fondos-graficos) (unas 6.600) | Servizo de Patrimonio Documental e Bibliográfico | La web solo indica «Copyright © Deputación de Pontevedra». |
+| Fondo de la Asociación de la Prensa de Vigo (509 fotos, más de 300 de Ángel Llanos) | Deputación de Pontevedra ([Atopo](https://atopo.depo.gal/)) | Fotos de la segunda mitad del siglo XX con autores conocidos. |
+
+### 4. Situar fotos que ya están en el mapa
+
+| Foto | Qué falta |
+|---|---|
+| Emilia Pardo Bazán en el Pazo da Pastora (3 fotos, 1909) | Ubicación del Pazo da Pastora. |
+| Teatro Rosalía (1908) y teatro Tamberlik (1936) | Ubicación exacta de los teatros. |
+| Casa de Caridad y Escuela Obrera (h. 1900) | Ubicación de los edificios. |
+| Resto de fotos con la etiqueta «Ubicación sin confirmar» | Se pueden ir corrigiendo con `editor.html` o con las propuestas de los visitantes. |
 
 ## C · Otras fotos sueltas encontradas en Commons (sin revisar)
 
