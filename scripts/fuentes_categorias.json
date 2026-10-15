@@ -1,0 +1,129 @@
+{
+  "_ayuda": "Fuentes para una importación puntual: imágenes de dominio público dentro de las categorías de Vigo en Commons (barrios, calles, monumentos), aunque no lleven 'Vigo' en el título.",
+  "hasta_anio": 1982,
+  "categorias": [],
+  "busquedas": [
+    {
+      "texto": "deepcat:Vigo filetype:bitmap hastemplate:PD-old",
+      "antiguas": true,
+      "solo_vigo": false
+    },
+    {
+      "texto": "deepcat:Vigo filetype:bitmap hastemplate:PD-old-70",
+      "antiguas": true,
+      "solo_vigo": false
+    },
+    {
+      "texto": "deepcat:Vigo filetype:bitmap hastemplate:PD-old-80",
+      "antiguas": true,
+      "solo_vigo": false
+    },
+    {
+      "texto": "deepcat:Vigo filetype:bitmap hastemplate:PD-old-100",
+      "antiguas": true,
+      "solo_vigo": false
+    },
+    {
+      "texto": "deepcat:Vigo filetype:bitmap hastemplate:PD-Spain",
+      "antiguas": true,
+      "solo_vigo": false
+    },
+    {
+      "texto": "deepcat:Vigo filetype:bitmap hastemplate:PD-anon-70-EU",
+      "antiguas": true,
+      "solo_vigo": false
+    },
+    {
+      "texto": "deepcat:Vigo filetype:bitmap hastemplate:PD-EU-no_author_disclosure",
+      "antiguas": true,
+      "solo_vigo": false
+    },
+    {
+      "texto": "deepcat:Vigo filetype:bitmap hastemplate:PD-scan",
+      "antiguas": true,
+      "solo_vigo": false
+    },
+    {
+      "texto": "deepcat:Vigo filetype:bitmap hastemplate:PD-Art",
+      "antiguas": true,
+      "solo_vigo": false
+    },
+    {
+      "texto": "deepcat:Vigo filetype:bitmap hastemplate:PD-1923",
+      "antiguas": true,
+      "solo_vigo": false
+    },
+    {
+      "texto": "deepcat:Vigo filetype:bitmap hastemplate:PD-US-expired",
+      "antiguas": true,
+      "solo_vigo": false
+    },
+    {
+      "texto": "deepcat:Vigo filetype:bitmap hastemplate:Flickr-no_known_copyright_restrictions",
+      "antiguas": true,
+      "solo_vigo": false
+    },
+    {
+      "texto": "deepcat:Vigo filetype:bitmap hastemplate:PD-because",
+      "antiguas": true,
+      "solo_vigo": false
+    },
+    {
+      "texto": "deepcat:Vigo filetype:bitmap postal OR postcard OR \"tarxeta postal\"",
+      "antiguas": false,
+      "solo_vigo": false
+    },
+    {
+      "texto": "deepcat:Vigo filetype:bitmap antiga OR antigua OR old OR histórica OR historical",
+      "antiguas": false,
+      "solo_vigo": false
+    }
+  ],
+  "excluir": [
+    "periodico",
+    "periódico",
+    "newspaper",
+    "semanario",
+    "revista semanal",
+    "diario",
+    "boletin",
+    "boletín",
+    "gaceta",
+    "necroloxica",
+    "necrológica",
+    "esquela",
+    "acta de nacimiento",
+    "partida de",
+    "plano de",
+    "mapa de",
+    "map of",
+    "escudo",
+    "coat of arms",
+    "firma",
+    "signature",
+    "portada",
+    "cuberta",
+    "cubierta",
+    "carta de",
+    "letter",
+    "sello",
+    "stamp",
+    "billete",
+    "el pueblo gallego",
+    "faro de vigo",
+    "el mino",
+    "organo del",
+    "órgano del",
+    "órgano de",
+    "ecos de vigo",
+    "galicia social",
+    "catalogo de",
+    "catálogo de",
+    "marechal de france",
+    "pdf",
+    "fassa",
+    "rendena",
+    "bolòs",
+    "bolós"
+  ]
+}
