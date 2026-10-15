@@ -103,10 +103,24 @@ def anio(item):
     return None, False
 
 
+# Barrios y parroquias de Vigo con nombre poco ambiguo
+LUGARES_VIGO = ["bouzas", "berbes", "teis", "cies", "samil", "castrelos", "lavadores", "coia", "coya", "alcabre",
+                "toralla", "canido", "balaidos", "valladares", "matama", "bembrive", "candean", "corujo", "saians",
+                "zamans", "navia", "freixeiro", "guixar", "sardoma", "chapela de vigo", "cabral", "beade", "comesana"]
+
+
 def es_vigo(item, texto):
     t = normalizar(texto)
-    if not re.search(r"\bvigo\b", t):
+    menciona_vigo = re.search(r"\bvigo\b", t)
+    menciona_barrio = any(re.search(r"\b" + b + r"\b", t) for b in LUGARES_VIGO)
+    if not (menciona_vigo or menciona_barrio):
         return False
+    if menciona_barrio and not menciona_vigo:
+        # Sin la palabra Vigo, se exige que sea de Galicia
+        lat = item.get("edmPlaceLatitude") or []
+        if any(abs(float(x) - 42.24) < 0.3 for x in lat if re.match(r"-?\d", str(x))):
+            return True
+        return any(normalizar(x) in t for x in ["galicia", "galiza", "pontevedra", "ria de vigo"])
     if any(re.search(r"\b" + re.escape(normalizar(x)) + r"\b", t) for x in NO_VIGO):
         return False
     lat = item.get("edmPlaceLatitude") or []
@@ -126,6 +140,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--salida", required=True)
     ap.add_argument("--hasta", type=int, default=1982)
+    ap.add_argument("--consultas", nargs="*", help="Consultas a Europeana (por defecto, Vigo)")
     ap.add_argument("--maximo", type=int, default=3000, help="Número máximo de registros a revisar")
     args = ap.parse_args()
 
@@ -139,7 +154,7 @@ def main():
         return d.get("fotos", d) if isinstance(d, dict) else d
     conocidas = {f.get("url_fuente") for f in cargar(FOTOS)} | {e if isinstance(e, str) else e.get("url_fuente") for e in cargar(EXCLUIDAS)}
 
-    consultas = ["Vigo", "Vigo AND (Galicia OR Pontevedra OR postal OR fotografía OR vista)"]
+    consultas = args.consultas or ["Vigo", "Vigo AND (Galicia OR Pontevedra OR postal OR fotografía OR vista)"]
     nuevas, vistos, motivos = [], set(), {}
 
     def descartar(m):
