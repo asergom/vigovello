@@ -42,8 +42,8 @@ LICENCIAS = [
     (r"licenses/by-sa/", "CC BY-SA"),
     (r"licenses/by/", "CC BY"),
 ]
-NO_VIGO = ["fassa", "rendena", "trentino", "trento", "vigo di", "vigò", "vigo im", "vigo cavedine",
-           "vigolo", "méndez vigo", "mendez vigo", "manuel vigo"]
+NO_VIGO = ["fassa", "rendena", "trentino", "trento", "vigo di", "monsu vigo", "vigo im", "vigo cavedine",
+           "vigolo", "mendez vigo", "manuel vigo"]
 SI_GALICIA = ["galicia", "galiza", "pontevedra", "españa", "espana", "spain", "spanje", "spanien", "espagne",
               "ria de vigo", "ría de vigo", "bahia de vigo", "bahía de vigo", "vigo bay"]
 
@@ -107,7 +107,7 @@ def es_vigo(item, texto):
     t = normalizar(texto)
     if not re.search(r"\bvigo\b", t):
         return False
-    if any(normalizar(x) in t for x in NO_VIGO):
+    if any(re.search(r"\b" + re.escape(normalizar(x)) + r"\b", t) for x in NO_VIGO):
         return False
     lat = item.get("edmPlaceLatitude") or []
     if any(abs(float(x) - 42.24) < 0.3 for x in lat if re.match(r"-?\d", str(x))):
