@@ -1,0 +1,24 @@
+· búsqueda: deepcat:Vigo filetype:bitmap hastemplate:PD-old
+· búsqueda: deepcat:Vigo filetype:bitmap hastemplate:PD-old-70
+· búsqueda: deepcat:Vigo filetype:bitmap hastemplate:PD-old-80
+  (tope de 400 resultados alcanzado)
+· búsqueda: deepcat:Vigo filetype:bitmap hastemplate:PD-old-100
+· búsqueda: deepcat:Vigo filetype:bitmap hastemplate:PD-Spain
+· búsqueda: deepcat:Vigo filetype:bitmap hastemplate:PD-anon-70-EU
+· búsqueda: deepcat:Vigo filetype:bitmap hastemplate:PD-EU-no_author_disclosure
+· búsqueda: deepcat:Vigo filetype:bitmap hastemplate:PD-scan
+  (tope de 400 resultados alcanzado)
+· búsqueda: deepcat:Vigo filetype:bitmap hastemplate:PD-Art
+· búsqueda: deepcat:Vigo filetype:bitmap hastemplate:PD-1923
+· búsqueda: deepcat:Vigo filetype:bitmap hastemplate:PD-US-expired
+· búsqueda: deepcat:Vigo filetype:bitmap hastemplate:Flickr-no_known_copyright_restrictions
+· búsqueda: deepcat:Vigo filetype:bitmap hastemplate:PD-because
+· búsqueda: deepcat:Vigo filetype:bitmap postal OR postcard OR "tarxeta postal"
+· búsqueda: deepcat:Vigo filetype:bitmap antiga OR antigua OR old OR histórica OR historical
+  (tope de 400 resultados alcanzado)
+
+Revisados 1098 archivos en 0 categorías.
+Nuevas: 669 (630 sin ubicación confirmada).
+  descartadas por posterior a 1982: 249
+  descartadas por documento, no imagen del lugar: 54
+Guardadas 669 fotos nuevas en importacion/resultado.json para revisar.
