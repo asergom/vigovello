@@ -1,0 +1,60 @@
+· consulta: Vigo
+  revisados 100 de 4757; candidatas 69
+  revisados 200 de 4757; candidatas 70
+  revisados 300 de 4757; candidatas 70
+  revisados 400 de 4757; candidatas 70
+  revisados 500 de 4757; candidatas 75
+  revisados 600 de 4757; candidatas 108
+  revisados 700 de 4757; candidatas 115
+  revisados 800 de 4757; candidatas 136
+  revisados 900 de 4757; candidatas 138
+  revisados 1000 de 4757; candidatas 138
+  revisados 1100 de 4757; candidatas 138
+  revisados 1200 de 4757; candidatas 138
+  revisados 1300 de 4757; candidatas 138
+  revisados 1400 de 4757; candidatas 139
+  revisados 1500 de 4757; candidatas 141
+  revisados 1600 de 4757; candidatas 141
+  revisados 1700 de 4757; candidatas 141
+  revisados 1800 de 4757; candidatas 144
+  revisados 1900 de 4757; candidatas 152
+  revisados 2000 de 4757; candidatas 162
+  revisados 2100 de 4757; candidatas 162
+  revisados 2200 de 4757; candidatas 162
+  revisados 2300 de 4757; candidatas 162
+  revisados 2400 de 4757; candidatas 162
+  revisados 2500 de 4757; candidatas 162
+  revisados 2600 de 4757; candidatas 162
+  revisados 2700 de 4757; candidatas 162
+  revisados 2800 de 4757; candidatas 162
+  revisados 2900 de 4757; candidatas 163
+  revisados 3000 de 4757; candidatas 164
+· consulta: Vigo AND (Galicia OR Pontevedra OR postal OR fotografía OR vista)
+  revisados 100 de 444; candidatas 164
+  revisados 200 de 444; candidatas 199
+  revisados 300 de 444; candidatas 299
+  revisados 400 de 444; candidatas 396
+  revisados 444 de 444; candidatas 408
+
+Candidatas: 408
+  descartadas por no es Vigo (Galicia): 2872
+  descartadas por posterior a 1982: 1
+  descartadas por sin imagen directa: 1
+  Galiciana: Digital Library of Galicia: 323
+  Virtual Library of Bibliographical Heritage: 19
+  Natural History Museum, Vienna: 15
+  Royal Botanic Garden Edinburgh: 12
+  Naturalis Biodiversity Center: 7
+  Digital Library of Castilla y León: 5
+  Digital Library of Madrid: 5
+  Image and Sound Archive of Menorca: 4
+  Digital Library Real Academia de la Historia: 3
+  Berlin-Dahlem Botanical Garden and Botanical Museum: 3
+  Cartographic and Geological Institute of Catalonia: 3
+  Europeana Foundation: 2
+  Biblioteca Virtual de la Real Academia Nacional de Farmacia: 2
+  Library of the Bar Association of Madrid: 1
+  Naval Museum: 1
+  The British Library: 1
+  National Maritime Museum: 1
+  Digital Memory of Catalonia: 1
