@@ -48,7 +48,7 @@ y abre <http://localhost:8000>.
 `scripts/importar_commons.py` importa fotos de las colecciones de [`scripts/fuentes.json`](scripts/fuentes.json). Se ejecuta a mano, solo cuando se decida:
 
 1. **Licencias:** solo acepta dominio público, CC0, CC BY y CC BY-SA. Descarta las «no comercial» (NC), «sin derivadas» (ND) y las desconocidas.
-2. **Fechas:** descarta las fotos posteriores a 1980.
+2. **Fechas:** descarta las fotos posteriores a 1982.
 3. **Documentos:** descarta prensa, esquelas, actas y planos.
 4. **Ubicación:** sitúa cada foto con sus coordenadas, con un lugar reconocido de [`scripts/lugares.json`](scripts/lugares.json) o, si no, en un punto orientativo con la etiqueta «Ubicación sin confirmar».
 5. **Fotos existentes:** no modifica las que ya están en el mapa.

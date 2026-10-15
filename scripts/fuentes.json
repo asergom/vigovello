@@ -1,6 +1,6 @@
 {
   "_ayuda": "Colecciones de Wikimedia Commons que importa scripts/importar_commons.py. 'categorias': se recorren con sus subcategorías hasta 'profundidad'. 'busquedas': búsquedas de archivos en Commons. 'antiguas' marca colecciones que son históricas en su totalidad (se aceptan fotos sin fecha). 'solo_vigo': exige que el archivo mencione Vigo o un lugar de Vigo. 'excluir': palabras que, si aparecen en el título, la descripción o las categorías, indican un documento (prensa, actas, planos…) y no una imagen del lugar.",
-  "hasta_anio": 1980,
+  "hasta_anio": 1982,
   "categorias": [
     {
       "nombre": "Category:History of Vigo",

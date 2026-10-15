@@ -17,6 +17,14 @@ Las fotos de Wikimedia Commons de los apartados anteriores se han añadido al ma
 
 Desde ahora, las fotos de Wikimedia Commons se incorporan automáticamente cada semana (ver README). Este listado queda para fuentes externas a Commons.
 
+## Pendientes de subir a Wikimedia Commons
+
+Fotos con licencia libre confirmada que no están en Commons. Para que la web pueda mostrarlas hace falta una dirección de imagen permanente, así que se suben todas juntas al terminar la búsqueda de fuentes. Al subirlas, pon como fuente el enlace permanente y la licencia indicada. Después, pasa a Claude los enlaces de Commons para añadirlas al mapa.
+
+| Foto | Fecha | Lugar | Licencia según la fuente | Enlace permanente |
+|---|---|---|---|---|
+| Mundial 1982: Italia–Polonia (0-0). Cabrini (n.º 4), Boniek y el portero Zoff. Spaarnestad Photo, fotógrafo desconocido. Nationaal Archief, inventario 7.000SPABB / 36572 | 14/06/1982 | Estadio de Balaídos | «Rechtenvrij» (libre de derechos) | http://hdl.handle.net/10648/35429da6-2819-a382-e063-6df0900a6686 |
+
 ## Pendientes de decidir: fotos del archivo de la ETH de Zúrich que no están en Commons
 
 Encontradas el 14/10/2026 en el buscador [E-Pics](https://e-pics3.ethz.ch/en/home_en/) de la ETH-Bibliothek. Los enlaces a las miniaturas caducaban esa misma noche, así que se guarda el número de inventario: basta con buscarlo en E-Pics para encontrar la ficha.

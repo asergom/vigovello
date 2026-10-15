@@ -312,7 +312,7 @@ def main():
     args = ap.parse_args()
 
     fuentes = json.loads(Path(args.fuentes).read_text(encoding="utf-8"))
-    hasta = fuentes.get("hasta_anio", 1980)
+    hasta = fuentes.get("hasta_anio", 1982)
     excluir = fuentes.get("excluir", [])
     ubicador = Ubicador(LUGARES)
 
