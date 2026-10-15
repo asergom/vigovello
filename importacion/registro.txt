@@ -1,0 +1,55 @@
+· consulta: Bouzas
+  revisados 4 de 4; candidatas 0
+· consulta: Berbés OR Berbes
+  revisados 100 de 878; candidatas 0
+  revisados 200 de 878; candidatas 1
+  revisados 300 de 878; candidatas 1
+  revisados 400 de 878; candidatas 1
+  revisados 500 de 878; candidatas 1
+  revisados 600 de 878; candidatas 1
+  revisados 700 de 878; candidatas 1
+  revisados 800 de 878; candidatas 1
+  revisados 878 de 878; candidatas 1
+· consulta: Teis
+  revisados 11 de 11; candidatas 2
+· consulta: Cíes OR Cies
+  revisados 25 de 25; candidatas 13
+· consulta: Samil
+  revisados 12 de 12; candidatas 14
+· consulta: Castrelos
+  revisados 5 de 5; candidatas 14
+· consulta: Lavadores
+  revisados 3 de 3; candidatas 14
+· consulta: Coia OR Coya
+  revisados 16 de 16; candidatas 14
+· consulta: Alcabre
+· consulta: Toralla
+  revisados 2 de 2; candidatas 14
+· consulta: Canido
+  revisados 100 de 119; candidatas 16
+  revisados 119 de 119; candidatas 20
+· consulta: Balaídos OR Balaidos
+· consulta: Valladares
+  revisados 65 de 65; candidatas 21
+· consulta: Guixar
+  revisados 2 de 2; candidatas 21
+· consulta: Bembrive OR Matamá OR Candeán OR Corujo OR Saiáns OR Zamáns
+  revisados 100 de 156; candidatas 21
+  revisados 156 de 156; candidatas 21
+· consulta: "Ría de Vigo" OR "Ria de Vigo"
+  revisados 46 de 46; candidatas 33
+· consulta: Galicia AND (postal OR tarjeta) AND Vigo
+  revisados 95 de 95; candidatas 38
+
+Candidatas: 38
+  descartadas por no es Vigo (Galicia): 1249
+  descartadas por ya incluida o excluida: 125
+  Galiciana: Digital Library of Galicia: 15
+  Naturalis Biodiversity Center: 6
+  Virtual Library of Bibliographical Heritage: 6
+  Digital Library of Castilla y León: 5
+  Cartographic and Geological Institute of Catalonia: 2
+  Digital Library Real Academia de la Historia: 1
+  Europeana Foundation: 1
+  The Trustees of the Natural History Museum, London: 1
+  Leibniz Institute DSMZ-German Collection of Microorganisms and Cell Cultures: 1
