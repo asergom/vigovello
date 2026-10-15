@@ -714,6 +714,36 @@ T = {
  "Wreck of the Highland Pride, 1929", "The Nelson Line passenger and cargo steamer, aground near Vigo.",
  "Naufrágio do Highland Pride, 1929", "O vapor de passageiros e carga da Nelson Line, encalhado perto de Vigo.",
  "Naufrage du Highland Pride, 1929", "Le vapeur de passagers et de fret de la Nelson Line, échoué près de Vigo."),
+"commons-182894634": (
+ "La isla de Toralla, 1927", "Vista aérea de la isla.",
+ "A illa de Toralla, 1927", "Vista aérea da illa.",
+ "Toralla Island, 1927", "Aerial view of the island.",
+ "A ilha de Toralla, 1927", "Vista aérea da ilha.",
+ "L'île de Toralla, 1927", "Vue aérienne de l'île."),
+"commons-120132320": (
+ "La isla de Toralla, hacia 1900-1910", "Fotografía de Eladio Oviedo y Arce.",
+ "A illa de Toralla, cara a 1900-1910", "Fotografía de Eladio Oviedo y Arce.",
+ "Toralla Island, c. 1900-1910", "Photograph by Eladio Oviedo y Arce.",
+ "A ilha de Toralla, c. 1900-1910", "Fotografia de Eladio Oviedo y Arce.",
+ "L'île de Toralla, vers 1900-1910", "Photographie d'Eladio Oviedo y Arce."),
+"commons-42742872": (
+ "La estación de ferrocarril en el siglo XIX", "Proyectada en 1860 por el ingeniero Francisco Javier Boquerín y terminada en 1878.",
+ "A estación de ferrocarril no século XIX", "Proxectada en 1860 polo enxeñeiro Francisco Javier Boquerín e rematada en 1878.",
+ "The railway station in the 19th century", "Designed in 1860 by the engineer Francisco Javier Boquerín and completed in 1878.",
+ "A estação ferroviária no século XIX", "Projetada em 1860 pelo engenheiro Francisco Javier Boquerín e concluída em 1878.",
+ "La gare au XIXe siècle", "Conçue en 1860 par l'ingénieur Francisco Javier Boquerín et achevée en 1878."),
+"commons-44723360": (
+ "El teatro Rosalía de Castro, 1910", "",
+ "O teatro Rosalía de Castro, 1910", "",
+ "The Rosalía de Castro Theatre, 1910", "",
+ "O teatro Rosalía de Castro, 1910", "",
+ "Le théâtre Rosalía de Castro, 1910", ""),
+"commons-61205117": (
+ "Los terrenos de Balaídos, 1928", "El periodista Manuel de Castro, «Handicap», en los terrenos donde se construiría el estadio.",
+ "Os terreos de Balaídos, 1928", "O xornalista Manuel de Castro, «Handicap», nos terreos onde se construiría o estadio.",
+ "The Balaídos grounds, 1928", "Journalist Manuel de Castro, \"Handicap\", on the land where the stadium would be built.",
+ "Os terrenos de Balaídos, 1928", "O jornalista Manuel de Castro, «Handicap», nos terrenos onde seria construído o estádio.",
+ "Les terrains de Balaídos, 1928", "Le journaliste Manuel de Castro, « Handicap », sur les terrains où serait construit le stade."),
 }
 
 # Ubicaciones corregidas a mano (el importador las había asignado por palabras sueltas)
@@ -727,6 +757,12 @@ UBICACIONES = {
     "commons-57430182": ("Real Club Náutico", 42.24050, -8.72300, "aproximada"),
     "commons-196084836": ("O Calvario", 42.22700, -8.70500, "aproximada"),
     "commons-76844617": ("Vigo (sin ubicar)", *CENTRO, "sin_confirmar"),
+    # Categorías de Vigo en Commons (importación de octubre de 2026)
+    "commons-182894634": ("Illa de Toralla", 42.20090, -8.79830, "aproximada"),
+    "commons-120132320": ("Illa de Toralla", 42.20090, -8.79830, "aproximada"),
+    "commons-42742872": ("Estación de ferrocarril", 42.23420, -8.71280, "aproximada"),
+    "commons-44723360": ("Teatro Rosalía", 42.23660, -8.72120, "sin_confirmar"),
+    "commons-61205117": ("Balaídos", 42.21180, -8.73980, "aproximada"),
     # Flickr Commons y dominio público (importación de octubre de 2026)
     "commons-7163837": ("Vigo (sin ubicar)", *CENTRO, "sin_confirmar"),
     "commons-47599451": ("Vigo (sin ubicar)", *CENTRO, "sin_confirmar"),
