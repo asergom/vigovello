@@ -2694,47 +2694,6 @@
    }
   },
   {
-   "id": "commons-65073768",
-   "titulo": "Maniobras navales en la bahía de Vigo, 1952",
-   "lugar": "Ría de Vigo",
-   "anio": 1952,
-   "aproximada": false,
-   "descripcion": "Fotografía de la agencia Anefo. Archivo Nacional de los Países Bajos.",
-   "lat": 42.249,
-   "lng": -8.743,
-   "ubicacion": "sin_confirmar",
-   "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Marvo_veldslag_Vigo_Baai%2C_Bestanddeelnr_905-4330.jpg/1280px-Marvo_veldslag_Vigo_Baai%2C_Bestanddeelnr_905-4330.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "miniatura": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Marvo_veldslag_Vigo_Baai%2C_Bestanddeelnr_905-4330.jpg/500px-Marvo_veldslag_Vigo_Baai%2C_Bestanddeelnr_905-4330.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "original": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Marvo_veldslag_Vigo_Baai%2C_Bestanddeelnr_905-4330.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "autor": "Anefo",
-   "fuente": "Wikimedia Commons",
-   "url_fuente": "https://commons.wikimedia.org/wiki/File:Marvo_veldslag_Vigo_Baai,_Bestanddeelnr_905-4330.jpg",
-   "licencia": "CC0",
-   "importada": true,
-   "textos": {
-    "es": {
-     "titulo": "Maniobras navales en la bahía de Vigo, 1952",
-     "descripcion": "Fotografía de la agencia Anefo. Archivo Nacional de los Países Bajos."
-    },
-    "gl": {
-     "titulo": "Manobras navais na baía de Vigo, 1952",
-     "descripcion": "Fotografía da axencia Anefo. Arquivo Nacional dos Países Baixos."
-    },
-    "en": {
-     "titulo": "Naval exercises in Vigo Bay, 1952",
-     "descripcion": "Photograph by the Anefo agency. National Archives of the Netherlands."
-    },
-    "pt": {
-     "titulo": "Manobras navais na baía de Vigo, 1952",
-     "descripcion": "Fotografia da agência Anefo. Arquivo Nacional dos Países Baixos."
-    },
-    "fr": {
-     "titulo": "Manœuvres navales dans la baie de Vigo, 1952",
-     "descripcion": "Photographie de l'agence Anefo. Archives nationales des Pays-Bas."
-    }
-   }
-  },
-  {
    "id": "commons-66509844",
    "titulo": "1702: destrucción de la flota francesa en la bahía de Vigo (grabado)",
    "lugar": "Ría de Vigo",

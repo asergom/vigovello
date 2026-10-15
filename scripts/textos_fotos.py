@@ -408,12 +408,6 @@ T = {
  "Vigo Bay (illustration)", "Illustration from Jules Verne's \"Twenty Thousand Leagues Under the Seas\".",
  "A baía de Vigo (ilustração)", "Ilustração de «Vinte Mil Léguas Submarinas», de Júlio Verne.",
  "La baie de Vigo (illustration)", "Illustration de « Vingt mille lieues sous les mers », de Jules Verne."),
-"commons-65073768": (
- "Maniobras navales en la bahía de Vigo, 1952", "Fotografía de la agencia Anefo. Archivo Nacional de los Países Bajos.",
- "Manobras navais na baía de Vigo, 1952", "Fotografía da axencia Anefo. Arquivo Nacional dos Países Baixos.",
- "Naval exercises in Vigo Bay, 1952", "Photograph by the Anefo agency. National Archives of the Netherlands.",
- "Manobras navais na baía de Vigo, 1952", "Fotografia da agência Anefo. Arquivo Nacional dos Países Baixos.",
- "Manœuvres navales dans la baie de Vigo, 1952", "Photographie de l'agence Anefo. Archives nationales des Pays-Bas."),
 "commons-66509844": (
  "1702: destrucción de la flota francesa en la bahía de Vigo (grabado)", "La batalla de Rande.",
  "1702: destrución da frota francesa na baía de Vigo (gravado)", "A batalla de Rande.",
