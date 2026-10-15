@@ -1,0 +1,20 @@
+· búsqueda: Vigo filetype:bitmap hastemplate:Flickr-no_known_copyright_restrictions
+· búsqueda: Vigo filetype:bitmap hastemplate:Flickr-Commons
+· búsqueda: Vigo filetype:bitmap hastemplate:PD-Spain
+· búsqueda: Vigo filetype:bitmap hastemplate:PD-old-80
+· búsqueda: Vigo filetype:bitmap hastemplate:PD-old-70
+· búsqueda: Vigo filetype:bitmap hastemplate:PD-old
+· búsqueda: Vigo filetype:bitmap hastemplate:PD-anon-70-EU
+· búsqueda: Vigo filetype:bitmap hastemplate:PD-1923
+· búsqueda: Vigo filetype:bitmap hastemplate:PD-US-expired
+  (tope de 400 resultados alcanzado)
+· búsqueda: Vigo filetype:bitmap hastemplate:PD-Art
+  (tope de 400 resultados alcanzado)
+· búsqueda: Vigo filetype:bitmap hastemplate:PD-scan
+
+Revisados 1182 archivos en 0 categorías.
+Nuevas: 532 (520 sin ubicación confirmada).
+  descartadas por no es de Vigo: 223
+  descartadas por posterior a 1982: 195
+  descartadas por documento, no imagen del lugar: 144
+Guardadas 532 fotos nuevas en importacion/resultado.json para revisar.
