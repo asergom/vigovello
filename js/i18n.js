@@ -231,6 +231,7 @@
     'Illa de Toralla': { es: 'Isla de Toralla', gl: 'Illa de Toralla', en: 'Toralla Island', pt: 'Ilha de Toralla', fr: 'Île de Toralla' },
     'Illa de San Simón': { es: 'Isla de San Simón', gl: 'Illa de San Simón', en: 'San Simón Island', pt: 'Ilha de San Simón', fr: 'Île de San Simón' },
     'Pavillón de As Travesas': { es: 'Pabellón de As Travesas', gl: 'Pavillón de As Travesas', en: 'As Travesas sports hall', pt: 'Pavilhão de As Travesas', fr: 'Palais des sports d’As Travesas' },
+    'Campo de Coia': { es: 'Campo de Coia', gl: 'Campo de Coia', en: 'Coia ground', pt: 'Campo de Coia', fr: 'Terrain de Coia' },
     'Real Club Náutico': { es: 'Real Club Náutico', gl: 'Real Club Náutico', en: 'Royal Yacht Club', pt: 'Real Clube Náutico', fr: 'Real Club Náutico' },
     'Casco Vello': { es: 'Casco Vello', gl: 'Casco Vello', en: 'Old Town (Casco Vello)', pt: 'Casco Vello (centro histórico)', fr: 'Vieille ville (Casco Vello)' },
     'Monte do Castro': { es: 'Monte do Castro', gl: 'Monte do Castro', en: 'O Castro hill', pt: 'Monte do Castro', fr: 'Colline du Castro' },

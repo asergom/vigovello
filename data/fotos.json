@@ -15278,6 +15278,580 @@
      "descripcion": "Carte postale."
     }
    }
+  },
+  {
+   "id": "commons-7163837",
+   "titulo": "Vendimia en Vigo (pintura)",
+   "lugar": "Vigo (sin ubicar)",
+   "anio": 1912,
+   "aproximada": false,
+   "descripcion": "Óleo de Aureliano de Beruete, 1912.",
+   "lat": 42.237,
+   "lng": -8.7215,
+   "ubicacion": "sin_confirmar",
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Vendimia_en_Vigo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Vendimia_en_Vigo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Vendimia_en_Vigo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "Aureliano de Beruete",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Vendimia_en_Vigo.jpg",
+   "licencia": "PD",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Vendimia en Vigo (pintura)",
+     "descripcion": "Óleo de Aureliano de Beruete, 1912."
+    },
+    "gl": {
+     "titulo": "Vendima en Vigo (pintura)",
+     "descripcion": "Óleo de Aureliano de Beruete, 1912."
+    },
+    "en": {
+     "titulo": "Grape harvest in Vigo (painting)",
+     "descripcion": "Oil painting by Aureliano de Beruete, 1912."
+    },
+    "pt": {
+     "titulo": "Vindima em Vigo (pintura)",
+     "descripcion": "Óleo de Aureliano de Beruete, 1912."
+    },
+    "fr": {
+     "titulo": "Vendanges à Vigo (peinture)",
+     "descripcion": "Huile d'Aureliano de Beruete, 1912."
+    }
+   }
+  },
+  {
+   "id": "commons-47599451",
+   "titulo": "El Exiles English Club de Vigo, 1903",
+   "lugar": "Vigo (sin ubicar)",
+   "anio": 1903,
+   "aproximada": false,
+   "descripcion": "Equipo de fútbol de la colonia británica en Vigo.",
+   "lat": 42.237,
+   "lng": -8.7215,
+   "ubicacion": "sin_confirmar",
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/5/57/Exiles_Club_Vigo_1903.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/5/57/Exiles_Club_Vigo_1903.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/5/57/Exiles_Club_Vigo_1903.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Exiles_Club_Vigo_1903.jpg",
+   "licencia": "PD",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "El Exiles English Club de Vigo, 1903",
+     "descripcion": "Equipo de fútbol de la colonia británica en Vigo."
+    },
+    "gl": {
+     "titulo": "O Exiles English Club de Vigo, 1903",
+     "descripcion": "Equipo de fútbol da colonia británica en Vigo."
+    },
+    "en": {
+     "titulo": "Exiles English Club of Vigo, 1903",
+     "descripcion": "Football team of the British community in Vigo."
+    },
+    "pt": {
+     "titulo": "O Exiles English Club de Vigo, 1903",
+     "descripcion": "Equipa de futebol da colónia britânica em Vigo."
+    },
+    "fr": {
+     "titulo": "L'Exiles English Club de Vigo, 1903",
+     "descripcion": "Équipe de football de la colonie britannique de Vigo."
+    }
+   }
+  },
+  {
+   "id": "commons-47738432",
+   "titulo": "Vista de Vigo, 1843 (grabado)",
+   "lugar": "Ría de Vigo",
+   "anio": 1843,
+   "aproximada": false,
+   "descripcion": "Grabado de John Harrison Allan para «A Pictorial Tour in the Mediterranean».",
+   "lat": 42.249,
+   "lng": -8.743,
+   "ubicacion": "sin_confirmar",
+   "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Vigo_-_Allan_John_H_-_1843.jpg/1280px-Vigo_-_Allan_John_H_-_1843.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "miniatura": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Vigo_-_Allan_John_H_-_1843.jpg/500px-Vigo_-_Allan_John_H_-_1843.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Vigo_-_Allan_John_H_-_1843.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "John Harrison Allan",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Vigo_-_Allan_John_H_-_1843.jpg",
+   "licencia": "PD",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Vista de Vigo, 1843 (grabado)",
+     "descripcion": "Grabado de John Harrison Allan para «A Pictorial Tour in the Mediterranean»."
+    },
+    "gl": {
+     "titulo": "Vista de Vigo, 1843 (gravado)",
+     "descripcion": "Gravado de John Harrison Allan para «A Pictorial Tour in the Mediterranean»."
+    },
+    "en": {
+     "titulo": "View of Vigo, 1843 (engraving)",
+     "descripcion": "Engraving by John Harrison Allan for \"A Pictorial Tour in the Mediterranean\"."
+    },
+    "pt": {
+     "titulo": "Vista de Vigo, 1843 (gravura)",
+     "descripcion": "Gravura de John Harrison Allan para «A Pictorial Tour in the Mediterranean»."
+    },
+    "fr": {
+     "titulo": "Vue de Vigo, 1843 (gravure)",
+     "descripcion": "Gravure de John Harrison Allan pour « A Pictorial Tour in the Mediterranean »."
+    }
+   }
+  },
+  {
+   "id": "commons-57430181",
+   "titulo": "La playa de Samil",
+   "lugar": "Praia de Samil",
+   "anio": 1920,
+   "aproximada": false,
+   "descripcion": "Fotografía entre 1920 y 1940. Colección Seoane Prado.",
+   "lat": 42.2105,
+   "lng": -8.7745,
+   "ubicacion": "aproximada",
+   "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Fotograf%C3%ADa_antiga_da_praia_de_Samil_01.jpg/1280px-Fotograf%C3%ADa_antiga_da_praia_de_Samil_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "miniatura": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Fotograf%C3%ADa_antiga_da_praia_de_Samil_01.jpg/500px-Fotograf%C3%ADa_antiga_da_praia_de_Samil_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/6/63/Fotograf%C3%ADa_antiga_da_praia_de_Samil_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "Thoman",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Fotograf%C3%ADa_antiga_da_praia_de_Samil_01.jpg",
+   "licencia": "PD",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "La playa de Samil",
+     "descripcion": "Fotografía entre 1920 y 1940. Colección Seoane Prado."
+    },
+    "gl": {
+     "titulo": "A praia de Samil",
+     "descripcion": "Fotografía entre 1920 e 1940. Colección Seoane Prado."
+    },
+    "en": {
+     "titulo": "Samil beach",
+     "descripcion": "Photograph from between 1920 and 1940. Seoane Prado Collection."
+    },
+    "pt": {
+     "titulo": "A praia de Samil",
+     "descripcion": "Fotografia entre 1920 e 1940. Coleção Seoane Prado."
+    },
+    "fr": {
+     "titulo": "La plage de Samil",
+     "descripcion": "Photographie prise entre 1920 et 1940. Collection Seoane Prado."
+    }
+   }
+  },
+  {
+   "id": "commons-89507795",
+   "titulo": "La selección española antes del partido contra Hungría, 1926",
+   "lugar": "Campo de Coia",
+   "anio": 1926,
+   "aproximada": false,
+   "descripcion": "Partido amistoso jugado en Vigo el 19 de diciembre de 1926.",
+   "lat": 42.225,
+   "lng": -8.74,
+   "ubicacion": "aproximada",
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Spanish_national_football_team_before_the_friendly_match_against_Hungary_in_Vigo%2C_19.12.1926.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Spanish_national_football_team_before_the_friendly_match_against_Hungary_in_Vigo%2C_19.12.1926.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Spanish_national_football_team_before_the_friendly_match_against_Hungary_in_Vigo%2C_19.12.1926.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Spanish_national_football_team_before_the_friendly_match_against_Hungary_in_Vigo,_19.12.1926.jpg",
+   "licencia": "PD",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "La selección española antes del partido contra Hungría, 1926",
+     "descripcion": "Partido amistoso jugado en Vigo el 19 de diciembre de 1926."
+    },
+    "gl": {
+     "titulo": "A selección española antes do partido contra Hungría, 1926",
+     "descripcion": "Partido amigable xogado en Vigo o 19 de decembro de 1926."
+    },
+    "en": {
+     "titulo": "Spain's national team before the match against Hungary, 1926",
+     "descripcion": "Friendly played in Vigo on 19 December 1926."
+    },
+    "pt": {
+     "titulo": "A seleção espanhola antes do jogo contra a Hungria, 1926",
+     "descripcion": "Jogo amigável disputado em Vigo a 19 de dezembro de 1926."
+    },
+    "fr": {
+     "titulo": "L'équipe d'Espagne avant le match contre la Hongrie, 1926",
+     "descripcion": "Match amical joué à Vigo le 19 décembre 1926."
+    }
+   }
+  },
+  {
+   "id": "commons-127469766",
+   "titulo": "Primer partido del Celta de Vigo, 1923",
+   "lugar": "Campo de Coia",
+   "anio": 1923,
+   "aproximada": false,
+   "descripcion": "Alineación del Celta en su debut, el 23 de septiembre de 1923, contra el Boavista de Oporto (1-8).",
+   "lat": 42.225,
+   "lng": -8.74,
+   "ubicacion": "aproximada",
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/7/78/Celta_de_Vigo%2C_partido_de_debut%2C_23-09-1923.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/7/78/Celta_de_Vigo%2C_partido_de_debut%2C_23-09-1923.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/7/78/Celta_de_Vigo%2C_partido_de_debut%2C_23-09-1923.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "Casa Alpha, Carretas 8, Madrid, 1923",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Celta_de_Vigo,_partido_de_debut,_23-09-1923.jpg",
+   "licencia": "PD",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Primer partido del Celta de Vigo, 1923",
+     "descripcion": "Alineación del Celta en su debut, el 23 de septiembre de 1923, contra el Boavista de Oporto (1-8)."
+    },
+    "gl": {
+     "titulo": "Primeiro partido do Celta de Vigo, 1923",
+     "descripcion": "Aliñación do Celta no seu debut, o 23 de setembro de 1923, fronte ao Boavista do Porto (1-8)."
+    },
+    "en": {
+     "titulo": "Celta de Vigo's first match, 1923",
+     "descripcion": "Celta's line-up for its debut on 23 September 1923 against Boavista of Porto (1-8)."
+    },
+    "pt": {
+     "titulo": "Primeiro jogo do Celta de Vigo, 1923",
+     "descripcion": "Onze do Celta na estreia, a 23 de setembro de 1923, contra o Boavista do Porto (1-8)."
+    },
+    "fr": {
+     "titulo": "Premier match du Celta de Vigo, 1923",
+     "descripcion": "Composition du Celta lors de ses débuts, le 23 septembre 1923, contre le Boavista de Porto (1-8)."
+    }
+   }
+  },
+  {
+   "id": "commons-35955954",
+   "titulo": "El campo de Coia",
+   "lugar": "Campo de Coia",
+   "anio": 1922,
+   "aproximada": false,
+   "descripcion": "Primer estadio del Celta de Vigo, en uso entre 1908 y 1923, conocido como «La Catedral».",
+   "lat": 42.225,
+   "lng": -8.74,
+   "ubicacion": "aproximada",
+   "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Campo_de_Coia.jpg/1280px-Campo_de_Coia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "miniatura": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Campo_de_Coia.jpg/500px-Campo_de_Coia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Campo_de_Coia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Campo_de_Coia.jpg",
+   "licencia": "PD",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "El campo de Coia",
+     "descripcion": "Primer estadio del Celta de Vigo, en uso entre 1908 y 1923, conocido como «La Catedral»."
+    },
+    "gl": {
+     "titulo": "O campo de Coia",
+     "descripcion": "Primeiro estadio do Celta de Vigo, en uso entre 1908 e 1923, coñecido como «A Catedral»."
+    },
+    "en": {
+     "titulo": "The Coia ground",
+     "descripcion": "Celta de Vigo's first stadium, in use from 1908 to 1923, known as \"The Cathedral\"."
+    },
+    "pt": {
+     "titulo": "O campo de Coia",
+     "descripcion": "Primeiro estádio do Celta de Vigo, usado entre 1908 e 1923, conhecido como «A Catedral»."
+    },
+    "fr": {
+     "titulo": "Le terrain de Coia",
+     "descripcion": "Premier stade du Celta de Vigo, utilisé de 1908 à 1923, surnommé « la Cathédrale »."
+    }
+   }
+  },
+  {
+   "id": "commons-7901789",
+   "titulo": "Venta del pescado en la playa de Vigo (pintura)",
+   "lugar": "O Berbés",
+   "anio": 1916,
+   "aproximada": false,
+   "descripcion": "Óleo de Francisco Pradilla, 1916.",
+   "lat": 42.2388,
+   "lng": -8.7264,
+   "ubicacion": "sin_confirmar",
+   "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Venta_del_pescado_en_la_playa_de_Vigo_%28Francisco_Pradilla%2C_1916%29.jpg/1280px-Venta_del_pescado_en_la_playa_de_Vigo_%28Francisco_Pradilla%2C_1916%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "miniatura": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Venta_del_pescado_en_la_playa_de_Vigo_%28Francisco_Pradilla%2C_1916%29.jpg/500px-Venta_del_pescado_en_la_playa_de_Vigo_%28Francisco_Pradilla%2C_1916%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/0/01/Venta_del_pescado_en_la_playa_de_Vigo_%28Francisco_Pradilla%2C_1916%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "Francisco Pradilla y Ortiz",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Venta_del_pescado_en_la_playa_de_Vigo_(Francisco_Pradilla,_1916).jpg",
+   "licencia": "PD",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Venta del pescado en la playa de Vigo (pintura)",
+     "descripcion": "Óleo de Francisco Pradilla, 1916."
+    },
+    "gl": {
+     "titulo": "Venda do peixe na praia de Vigo (pintura)",
+     "descripcion": "Óleo de Francisco Pradilla, 1916."
+    },
+    "en": {
+     "titulo": "Selling fish on the beach in Vigo (painting)",
+     "descripcion": "Oil painting by Francisco Pradilla, 1916."
+    },
+    "pt": {
+     "titulo": "Venda do peixe na praia de Vigo (pintura)",
+     "descripcion": "Óleo de Francisco Pradilla, 1916."
+    },
+    "fr": {
+     "titulo": "Vente du poisson sur la plage de Vigo (peinture)",
+     "descripcion": "Huile de Francisco Pradilla, 1916."
+    }
+   }
+  },
+  {
+   "id": "commons-78260812",
+   "titulo": "Vigo visto desde el mar",
+   "lugar": "Ría de Vigo",
+   "anio": 1880,
+   "aproximada": true,
+   "descripcion": "Fotografía de Lluís Marià Vidal i Carreras, hacia 1880.",
+   "lat": 42.249,
+   "lng": -8.743,
+   "ubicacion": "sin_confirmar",
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Ciutat_de_Vigo%2C_vista_des_del_mar.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Ciutat_de_Vigo%2C_vista_des_del_mar.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Ciutat_de_Vigo%2C_vista_des_del_mar.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "Lluís Marià Vidal i Carreras",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Ciutat_de_Vigo,_vista_des_del_mar.jpeg",
+   "licencia": "PD",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Vigo visto desde el mar",
+     "descripcion": "Fotografía de Lluís Marià Vidal i Carreras, hacia 1880."
+    },
+    "gl": {
+     "titulo": "Vigo visto dende o mar",
+     "descripcion": "Fotografía de Lluís Marià Vidal i Carreras, cara a 1880."
+    },
+    "en": {
+     "titulo": "Vigo seen from the sea",
+     "descripcion": "Photograph by Lluís Marià Vidal i Carreras, c. 1880."
+    },
+    "pt": {
+     "titulo": "Vigo visto do mar",
+     "descripcion": "Fotografia de Lluís Marià Vidal i Carreras, c. 1880."
+    },
+    "fr": {
+     "titulo": "Vigo vu de la mer",
+     "descripcion": "Photographie de Lluís Marià Vidal i Carreras, vers 1880."
+    }
+   }
+  },
+  {
+   "id": "commons-127871363",
+   "titulo": "Barcos en la costa de la bahía de Vigo (pintura)",
+   "lugar": "Ría de Vigo",
+   "anio": 1923,
+   "aproximada": false,
+   "descripcion": "Obra de Benjamin Olsen, 1923.",
+   "lat": 42.249,
+   "lng": -8.743,
+   "ubicacion": "sin_confirmar",
+   "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Christian_Benjamin_Olsen_-_B%C3%A5de_ud_for_kysten_ved_Vigo-bugten%2C_Spanien_-_1923.png/1280px-Christian_Benjamin_Olsen_-_B%C3%A5de_ud_for_kysten_ved_Vigo-bugten%2C_Spanien_-_1923.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "miniatura": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Christian_Benjamin_Olsen_-_B%C3%A5de_ud_for_kysten_ved_Vigo-bugten%2C_Spanien_-_1923.png/500px-Christian_Benjamin_Olsen_-_B%C3%A5de_ud_for_kysten_ved_Vigo-bugten%2C_Spanien_-_1923.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/8/84/Christian_Benjamin_Olsen_-_B%C3%A5de_ud_for_kysten_ved_Vigo-bugten%2C_Spanien_-_1923.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "Benjamin Olsen",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Christian_Benjamin_Olsen_-_B%C3%A5de_ud_for_kysten_ved_Vigo-bugten,_Spanien_-_1923.png",
+   "licencia": "PD",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Barcos en la costa de la bahía de Vigo (pintura)",
+     "descripcion": "Obra de Benjamin Olsen, 1923."
+    },
+    "gl": {
+     "titulo": "Barcos na costa da baía de Vigo (pintura)",
+     "descripcion": "Obra de Benjamin Olsen, 1923."
+    },
+    "en": {
+     "titulo": "Boats along the coast of Vigo Bay (painting)",
+     "descripcion": "Work by Benjamin Olsen, 1923."
+    },
+    "pt": {
+     "titulo": "Barcos na costa da baía de Vigo (pintura)",
+     "descripcion": "Obra de Benjamin Olsen, 1923."
+    },
+    "fr": {
+     "titulo": "Bateaux sur la côte de la baie de Vigo (peinture)",
+     "descripcion": "Œuvre de Benjamin Olsen, 1923."
+    }
+   }
+  },
+  {
+   "id": "commons-141825088",
+   "titulo": "La Ribeira de San Francisco, 1867 (grabado)",
+   "lugar": "Ribeira de San Francisco",
+   "anio": 1867,
+   "aproximada": false,
+   "descripcion": "Grabado de la «Crónica de la provincia de Pontevedra», de Fernando Fulgosio.",
+   "lat": 42.2393,
+   "lng": -8.727,
+   "ubicacion": "aproximada",
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Ribeira_de_San_Francisco%2C_Vigo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Ribeira_de_San_Francisco%2C_Vigo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Ribeira_de_San_Francisco%2C_Vigo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "Fernando Fulgosio",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Ribeira_de_San_Francisco,_Vigo.jpg",
+   "licencia": "PD",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "La Ribeira de San Francisco, 1867 (grabado)",
+     "descripcion": "Grabado de la «Crónica de la provincia de Pontevedra», de Fernando Fulgosio."
+    },
+    "gl": {
+     "titulo": "A Ribeira de San Francisco, 1867 (gravado)",
+     "descripcion": "Gravado da «Crónica de la provincia de Pontevedra», de Fernando Fulgosio."
+    },
+    "en": {
+     "titulo": "Ribeira de San Francisco, 1867 (engraving)",
+     "descripcion": "Engraving from Fernando Fulgosio's \"Crónica de la provincia de Pontevedra\"."
+    },
+    "pt": {
+     "titulo": "A Ribeira de San Francisco, 1867 (gravura)",
+     "descripcion": "Gravura da «Crónica de la provincia de Pontevedra», de Fernando Fulgosio."
+    },
+    "fr": {
+     "titulo": "La Ribeira de San Francisco, 1867 (gravure)",
+     "descripcion": "Gravure de la « Crónica de la provincia de Pontevedra » de Fernando Fulgosio."
+    }
+   }
+  },
+  {
+   "id": "commons-139108220",
+   "titulo": "Derrota de la escuadra de Don Miguel frente a Vigo, 1833 (grabado)",
+   "lugar": "Ría de Vigo",
+   "anio": 1833,
+   "aproximada": false,
+   "descripcion": "Grabado inglés sobre la batalla naval de la guerra civil portuguesa.",
+   "lat": 42.249,
+   "lng": -8.743,
+   "ubicacion": "sin_confirmar",
+   "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/The_Defeat_of_the_Squadron_of_Don_Miguel_off_Vigo_%281833%29.png/1280px-The_Defeat_of_the_Squadron_of_Don_Miguel_off_Vigo_%281833%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "miniatura": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/The_Defeat_of_the_Squadron_of_Don_Miguel_off_Vigo_%281833%29.png/500px-The_Defeat_of_the_Squadron_of_Don_Miguel_off_Vigo_%281833%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/4/4b/The_Defeat_of_the_Squadron_of_Don_Miguel_off_Vigo_%281833%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:The_Defeat_of_the_Squadron_of_Don_Miguel_off_Vigo_(1833).png",
+   "licencia": "PD",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Derrota de la escuadra de Don Miguel frente a Vigo, 1833 (grabado)",
+     "descripcion": "Grabado inglés sobre la batalla naval de la guerra civil portuguesa."
+    },
+    "gl": {
+     "titulo": "Derrota da escuadra de Don Miguel fronte a Vigo, 1833 (gravado)",
+     "descripcion": "Gravado inglés sobre a batalla naval da guerra civil portuguesa."
+    },
+    "en": {
+     "titulo": "Defeat of Dom Miguel's squadron off Vigo, 1833 (engraving)",
+     "descripcion": "English engraving of the naval battle in the Portuguese Civil War."
+    },
+    "pt": {
+     "titulo": "Derrota da esquadra de D. Miguel ao largo de Vigo, 1833 (gravura)",
+     "descripcion": "Gravura inglesa sobre a batalha naval da guerra civil portuguesa."
+    },
+    "fr": {
+     "titulo": "Défaite de l'escadre de Dom Miguel au large de Vigo, 1833 (gravure)",
+     "descripcion": "Gravure anglaise de la bataille navale de la guerre civile portugaise."
+    }
+   }
+  },
+  {
+   "id": "commons-176352021",
+   "titulo": "Mercado del Berbés (pintura)",
+   "lugar": "O Berbés",
+   "anio": 1905,
+   "aproximada": false,
+   "descripcion": "Obra de Enrique Simonet, hacia 1905.",
+   "lat": 42.2388,
+   "lng": -8.7264,
+   "ubicacion": "aproximada",
+   "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Simonet_Vigo.jpg/1280px-Simonet_Vigo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "miniatura": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Simonet_Vigo.jpg/500px-Simonet_Vigo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Simonet_Vigo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "Enrique Simonet",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Simonet_Vigo.jpg",
+   "licencia": "PD",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Mercado del Berbés (pintura)",
+     "descripcion": "Obra de Enrique Simonet, hacia 1905."
+    },
+    "gl": {
+     "titulo": "Mercado do Berbés (pintura)",
+     "descripcion": "Obra de Enrique Simonet, cara a 1905."
+    },
+    "en": {
+     "titulo": "Berbés market (painting)",
+     "descripcion": "Work by Enrique Simonet, c. 1905."
+    },
+    "pt": {
+     "titulo": "Mercado do Berbés (pintura)",
+     "descripcion": "Obra de Enrique Simonet, c. 1905."
+    },
+    "fr": {
+     "titulo": "Marché du Berbés (peinture)",
+     "descripcion": "Œuvre d'Enrique Simonet, vers 1905."
+    }
+   }
+  },
+  {
+   "id": "commons-51087895",
+   "titulo": "Naufragio del Highland Pride, 1929",
+   "lugar": "Ría de Vigo",
+   "anio": 1929,
+   "aproximada": false,
+   "descripcion": "El vapor de pasajeros y carga de la Nelson Line, encallado cerca de Vigo.",
+   "lat": 42.249,
+   "lng": -8.743,
+   "ubicacion": "sin_confirmar",
+   "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Afundimento_do_Highland_Pride%2C_1929.jpg/1280px-Afundimento_do_Highland_Pride%2C_1929.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "miniatura": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Afundimento_do_Highland_Pride%2C_1929.jpg/500px-Afundimento_do_Highland_Pride%2C_1929.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/5/56/Afundimento_do_Highland_Pride%2C_1929.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "autor": "",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Afundimento_do_Highland_Pride,_1929.jpg",
+   "licencia": "PD",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Naufragio del Highland Pride, 1929",
+     "descripcion": "El vapor de pasajeros y carga de la Nelson Line, encallado cerca de Vigo."
+    },
+    "gl": {
+     "titulo": "Naufraxio do Highland Pride, 1929",
+     "descripcion": "O vapor de pasaxeiros e carga da Nelson Line, encallado preto de Vigo."
+    },
+    "en": {
+     "titulo": "Wreck of the Highland Pride, 1929",
+     "descripcion": "The Nelson Line passenger and cargo steamer, aground near Vigo."
+    },
+    "pt": {
+     "titulo": "Naufrágio do Highland Pride, 1929",
+     "descripcion": "O vapor de passageiros e carga da Nelson Line, encalhado perto de Vigo."
+    },
+    "fr": {
+     "titulo": "Naufrage du Highland Pride, 1929",
+     "descripcion": "Le vapeur de passagers et de fret de la Nelson Line, échoué près de Vigo."
+    }
+   }
   }
  ]
 }

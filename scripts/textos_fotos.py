@@ -630,6 +630,90 @@ T = {
  "The Battle of Vigo Bay, 1702 (painting)", "Oil painting by Ludolf Bakhuizen of the naval battle in the Rande strait. Rijksmuseum, Amsterdam.",
  "A batalha de Rande, 1702 (pintura)", "Óleo de Ludolf Bakhuizen sobre a batalha naval no estreito de Rande. Rijksmuseum, Amesterdão.",
  "La bataille de Rande, 1702 (peinture)", "Huile de Ludolf Bakhuizen sur la bataille navale dans le détroit de Rande. Rijksmuseum, Amsterdam."),
+"commons-7163837": (
+ "Vendimia en Vigo (pintura)", "Óleo de Aureliano de Beruete, 1912.",
+ "Vendima en Vigo (pintura)", "Óleo de Aureliano de Beruete, 1912.",
+ "Grape harvest in Vigo (painting)", "Oil painting by Aureliano de Beruete, 1912.",
+ "Vindima em Vigo (pintura)", "Óleo de Aureliano de Beruete, 1912.",
+ "Vendanges à Vigo (peinture)", "Huile d'Aureliano de Beruete, 1912."),
+"commons-47599451": (
+ "El Exiles English Club de Vigo, 1903", "Equipo de fútbol de la colonia británica en Vigo.",
+ "O Exiles English Club de Vigo, 1903", "Equipo de fútbol da colonia británica en Vigo.",
+ "Exiles English Club of Vigo, 1903", "Football team of the British community in Vigo.",
+ "O Exiles English Club de Vigo, 1903", "Equipa de futebol da colónia britânica em Vigo.",
+ "L'Exiles English Club de Vigo, 1903", "Équipe de football de la colonie britannique de Vigo."),
+"commons-47738432": (
+ "Vista de Vigo, 1843 (grabado)", "Grabado de John Harrison Allan para «A Pictorial Tour in the Mediterranean».",
+ "Vista de Vigo, 1843 (gravado)", "Gravado de John Harrison Allan para «A Pictorial Tour in the Mediterranean».",
+ "View of Vigo, 1843 (engraving)", "Engraving by John Harrison Allan for \"A Pictorial Tour in the Mediterranean\".",
+ "Vista de Vigo, 1843 (gravura)", "Gravura de John Harrison Allan para «A Pictorial Tour in the Mediterranean».",
+ "Vue de Vigo, 1843 (gravure)", "Gravure de John Harrison Allan pour « A Pictorial Tour in the Mediterranean »."),
+"commons-57430181": (
+ "La playa de Samil", "Fotografía entre 1920 y 1940. Colección Seoane Prado.",
+ "A praia de Samil", "Fotografía entre 1920 e 1940. Colección Seoane Prado.",
+ "Samil beach", "Photograph from between 1920 and 1940. Seoane Prado Collection.",
+ "A praia de Samil", "Fotografia entre 1920 e 1940. Coleção Seoane Prado.",
+ "La plage de Samil", "Photographie prise entre 1920 et 1940. Collection Seoane Prado."),
+"commons-89507795": (
+ "La selección española antes del partido contra Hungría, 1926", "Partido amistoso jugado en Vigo el 19 de diciembre de 1926.",
+ "A selección española antes do partido contra Hungría, 1926", "Partido amigable xogado en Vigo o 19 de decembro de 1926.",
+ "Spain's national team before the match against Hungary, 1926", "Friendly played in Vigo on 19 December 1926.",
+ "A seleção espanhola antes do jogo contra a Hungria, 1926", "Jogo amigável disputado em Vigo a 19 de dezembro de 1926.",
+ "L'équipe d'Espagne avant le match contre la Hongrie, 1926", "Match amical joué à Vigo le 19 décembre 1926."),
+"commons-127469766": (
+ "Primer partido del Celta de Vigo, 1923", "Alineación del Celta en su debut, el 23 de septiembre de 1923, contra el Boavista de Oporto (1-8).",
+ "Primeiro partido do Celta de Vigo, 1923", "Aliñación do Celta no seu debut, o 23 de setembro de 1923, fronte ao Boavista do Porto (1-8).",
+ "Celta de Vigo's first match, 1923", "Celta's line-up for its debut on 23 September 1923 against Boavista of Porto (1-8).",
+ "Primeiro jogo do Celta de Vigo, 1923", "Onze do Celta na estreia, a 23 de setembro de 1923, contra o Boavista do Porto (1-8).",
+ "Premier match du Celta de Vigo, 1923", "Composition du Celta lors de ses débuts, le 23 septembre 1923, contre le Boavista de Porto (1-8)."),
+"commons-35955954": (
+ "El campo de Coia", "Primer estadio del Celta de Vigo, en uso entre 1908 y 1923, conocido como «La Catedral».",
+ "O campo de Coia", "Primeiro estadio do Celta de Vigo, en uso entre 1908 e 1923, coñecido como «A Catedral».",
+ "The Coia ground", "Celta de Vigo's first stadium, in use from 1908 to 1923, known as \"The Cathedral\".",
+ "O campo de Coia", "Primeiro estádio do Celta de Vigo, usado entre 1908 e 1923, conhecido como «A Catedral».",
+ "Le terrain de Coia", "Premier stade du Celta de Vigo, utilisé de 1908 à 1923, surnommé « la Cathédrale »."),
+"commons-7901789": (
+ "Venta del pescado en la playa de Vigo (pintura)", "Óleo de Francisco Pradilla, 1916.",
+ "Venda do peixe na praia de Vigo (pintura)", "Óleo de Francisco Pradilla, 1916.",
+ "Selling fish on the beach in Vigo (painting)", "Oil painting by Francisco Pradilla, 1916.",
+ "Venda do peixe na praia de Vigo (pintura)", "Óleo de Francisco Pradilla, 1916.",
+ "Vente du poisson sur la plage de Vigo (peinture)", "Huile de Francisco Pradilla, 1916."),
+"commons-78260812": (
+ "Vigo visto desde el mar", "Fotografía de Lluís Marià Vidal i Carreras, hacia 1880.",
+ "Vigo visto dende o mar", "Fotografía de Lluís Marià Vidal i Carreras, cara a 1880.",
+ "Vigo seen from the sea", "Photograph by Lluís Marià Vidal i Carreras, c. 1880.",
+ "Vigo visto do mar", "Fotografia de Lluís Marià Vidal i Carreras, c. 1880.",
+ "Vigo vu de la mer", "Photographie de Lluís Marià Vidal i Carreras, vers 1880."),
+"commons-127871363": (
+ "Barcos en la costa de la bahía de Vigo (pintura)", "Obra de Benjamin Olsen, 1923.",
+ "Barcos na costa da baía de Vigo (pintura)", "Obra de Benjamin Olsen, 1923.",
+ "Boats along the coast of Vigo Bay (painting)", "Work by Benjamin Olsen, 1923.",
+ "Barcos na costa da baía de Vigo (pintura)", "Obra de Benjamin Olsen, 1923.",
+ "Bateaux sur la côte de la baie de Vigo (peinture)", "Œuvre de Benjamin Olsen, 1923."),
+"commons-141825088": (
+ "La Ribeira de San Francisco, 1867 (grabado)", "Grabado de la «Crónica de la provincia de Pontevedra», de Fernando Fulgosio.",
+ "A Ribeira de San Francisco, 1867 (gravado)", "Gravado da «Crónica de la provincia de Pontevedra», de Fernando Fulgosio.",
+ "Ribeira de San Francisco, 1867 (engraving)", "Engraving from Fernando Fulgosio's \"Crónica de la provincia de Pontevedra\".",
+ "A Ribeira de San Francisco, 1867 (gravura)", "Gravura da «Crónica de la provincia de Pontevedra», de Fernando Fulgosio.",
+ "La Ribeira de San Francisco, 1867 (gravure)", "Gravure de la « Crónica de la provincia de Pontevedra » de Fernando Fulgosio."),
+"commons-139108220": (
+ "Derrota de la escuadra de Don Miguel frente a Vigo, 1833 (grabado)", "Grabado inglés sobre la batalla naval de la guerra civil portuguesa.",
+ "Derrota da escuadra de Don Miguel fronte a Vigo, 1833 (gravado)", "Gravado inglés sobre a batalla naval da guerra civil portuguesa.",
+ "Defeat of Dom Miguel's squadron off Vigo, 1833 (engraving)", "English engraving of the naval battle in the Portuguese Civil War.",
+ "Derrota da esquadra de D. Miguel ao largo de Vigo, 1833 (gravura)", "Gravura inglesa sobre a batalha naval da guerra civil portuguesa.",
+ "Défaite de l'escadre de Dom Miguel au large de Vigo, 1833 (gravure)", "Gravure anglaise de la bataille navale de la guerre civile portugaise."),
+"commons-176352021": (
+ "Mercado del Berbés (pintura)", "Obra de Enrique Simonet, hacia 1905.",
+ "Mercado do Berbés (pintura)", "Obra de Enrique Simonet, cara a 1905.",
+ "Berbés market (painting)", "Work by Enrique Simonet, c. 1905.",
+ "Mercado do Berbés (pintura)", "Obra de Enrique Simonet, c. 1905.",
+ "Marché du Berbés (peinture)", "Œuvre d'Enrique Simonet, vers 1905."),
+"commons-51087895": (
+ "Naufragio del Highland Pride, 1929", "El vapor de pasajeros y carga de la Nelson Line, encallado cerca de Vigo.",
+ "Naufraxio do Highland Pride, 1929", "O vapor de pasaxeiros e carga da Nelson Line, encallado preto de Vigo.",
+ "Wreck of the Highland Pride, 1929", "The Nelson Line passenger and cargo steamer, aground near Vigo.",
+ "Naufrágio do Highland Pride, 1929", "O vapor de passageiros e carga da Nelson Line, encalhado perto de Vigo.",
+ "Naufrage du Highland Pride, 1929", "Le vapeur de passagers et de fret de la Nelson Line, échoué près de Vigo."),
 }
 
 # Ubicaciones corregidas a mano (el importador las había asignado por palabras sueltas)
@@ -643,6 +727,21 @@ UBICACIONES = {
     "commons-57430182": ("Real Club Náutico", 42.24050, -8.72300, "aproximada"),
     "commons-196084836": ("O Calvario", 42.22700, -8.70500, "aproximada"),
     "commons-76844617": ("Vigo (sin ubicar)", *CENTRO, "sin_confirmar"),
+    # Flickr Commons y dominio público (importación de octubre de 2026)
+    "commons-7163837": ("Vigo (sin ubicar)", *CENTRO, "sin_confirmar"),
+    "commons-47599451": ("Vigo (sin ubicar)", *CENTRO, "sin_confirmar"),
+    "commons-47738432": ("Ría de Vigo", 42.24900, -8.74300, "sin_confirmar"),
+    "commons-57430181": ("Praia de Samil", 42.21050, -8.77450, "aproximada"),
+    "commons-89507795": ("Campo de Coia", 42.22500, -8.74000, "aproximada"),
+    "commons-127469766": ("Campo de Coia", 42.22500, -8.74000, "aproximada"),
+    "commons-35955954": ("Campo de Coia", 42.22500, -8.74000, "aproximada"),
+    "commons-7901789": ("O Berbés", 42.23880, -8.72640, "sin_confirmar"),
+    "commons-78260812": ("Ría de Vigo", 42.24900, -8.74300, "sin_confirmar"),
+    "commons-127871363": ("Ría de Vigo", 42.24900, -8.74300, "sin_confirmar"),
+    "commons-141825088": ("Ribeira de San Francisco", 42.23930, -8.72700, "aproximada"),
+    "commons-139108220": ("Ría de Vigo", 42.24900, -8.74300, "sin_confirmar"),
+    "commons-176352021": ("O Berbés", 42.23880, -8.72640, "aproximada"),
+    "commons-51087895": ("Ría de Vigo", 42.24900, -8.74300, "sin_confirmar"),
     # Revistas ilustradas (importación de octubre de 2026)
     "commons-65407623": ("Ría de Vigo", 42.24900, -8.74300, "sin_confirmar"),
     "commons-57829083": ("Teatro Tamberlik", 42.23720, -8.72050, "sin_confirmar"),  # "Castro" era un apellido
