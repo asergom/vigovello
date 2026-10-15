@@ -56,6 +56,32 @@ Para que la web pueda mostrarlas hace falta una dirección de imagen permanente.
 | Casa de Caridad y Escuela Obrera (h. 1900) | Ubicación de los edificios. |
 | Resto de fotos con la etiqueta «Ubicación sin confirmar» | Se pueden ir corrigiendo con `editor.html` o con las propuestas de los visitantes. |
 
+### 5. Revisar: otras imágenes encontradas en Europeana
+
+Licencia libre según Europeana. Hay que comprobar fecha, lugar y si encajan en el mapa.
+
+| Imagen | Institución | Licencia | Ficha en Europeana |
+|---|---|---|---|
+| Vista de la parte oriental de la ciudad y puerto de Vigo [Material gráfico no proyectable] | Digital Library Real Academia de la Historia | PDM | https://www.europeana.eu/item/344/https___hispana_mcu_es_lod_oai_bibliotecadigital_rah_es_62777_ent0 |
+| Fotografía de Carmen Martín Gaite en la playa de Canido (Vigo) | Digital Library of Castilla y León | CC0 | https://www.europeana.eu/item/545/https___hispana_mcu_es_lod_oai_bibliotecadigital_jcyl_es_28923_ent0 |
+| Camilo José Cela en Vigo, 1982 | Virtual Library of Bibliographical Heritage | CC BY 4.0 | https://www.europeana.eu/item/109/https___hispana_mcu_es_lod_oai_bvpb_mcu_es_572011_ent0 |
+| Camilo José Cela en Vigo, 1957 | Virtual Library of Bibliographical Heritage | CC BY 4.0 | https://www.europeana.eu/item/109/https___hispana_mcu_es_lod_oai_bvpb_mcu_es_573989_ent0 |
+| Camilo José Cela en Vigo : recepción en el Ayuntamiento | Virtual Library of Bibliographical Heritage | CC BY 4.0 | https://www.europeana.eu/item/109/https___hispana_mcu_es_lod_oai_bvpb_mcu_es_574354_ent0 |
+| Camilo José Cela en Vigo : ágape en el Centro de Hijos de Vigo | Virtual Library of Bibliographical Heritage | CC BY 4.0 | https://www.europeana.eu/item/109/https___hispana_mcu_es_lod_oai_bvpb_mcu_es_574356_ent0 |
+| Camilo José Cela en Vigo : con Celso Emilio Ferreiro | Virtual Library of Bibliographical Heritage | CC BY 4.0 | https://www.europeana.eu/item/109/https___hispana_mcu_es_lod_oai_bvpb_mcu_es_574357_ent0 |
+| Camilo José Cela en Vigo : ágape en el Centro de Hijos de Vigo | Virtual Library of Bibliographical Heritage | CC BY 4.0 | https://www.europeana.eu/item/109/https___hispana_mcu_es_lod_oai_bvpb_mcu_es_574358_ent0 |
+| Camilo José Cela en Vigo : primera conferencia en el Círculo Recreativo Mercantil e Indust | Virtual Library of Bibliographical Heritage | CC BY 4.0 | https://www.europeana.eu/item/109/https___hispana_mcu_es_lod_oai_bvpb_mcu_es_574359_ent0 |
+| Camilo José Cela en Vigo : cena homenaje en el Monte del Castro | Virtual Library of Bibliographical Heritage | CC BY 4.0 | https://www.europeana.eu/item/109/https___hispana_mcu_es_lod_oai_bvpb_mcu_es_574362_ent0 |
+| Camilo José Cela en Vigo : segunda conferencia en el Círculo Recreativo Mercantil e Indust | Virtual Library of Bibliographical Heritage | CC BY 4.0 | https://www.europeana.eu/item/109/https___hispana_mcu_es_lod_oai_bvpb_mcu_es_574367_ent0 |
+| Camilo José Cela en Vigo, 1957 | Virtual Library of Bibliographical Heritage | CC BY 4.0 | https://www.europeana.eu/item/109/https___hispana_mcu_es_lod_oai_bvpb_mcu_es_574376_ent0 |
+| Camilo José Cela en Vigo : cena-homenaje en el Monte del Castro, tocando la gaita | Virtual Library of Bibliographical Heritage | CC BY 4.0 | https://www.europeana.eu/item/109/https___hispana_mcu_es_lod_oai_bvpb_mcu_es_574378_ent0 |
+| Bilden föreställer en stadsvy från Vigo, Spanien, från havet | Naval Museum | PDM | https://www.europeana.eu/item/916108/smm_mm_photo_D13816_3A47 |
+| Fotografía de Carmen Martín Gaite en la playa de Canido (Vigo) | Digital Library of Castilla y León | CC0 | https://www.europeana.eu/item/545/https___hispana_mcu_es_lod_oai_bibliotecadigital_jcyl_es_28908_ent0 |
+| Fotografía de Carmen Martín Gaite en la playa de Canido (Vigo) | Digital Library of Castilla y León | CC0 | https://www.europeana.eu/item/545/https___hispana_mcu_es_lod_oai_bibliotecadigital_jcyl_es_28913_ent0 |
+| S[an]t[ísi]mo Cristo de la Victoria de Vigo [Material gráfico no proyectable | Digital Library Real Academia de la Historia | PDM | https://www.europeana.eu/item/344/https___hispana_mcu_es_lod_oai_bibliotecadigital_rah_es_62424_ent0 |
+| Fotografía de Carmen Martín Gaite en la playa de Canido (Vigo) | Digital Library of Castilla y León | CC0 | https://www.europeana.eu/item/545/https___hispana_mcu_es_lod_oai_bibliotecadigital_jcyl_es_28911_ent0 |
+| Fotografía de Carmen Martín Gaite en la playa de Canido (Vigo) | Digital Library of Castilla y León | CC0 | https://www.europeana.eu/item/545/https___hispana_mcu_es_lod_oai_bibliotecadigital_jcyl_es_28912_ent0 |
+
 ## C · Otras fotos sueltas encontradas en Commons (sin revisar)
 
 | Foto | Notas para revisar |

@@ -667,7 +667,8 @@ def main():
             f.update(lugar=lugar, lat=lat, lng=lng, ubicacion=ub)
         t = T.get(f["id"])
         if not t:
-            sin.append(f["id"])
+            if not f.get("textos"):  # las postales de Galiciana traen sus textos de scripts/postales_galiciana.py
+                sin.append(f["id"])
             continue
         f["textos"] = {l: {"titulo": t[2 * i], "descripcion": t[2 * i + 1]} for i, l in enumerate(LENGUAS)}
         # Los textos en español sustituyen a los originales mezclados
