@@ -82,6 +82,15 @@ Licencia libre según Europeana. Hay que comprobar fecha, lugar y si encajan en 
 | Fotografía de Carmen Martín Gaite en la playa de Canido (Vigo) | Digital Library of Castilla y León | CC0 | https://www.europeana.eu/item/545/https___hispana_mcu_es_lod_oai_bibliotecadigital_jcyl_es_28911_ent0 |
 | Fotografía de Carmen Martín Gaite en la playa de Canido (Vigo) | Digital Library of Castilla y León | CC0 | https://www.europeana.eu/item/545/https___hispana_mcu_es_lod_oai_bibliotecadigital_jcyl_es_28912_ent0 |
 
+### 6. Protegidas por derechos de autor: incluir cuando caduquen
+
+Obras que figuran como dominio público en su web de origen por la ley de otro país, pero que **en España aún tienen derechos**. No se publican hasta que caduquen.
+
+| Obra | Autor | Libre en España desde | Ficha |
+|---|---|---|---|
+| Vigo, l'entrée du port (pintura, 1932) | Albert Marquet (†1947) | 1 de enero de 2028 | https://commons.wikimedia.org/wiki/File:Albert_Marquet,_1932_-_Vigo,_l%27entr%C3%A9e_du_port.jpg |
+| Le port de Vigo, Espagne (pintura, 1932) | Albert Marquet (†1947) | 1 de enero de 2028 | https://commons.wikimedia.org/wiki/File:LE_PORT_DE_VIGO,_ESPAGNE_).jpg |
+
 ## C · Otras fotos sueltas encontradas en Commons (sin revisar)
 
 | Foto | Notas para revisar |
