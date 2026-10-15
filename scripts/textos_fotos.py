@@ -630,6 +630,12 @@ T = {
  "Monument to the repatriated (sculpture)", "Work by Julio González Pola, published in La Esfera magazine, 1929.",
  "Monumento aos repatriados (escultura)", "Obra de Julio González Pola, publicada na revista La Esfera, 1929.",
  "Monument aux rapatriés (sculpture)", "Œuvre de Julio González Pola, publiée dans la revue La Esfera, 1929."),
+"commons-bakhuizen-rande": (
+ "La batalla de Rande, 1702 (pintura)", "Óleo de Ludolf Bakhuizen sobre la batalla naval en el estrecho de Rande. Rijksmuseum, Ámsterdam.",
+ "A batalla de Rande, 1702 (pintura)", "Óleo de Ludolf Bakhuizen sobre a batalla naval no estreito de Rande. Rijksmuseum, Ámsterdam.",
+ "The Battle of Vigo Bay, 1702 (painting)", "Oil painting by Ludolf Bakhuizen of the naval battle in the Rande strait. Rijksmuseum, Amsterdam.",
+ "A batalha de Rande, 1702 (pintura)", "Óleo de Ludolf Bakhuizen sobre a batalha naval no estreito de Rande. Rijksmuseum, Amesterdão.",
+ "La bataille de Rande, 1702 (peinture)", "Huile de Ludolf Bakhuizen sur la bataille navale dans le détroit de Rande. Rijksmuseum, Amsterdam."),
 }
 
 # Ubicaciones corregidas a mano (el importador las había asignado por palabras sueltas)

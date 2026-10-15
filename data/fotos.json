@@ -4209,6 +4209,46 @@
      "descripcion": "Œuvre de Julio González Pola, publiée dans la revue La Esfera, 1929."
     }
    }
+  },
+  {
+   "id": "commons-bakhuizen-rande",
+   "titulo": "La batalla de Rande, 1702 (pintura)",
+   "lugar": "Estrecho de Rande",
+   "anio": 1702,
+   "aproximada": false,
+   "descripcion": "Óleo de Ludolf Bakhuizen sobre la batalla naval en el estrecho de Rande. Rijksmuseum, Ámsterdam.",
+   "lat": 42.2865,
+   "lng": -8.6605,
+   "ubicacion": "aproximada",
+   "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Bakhuizen,_Battle_of_Vigo_Bay.jpg/1280px-Bakhuizen,_Battle_of_Vigo_Bay.jpg",
+   "miniatura": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Bakhuizen,_Battle_of_Vigo_Bay.jpg/500px-Bakhuizen,_Battle_of_Vigo_Bay.jpg",
+   "original": "https://upload.wikimedia.org/wikipedia/commons/7/78/Bakhuizen,_Battle_of_Vigo_Bay.jpg",
+   "autor": "Ludolf Bakhuizen",
+   "fuente": "Wikimedia Commons",
+   "url_fuente": "https://commons.wikimedia.org/wiki/File:Bakhuizen,_Battle_of_Vigo_Bay.jpg",
+   "licencia": "PD",
+   "textos": {
+    "es": {
+     "titulo": "La batalla de Rande, 1702 (pintura)",
+     "descripcion": "Óleo de Ludolf Bakhuizen sobre la batalla naval en el estrecho de Rande. Rijksmuseum, Ámsterdam."
+    },
+    "gl": {
+     "titulo": "A batalla de Rande, 1702 (pintura)",
+     "descripcion": "Óleo de Ludolf Bakhuizen sobre a batalla naval no estreito de Rande. Rijksmuseum, Ámsterdam."
+    },
+    "en": {
+     "titulo": "The Battle of Vigo Bay, 1702 (painting)",
+     "descripcion": "Oil painting by Ludolf Bakhuizen of the naval battle in the Rande strait. Rijksmuseum, Amsterdam."
+    },
+    "pt": {
+     "titulo": "A batalha de Rande, 1702 (pintura)",
+     "descripcion": "Óleo de Ludolf Bakhuizen sobre a batalha naval no estreito de Rande. Rijksmuseum, Amesterdão."
+    },
+    "fr": {
+     "titulo": "La bataille de Rande, 1702 (peinture)",
+     "descripcion": "Huile de Ludolf Bakhuizen sur la bataille navale dans le détroit de Rande. Rijksmuseum, Amsterdam."
+    }
+   }
   }
  ]
 }
