@@ -1,0 +1,22 @@
+{
+  "_ayuda": "Fuentes para una importación puntual: fotos de Vigo en Wikimedia Commons procedentes de Flickr Commons (instituciones, 'sin restricciones de copyright conocidas') y con otras etiquetas de dominio público.",
+  "hasta_anio": 1982,
+  "categorias": [],
+  "busquedas": [
+    { "texto": "Vigo filetype:bitmap hastemplate:Flickr-no_known_copyright_restrictions", "antiguas": true, "solo_vigo": true },
+    { "texto": "Vigo filetype:bitmap hastemplate:Flickr-Commons", "antiguas": false, "solo_vigo": true },
+    { "texto": "Vigo filetype:bitmap hastemplate:PD-Spain", "antiguas": false, "solo_vigo": true },
+    { "texto": "Vigo filetype:bitmap hastemplate:PD-old-80", "antiguas": true, "solo_vigo": true },
+    { "texto": "Vigo filetype:bitmap hastemplate:PD-old-70", "antiguas": true, "solo_vigo": true },
+    { "texto": "Vigo filetype:bitmap hastemplate:PD-old", "antiguas": true, "solo_vigo": true },
+    { "texto": "Vigo filetype:bitmap hastemplate:PD-anon-70-EU", "antiguas": true, "solo_vigo": true },
+    { "texto": "Vigo filetype:bitmap hastemplate:PD-1923", "antiguas": true, "solo_vigo": true },
+    { "texto": "Vigo filetype:bitmap hastemplate:PD-US-expired", "antiguas": true, "solo_vigo": true },
+    { "texto": "Vigo filetype:bitmap hastemplate:PD-Art", "antiguas": true, "solo_vigo": true },
+    { "texto": "Vigo filetype:bitmap hastemplate:PD-scan", "antiguas": true, "solo_vigo": true }
+  ],
+  "excluir": ["periodico", "periódico", "newspaper", "semanario", "diario", "boletin", "boletín", "gaceta",
+              "necroloxica", "necrológica", "esquela", "acta de nacimiento", "plano de", "mapa de", "map of",
+              "escudo", "coat of arms", "firma", "signature", "portada", "cuberta", "cubierta", "carta de", "letter",
+              "sello", "stamp", "billete", "pdf", "fassa", "rendena", "bolòs", "bolós"]
+}
