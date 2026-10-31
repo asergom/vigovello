@@ -120,6 +120,21 @@ Serie de negativos del puerto y la bahía de Vigo (1930–1937), de Marine Photo
 | https://rmg.co.uk/collections/objects/rmgc-object-1162604 |
 | https://rmg.co.uk/collections/objects/rmgc-object-1162608 |
 
+### 8. PK Porthcurno (archivo de la Eastern Telegraph / Cable and Wireless)
+
+Catálogo en línea: https://pkoc.co.uk/ (7.966 fotos). Revisado el 31/10/2026. Condiciones de la web: uso personal o educativo con crédito a PK Porthcurno; prohibido el uso comercial sin permiso escrito. Cada foto lleva además el aviso «If you would like to use or copy this image, please contact us». El usuario decidió usarlas como uso educativo, con crédito; conviene escribirles igualmente.
+
+La imagen de cada ficha tiene una dirección fija (`https://pkoc.co.uk/collection_assets/images/PHO_<n>.jpg`), así que se pueden enlazar como el resto de fotos.
+
+**Listas para añadir:**
+
+| Ficha | Qué es | Imagen | Ubicación propuesta |
+|---|---|---|---|
+| [PHO///314](https://pkoc.co.uk/collections-search/?si_elastic_detail=PHO///314/) | Vigo Station Building (edificio de la estación del cable), anterior a 1970 | https://pkoc.co.uk/collection_assets/images/PHO_314.jpg | Velázquez Moreno 22, sin confirmar |
+| [PHO///315](https://pkoc.co.uk/collections-search/?si_elastic_detail=PHO///315/) | Vigo Station Superintendent's Quarters (residencia del jefe de estación, probablemente Villa Felisa), anterior a 1970 | https://pkoc.co.uk/collection_assets/images/PHO_315.jpg | Ladera del Castro, aproximada |
+
+**Pendiente:** hay más fichas de Vigo a partir de la 314, pero desde la sesión de Claude el catálogo solo devuelve las fichas cuyo enlace pega el usuario. Para recorrerlas hace falta pasar los enlaces o usar un navegador conectado (comprobar desde la 314 hasta encontrar 20 seguidas sin foto).
+
 ## C · Otras fotos sueltas encontradas en Commons (sin revisar)
 
 | Foto | Notas para revisar |
