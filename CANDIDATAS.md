@@ -43,6 +43,7 @@ Para que la web pueda mostrarlas hace falta una dirección de imagen permanente.
 
 | Fuente | Contacto | Notas |
 |---|---|---|
+| Royal Museums Greenwich (fotos de Vigo de los años 30) | Ver el apartado 7 | Uso gratuito no comercial con condiciones; solo falta resolver cómo enlazar las imágenes. |
 | Archivo Pacheco y [Postais históricas municipais](https://postaishistoricasmunicipais.vigo.org/es/) | Concello de Vigo | El gran archivo visual de la ciudad. Claude puede redactar el correo de solicitud. Algunas fotos del Archivo Pacheco ya están en Commons con CC BY-SA 4.0. |
 | [Postales de la Deputación de Pontevedra](https://arquivos.depo.gal/es/fondos-graficos) (unas 6.600) | Servizo de Patrimonio Documental e Bibliográfico | La web solo indica «Copyright © Deputación de Pontevedra». |
 | Fondo de la Asociación de la Prensa de Vigo (509 fotos, más de 300 de Ángel Llanos) | Deputación de Pontevedra ([Atopo](https://atopo.depo.gal/)) | Fotos de la segunda mitad del siglo XX con autores conocidos. |
@@ -90,6 +91,34 @@ Obras que figuran como dominio público en su web de origen por la ley de otro p
 |---|---|---|---|
 | Vigo, l'entrée du port (pintura, 1932) | Albert Marquet (†1947) | 1 de enero de 2028 | https://commons.wikimedia.org/wiki/File:Albert_Marquet,_1932_-_Vigo,_l%27entr%C3%A9e_du_port.jpg |
 | Le port de Vigo, Espagne (pintura, 1932) | Albert Marquet (†1947) | 1 de enero de 2028 | https://commons.wikimedia.org/wiki/File:LE_PORT_DE_VIGO,_ESPAGNE_).jpg |
+
+### 7. Uso permitido con condiciones: Royal Museums Greenwich (Londres)
+
+Serie de negativos del puerto y la bahía de Vigo (1930–1937), de Marine Photo Service, en la *Waterline Collection* del National Maritime Museum. Ejemplos: «The harbour and bay at Vigo, Spain» (P96031) y «The city, harbour and bay at Vigo, Spain» (P96046). Revisado el 31/10/2026.
+
+**Condiciones de uso gratuito del museo:** imágenes de 1280 px (72 dpi), solo en proyectos no comerciales, **máximo 15 imágenes por proyecto**, licencia **CC BY-NC-ND**. VigoVello es sin ánimo de lucro, así que se cumplen.
+
+**Al incluirlas:**
+- Crédito: «National Maritime Museum, Greenwich, London, Waterline Collection · CC BY-NC-ND».
+- Mostrarlas sin recortar ni modificar.
+- Enlazarlas desde la web del museo, como el resto de fotos.
+
+**Pendiente:** las fichas cargan la imagen con un programa del navegador y, según parece, hace falta crearse un usuario para verla o descargarla. Falta conseguir la dirección real de la imagen para comprobar si se puede enlazar.
+
+| Ficha |
+|---|
+| https://rmg.co.uk/collections/objects/rmgc-object-1162563 |
+| https://rmg.co.uk/collections/objects/rmgc-object-1162564 |
+| https://rmg.co.uk/collections/objects/rmgc-object-1162576 |
+| https://rmg.co.uk/collections/objects/rmgc-object-1162577 |
+| https://rmg.co.uk/collections/objects/rmgc-object-1162579 |
+| https://rmg.co.uk/collections/objects/rmgc-object-1162581 |
+| https://rmg.co.uk/collections/objects/rmgc-object-1162584 |
+| https://rmg.co.uk/collections/objects/rmgc-object-1162587 |
+| https://rmg.co.uk/collections/objects/rmgc-object-1162594 |
+| https://rmg.co.uk/collections/objects/rmgc-object-1162600 |
+| https://rmg.co.uk/collections/objects/rmgc-object-1162604 |
+| https://rmg.co.uk/collections/objects/rmgc-object-1162608 |
 
 ## C · Otras fotos sueltas encontradas en Commons (sin revisar)
 
