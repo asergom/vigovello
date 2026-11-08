@@ -135,6 +135,16 @@ La imagen de cada ficha tiene una dirección fija (`https://pkoc.co.uk/collectio
 
 **Pendiente:** hay más fichas de Vigo a partir de la 314, pero desde la sesión de Claude el catálogo solo devuelve las fichas cuyo enlace pega el usuario. Para recorrerlas hace falta pasar los enlaces o usar un navegador conectado (comprobar desde la 314 hasta encontrar 20 seguidas sin foto).
 
+### 9. Rijksmuseum (Ámsterdam): falta el enlace a la imagen
+
+Dominio público confirmado en la ficha («Acquisition and rights · Copyright: Public domain»). El autor murió en 1943, así que también es dominio público en España desde 2024. No está en Europeana y la web del museo no deja leer la dirección de la imagen desde la sesión de Claude: hay que copiarla a mano (clic derecho sobre la foto → «Copiar dirección de la imagen»).
+
+| Ficha | Qué es | Imagen |
+|---|---|---|
+| [RP-F-00-23249](https://www.rijksmuseum.nl/en/collection/object/RP-F-00-23249--91f051df11752112cde9096039237978) | «Vigo. Vista parcial / Vue parcielle», postal fotográfica de Lucien Roisin Besnard, h. 1920–1943 | Pendiente |
+
+Puede que el museo tenga más postales de Vigo que tampoco estén en Europeana; se buscarían a mano en su web.
+
 ## C · Otras fotos sueltas encontradas en Commons (sin revisar)
 
 | Foto | Notas para revisar |
