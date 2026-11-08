@@ -15,6 +15,8 @@ Las fotos de Wikimedia Commons de los apartados anteriores se han añadido al ma
 
 **Cine Royalty (Archivo Pacheco):** licencia CC BY-SA 4.0 confirmada en su ficha.
 
+**Rijksmuseum (8/11/2026):** 6 grabados de la batalla de Rande (BI-B-FM-073-6, BI-B-FM-090-64, RP-P-OB-83.142, 83.143, 83.144 y RP-P-OB-76.820), dominio público. Se enlaza la imagen alojada por el museo y, si falla, la miniatura de Europeana. Descartados del mismo museo: mapas de la batalla, sátiras, alegorías, fuegos artificiales de La Haya y objetos.
+
 Las nuevas fotos de Wikimedia Commons se incorporan con el importador, que se ejecuta a mano (ver README). Este listado queda para lo que no se puede importar así.
 
 ## Lista de tareas pendientes

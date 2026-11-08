@@ -16057,6 +16057,252 @@
      "descripcion": "Le journaliste Manuel de Castro, « Handicap », sur les terrains où serait construit le stade."
     }
    }
+  },
+  {
+   "id": "rijks-bi-b-fm-073-6",
+   "titulo": "La batalla de Rande, 1702 (grabado con marco ornamental)",
+   "lugar": "Estrecho de Rande",
+   "anio": 1702,
+   "aproximada": true,
+   "descripcion": "Derrota de la flota franco-española el 23 de octubre de 1702, con un mapa de la ría en la parte superior. Rijksmuseum, Ámsterdam.",
+   "lat": 42.2865,
+   "lng": -8.6605,
+   "ubicacion": "aproximada",
+   "imagen": "https://lh5.ggpht.com/lJJ24YN0L7IjrGSxKTEPmjVF_qc5V54Drky8qkICuUtrT-OC0z51U9BBhZkxDsWgYTI9VMxdPfcM_BSkQX9CTj_QgHE1=s1600",
+   "miniatura": "https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Flh5.ggpht.com%2FlJJ24YN0L7IjrGSxKTEPmjVF_qc5V54Drky8qkICuUtrT-OC0z51U9BBhZkxDsWgYTI9VMxdPfcM_BSkQX9CTj_QgHE1%3Ds0&type=IMAGE",
+   "original": "https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Flh5.ggpht.com%2FlJJ24YN0L7IjrGSxKTEPmjVF_qc5V54Drky8qkICuUtrT-OC0z51U9BBhZkxDsWgYTI9VMxdPfcM_BSkQX9CTj_QgHE1%3Ds0&type=IMAGE",
+   "autor": "",
+   "fuente": "Rijksmuseum",
+   "url_fuente": "https://hdl.handle.net/10934/RM0001.COLLECT.476469",
+   "licencia": "PDM",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "La batalla de Rande, 1702 (grabado con marco ornamental)",
+     "descripcion": "Derrota de la flota franco-española el 23 de octubre de 1702, con un mapa de la ría en la parte superior. Rijksmuseum, Ámsterdam."
+    },
+    "gl": {
+     "titulo": "A batalla de Rande, 1702 (gravado con marco ornamental)",
+     "descripcion": "Derrota da frota franco-española o 23 de outubro de 1702, cun mapa da ría na parte superior. Rijksmuseum, Ámsterdam."
+    },
+    "en": {
+     "titulo": "The Battle of Vigo Bay, 1702 (engraving with ornamental frame)",
+     "descripcion": "Defeat of the Franco-Spanish fleet on 23 October 1702, with a map of the estuary at the top. Rijksmuseum, Amsterdam."
+    },
+    "pt": {
+     "titulo": "A batalha de Rande, 1702 (gravura com moldura ornamental)",
+     "descripcion": "Derrota da frota franco-espanhola a 23 de outubro de 1702, com um mapa da ria na parte superior. Rijksmuseum, Amesterdão."
+    },
+    "fr": {
+     "titulo": "La bataille de Rande, 1702 (gravure à cadre ornemental)",
+     "descripcion": "Défaite de la flotte franco-espagnole le 23 octobre 1702, avec une carte de la ria en haut. Rijksmuseum, Amsterdam."
+    }
+   }
+  },
+  {
+   "id": "rijks-rp-p-ob-83-143",
+   "titulo": "Ataque a la flota de la plata en la ría, 1702 (grabado)",
+   "lugar": "Estrecho de Rande",
+   "anio": 1702,
+   "aproximada": false,
+   "descripcion": "Grabado holandés de la captura de la flota de la plata española el 23 de octubre de 1702. Rijksmuseum, Ámsterdam.",
+   "lat": 42.2865,
+   "lng": -8.6605,
+   "ubicacion": "aproximada",
+   "imagen": "https://lh4.ggpht.com/4kN3QzVh_vFCVxEFbg3TuoKRBvgWCXXihG47gq0MIgm2yGSgkGGaOpaZ2EYYRwHw5kJPpDWyx-wVUxmtsfyZNsoCM18=s1600",
+   "miniatura": "https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Flh4.ggpht.com%2F4kN3QzVh_vFCVxEFbg3TuoKRBvgWCXXihG47gq0MIgm2yGSgkGGaOpaZ2EYYRwHw5kJPpDWyx-wVUxmtsfyZNsoCM18%3Ds0&type=IMAGE",
+   "original": "https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Flh4.ggpht.com%2F4kN3QzVh_vFCVxEFbg3TuoKRBvgWCXXihG47gq0MIgm2yGSgkGGaOpaZ2EYYRwHw5kJPpDWyx-wVUxmtsfyZNsoCM18%3Ds0&type=IMAGE",
+   "autor": "",
+   "fuente": "Rijksmuseum",
+   "url_fuente": "https://hdl.handle.net/10934/RM0001.COLLECT.472382",
+   "licencia": "PDM",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Ataque a la flota de la plata en la ría, 1702 (grabado)",
+     "descripcion": "Grabado holandés de la captura de la flota de la plata española el 23 de octubre de 1702. Rijksmuseum, Ámsterdam."
+    },
+    "gl": {
+     "titulo": "Ataque á frota da prata na ría, 1702 (gravado)",
+     "descripcion": "Gravado holandés da captura da frota da prata española o 23 de outubro de 1702. Rijksmuseum, Ámsterdam."
+    },
+    "en": {
+     "titulo": "Attack on the silver fleet in the estuary, 1702 (engraving)",
+     "descripcion": "Dutch engraving of the capture of the Spanish silver fleet on 23 October 1702. Rijksmuseum, Amsterdam."
+    },
+    "pt": {
+     "titulo": "Ataque à frota da prata na ria, 1702 (gravura)",
+     "descripcion": "Gravura holandesa da captura da frota da prata espanhola a 23 de outubro de 1702. Rijksmuseum, Amesterdão."
+    },
+    "fr": {
+     "titulo": "Attaque contre la flotte de l'argent dans la ria, 1702 (gravure)",
+     "descripcion": "Gravure hollandaise de la capture de la flotte de l'argent espagnole le 23 octobre 1702. Rijksmuseum, Amsterdam."
+    }
+   }
+  },
+  {
+   "id": "rijks-bi-b-fm-090-64",
+   "titulo": "La ría durante la batalla de Rande (grabado, 1735)",
+   "lugar": "Estrecho de Rande",
+   "anio": 1735,
+   "aproximada": false,
+   "descripcion": "Lámina de un atlas holandés de 1735 que muestra la batalla del 23 de octubre de 1702. Rijksmuseum, Ámsterdam.",
+   "lat": 42.2865,
+   "lng": -8.6605,
+   "ubicacion": "aproximada",
+   "imagen": "https://lh3.googleusercontent.com/rWa0aOvmtR-_oMrHB0fY78zLd4E9cyxI9xcn3lezhqASYKy8JzewNM2beP-PqiC6kA18d9ONXr0owglFJ5Nv1FEV=s1600",
+   "miniatura": "https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Flh3.googleusercontent.com%2FrWa0aOvmtR-_oMrHB0fY78zLd4E9cyxI9xcn3lezhqASYKy8JzewNM2beP-PqiC6kA18d9ONXr0owglFJ5Nv1FEV%3Ds0&type=IMAGE",
+   "original": "https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Flh3.googleusercontent.com%2FrWa0aOvmtR-_oMrHB0fY78zLd4E9cyxI9xcn3lezhqASYKy8JzewNM2beP-PqiC6kA18d9ONXr0owglFJ5Nv1FEV%3Ds0&type=IMAGE",
+   "autor": "",
+   "fuente": "Rijksmuseum",
+   "url_fuente": "https://hdl.handle.net/10934/RM0001.COLLECT.504315",
+   "licencia": "PDM",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "La ría durante la batalla de Rande (grabado, 1735)",
+     "descripcion": "Lámina de un atlas holandés de 1735 que muestra la batalla del 23 de octubre de 1702. Rijksmuseum, Ámsterdam."
+    },
+    "gl": {
+     "titulo": "A ría durante a batalla de Rande (gravado, 1735)",
+     "descripcion": "Lámina dun atlas holandés de 1735 que mostra a batalla do 23 de outubro de 1702. Rijksmuseum, Ámsterdam."
+    },
+    "en": {
+     "titulo": "The estuary during the Battle of Vigo Bay (engraving, 1735)",
+     "descripcion": "Plate from a 1735 Dutch atlas showing the battle of 23 October 1702. Rijksmuseum, Amsterdam."
+    },
+    "pt": {
+     "titulo": "A ria durante a batalha de Rande (gravura, 1735)",
+     "descripcion": "Estampa de um atlas holandês de 1735 que mostra a batalha de 23 de outubro de 1702. Rijksmuseum, Amesterdão."
+    },
+    "fr": {
+     "titulo": "La ria pendant la bataille de Rande (gravure, 1735)",
+     "descripcion": "Planche d'un atlas hollandais de 1735 montrant la bataille du 23 octobre 1702. Rijksmuseum, Amsterdam."
+    }
+   }
+  },
+  {
+   "id": "rijks-rp-p-ob-83-144",
+   "titulo": "La flota de la plata y la barrera de Rande, 1702 (grabado)",
+   "lugar": "Estrecho de Rande",
+   "anio": 1702,
+   "aproximada": false,
+   "descripcion": "Captura de la flota tras romper la barrera que cerraba el estrecho. Dos angelotes sostienen el título. Rijksmuseum, Ámsterdam.",
+   "lat": 42.2865,
+   "lng": -8.6605,
+   "ubicacion": "aproximada",
+   "imagen": "https://lh5.ggpht.com/cAgRMfQnuIod3vCVRRoaT_bSG_Cb8tGGlL34ONx-O1jkHCOnPKa0UCbq9Ff0HVxVHOt5NDESgWSPqArTYwxDLJccU74=s1600",
+   "miniatura": "https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Flh5.ggpht.com%2FcAgRMfQnuIod3vCVRRoaT_bSG_Cb8tGGlL34ONx-O1jkHCOnPKa0UCbq9Ff0HVxVHOt5NDESgWSPqArTYwxDLJccU74%3Ds0&type=IMAGE",
+   "original": "https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Flh5.ggpht.com%2FcAgRMfQnuIod3vCVRRoaT_bSG_Cb8tGGlL34ONx-O1jkHCOnPKa0UCbq9Ff0HVxVHOt5NDESgWSPqArTYwxDLJccU74%3Ds0&type=IMAGE",
+   "autor": "",
+   "fuente": "Rijksmuseum",
+   "url_fuente": "https://hdl.handle.net/10934/RM0001.COLLECT.472383",
+   "licencia": "PDM",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "La flota de la plata y la barrera de Rande, 1702 (grabado)",
+     "descripcion": "Captura de la flota tras romper la barrera que cerraba el estrecho. Dos angelotes sostienen el título. Rijksmuseum, Ámsterdam."
+    },
+    "gl": {
+     "titulo": "A frota da prata e a barreira de Rande, 1702 (gravado)",
+     "descripcion": "Captura da frota tras romper a barreira que pechaba o estreito. Dous anxiños suxeitan o título. Rijksmuseum, Ámsterdam."
+    },
+    "en": {
+     "titulo": "The silver fleet and the Rande boom, 1702 (engraving)",
+     "descripcion": "Capture of the fleet after breaking the boom closing the strait. Two putti hold up the title. Rijksmuseum, Amsterdam."
+    },
+    "pt": {
+     "titulo": "A frota da prata e a barreira de Rande, 1702 (gravura)",
+     "descripcion": "Captura da frota depois de romper a barreira que fechava o estreito. Dois anjinhos seguram o título. Rijksmuseum, Amesterdão."
+    },
+    "fr": {
+     "titulo": "La flotte de l'argent et la barrière de Rande, 1702 (gravure)",
+     "descripcion": "Capture de la flotte après avoir forcé la barrière qui fermait le détroit. Deux putti tiennent le titre. Rijksmuseum, Amsterdam."
+    }
+   }
+  },
+  {
+   "id": "rijks-rp-p-ob-83-142",
+   "titulo": "Captura de la flota de la plata en Rande, 1702 (grabado)",
+   "lugar": "Estrecho de Rande",
+   "anio": 1702,
+   "aproximada": false,
+   "descripcion": "La flota anglo-holandesa rompe la barrera que cerraba el estrecho el 23 de octubre de 1702. Con leyenda de la A a la Q. Rijksmuseum, Ámsterdam.",
+   "lat": 42.2865,
+   "lng": -8.6605,
+   "ubicacion": "aproximada",
+   "imagen": "https://lh4.ggpht.com/3TRK8zZqPwIgM5SdbZsx-2uX7rk1iDLX5vUSxSb5WIpjhg7aYMC8y2uyZwEzVHPipp9YwL3gQqAHwI4XslkOvTvHQWtJ=s1600",
+   "miniatura": "https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Flh4.ggpht.com%2F3TRK8zZqPwIgM5SdbZsx-2uX7rk1iDLX5vUSxSb5WIpjhg7aYMC8y2uyZwEzVHPipp9YwL3gQqAHwI4XslkOvTvHQWtJ%3Ds0&type=IMAGE",
+   "original": "https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Flh4.ggpht.com%2F3TRK8zZqPwIgM5SdbZsx-2uX7rk1iDLX5vUSxSb5WIpjhg7aYMC8y2uyZwEzVHPipp9YwL3gQqAHwI4XslkOvTvHQWtJ%3Ds0&type=IMAGE",
+   "autor": "",
+   "fuente": "Rijksmuseum",
+   "url_fuente": "https://hdl.handle.net/10934/RM0001.COLLECT.472381",
+   "licencia": "PDM",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Captura de la flota de la plata en Rande, 1702 (grabado)",
+     "descripcion": "La flota anglo-holandesa rompe la barrera que cerraba el estrecho el 23 de octubre de 1702. Con leyenda de la A a la Q. Rijksmuseum, Ámsterdam."
+    },
+    "gl": {
+     "titulo": "Captura da frota da prata en Rande, 1702 (gravado)",
+     "descripcion": "A frota anglo-holandesa rompe a barreira que pechaba o estreito o 23 de outubro de 1702. Con lenda da A á Q. Rijksmuseum, Ámsterdam."
+    },
+    "en": {
+     "titulo": "Capture of the silver fleet at Rande, 1702 (engraving)",
+     "descripcion": "The Anglo-Dutch fleet breaks the boom closing the strait on 23 October 1702. With a key from A to Q. Rijksmuseum, Amsterdam."
+    },
+    "pt": {
+     "titulo": "Captura da frota da prata em Rande, 1702 (gravura)",
+     "descripcion": "A frota anglo-holandesa rompe a barreira que fechava o estreito a 23 de outubro de 1702. Com legenda de A a Q. Rijksmuseum, Amesterdão."
+    },
+    "fr": {
+     "titulo": "Capture de la flotte de l'argent à Rande, 1702 (gravure)",
+     "descripcion": "La flotte anglo-hollandaise force la barrière qui fermait le détroit le 23 octobre 1702. Avec une légende de A à Q. Rijksmuseum, Amsterdam."
+    }
+   }
+  },
+  {
+   "id": "rijks-rp-p-ob-76-820",
+   "titulo": "Toma y quema de los barcos en Rande, 1702 (grabado)",
+   "lugar": "Estrecho de Rande",
+   "anio": 1702,
+   "aproximada": false,
+   "descripcion": "Escena detallada de la captura y el incendio de los barcos franceses y españoles, con un mapa de la costa en una cartela. Rijksmuseum, Ámsterdam.",
+   "lat": 42.2865,
+   "lng": -8.6605,
+   "ubicacion": "aproximada",
+   "imagen": "https://lh3.ggpht.com/kq49clHUyypXYnd92ll57vKIVGUpIw3kwsGxi2B5fNp91v4TPi5vaCUPa4a9-6RoOjVLsa_LTXQhVsAM2eat2Za9wYI=s1600",
+   "miniatura": "https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Flh3.ggpht.com%2Fkq49clHUyypXYnd92ll57vKIVGUpIw3kwsGxi2B5fNp91v4TPi5vaCUPa4a9-6RoOjVLsa_LTXQhVsAM2eat2Za9wYI%3Ds0&type=IMAGE",
+   "original": "https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Flh3.ggpht.com%2Fkq49clHUyypXYnd92ll57vKIVGUpIw3kwsGxi2B5fNp91v4TPi5vaCUPa4a9-6RoOjVLsa_LTXQhVsAM2eat2Za9wYI%3Ds0&type=IMAGE",
+   "autor": "",
+   "fuente": "Rijksmuseum",
+   "url_fuente": "https://hdl.handle.net/10934/RM0001.COLLECT.365677",
+   "licencia": "PDM",
+   "importada": true,
+   "textos": {
+    "es": {
+     "titulo": "Toma y quema de los barcos en Rande, 1702 (grabado)",
+     "descripcion": "Escena detallada de la captura y el incendio de los barcos franceses y españoles, con un mapa de la costa en una cartela. Rijksmuseum, Ámsterdam."
+    },
+    "gl": {
+     "titulo": "Toma e queima dos barcos en Rande, 1702 (gravado)",
+     "descripcion": "Escena detallada da captura e o incendio dos barcos franceses e españois, cun mapa da costa nunha cartela. Rijksmuseum, Ámsterdam."
+    },
+    "en": {
+     "titulo": "Capture and burning of the ships at Rande, 1702 (engraving)",
+     "descripcion": "Detailed scene of the capture and burning of the French and Spanish ships, with a map of the coast in a cartouche. Rijksmuseum, Amsterdam."
+    },
+    "pt": {
+     "titulo": "Tomada e incêndio dos navios em Rande, 1702 (gravura)",
+     "descripcion": "Cena pormenorizada da captura e do incêndio dos navios franceses e espanhóis, com um mapa da costa numa cartela. Rijksmuseum, Amesterdão."
+    },
+    "fr": {
+     "titulo": "Prise et incendie des navires à Rande, 1702 (gravure)",
+     "descripcion": "Scène détaillée de la capture et de l'incendie des navires français et espagnols, avec une carte de la côte dans un cartouche. Rijksmuseum, Amsterdam."
+    }
+   }
   }
  ]
 }

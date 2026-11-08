@@ -744,6 +744,43 @@ T = {
  "The Balaídos grounds, 1928", "Journalist Manuel de Castro, \"Handicap\", on the land where the stadium would be built.",
  "Os terrenos de Balaídos, 1928", "O jornalista Manuel de Castro, «Handicap», nos terrenos onde seria construído o estádio.",
  "Les terrains de Balaídos, 1928", "Le journaliste Manuel de Castro, « Handicap », sur les terrains où serait construit le stade."),
+# Rijksmuseum (grabados de la batalla de Rande, noviembre de 2026)
+"rijks-bi-b-fm-073-6": (
+ "La batalla de Rande, 1702 (grabado con marco ornamental)", "Derrota de la flota franco-española el 23 de octubre de 1702, con un mapa de la ría en la parte superior. Rijksmuseum, Ámsterdam.",
+ "A batalla de Rande, 1702 (gravado con marco ornamental)", "Derrota da frota franco-española o 23 de outubro de 1702, cun mapa da ría na parte superior. Rijksmuseum, Ámsterdam.",
+ "The Battle of Vigo Bay, 1702 (engraving with ornamental frame)", "Defeat of the Franco-Spanish fleet on 23 October 1702, with a map of the estuary at the top. Rijksmuseum, Amsterdam.",
+ "A batalha de Rande, 1702 (gravura com moldura ornamental)", "Derrota da frota franco-espanhola a 23 de outubro de 1702, com um mapa da ria na parte superior. Rijksmuseum, Amesterdão.",
+ "La bataille de Rande, 1702 (gravure à cadre ornemental)", "Défaite de la flotte franco-espagnole le 23 octobre 1702, avec une carte de la ria en haut. Rijksmuseum, Amsterdam."),
+"rijks-bi-b-fm-090-64": (
+ "La ría durante la batalla de Rande (grabado, 1735)", "Lámina de un atlas holandés de 1735 que muestra la batalla del 23 de octubre de 1702. Rijksmuseum, Ámsterdam.",
+ "A ría durante a batalla de Rande (gravado, 1735)", "Lámina dun atlas holandés de 1735 que mostra a batalla do 23 de outubro de 1702. Rijksmuseum, Ámsterdam.",
+ "The estuary during the Battle of Vigo Bay (engraving, 1735)", "Plate from a 1735 Dutch atlas showing the battle of 23 October 1702. Rijksmuseum, Amsterdam.",
+ "A ria durante a batalha de Rande (gravura, 1735)", "Estampa de um atlas holandês de 1735 que mostra a batalha de 23 de outubro de 1702. Rijksmuseum, Amesterdão.",
+ "La ria pendant la bataille de Rande (gravure, 1735)", "Planche d'un atlas hollandais de 1735 montrant la bataille du 23 octobre 1702. Rijksmuseum, Amsterdam."),
+"rijks-rp-p-ob-83-142": (
+ "Captura de la flota de la plata en Rande, 1702 (grabado)", "La flota anglo-holandesa rompe la barrera que cerraba el estrecho el 23 de octubre de 1702. Con leyenda de la A a la Q. Rijksmuseum, Ámsterdam.",
+ "Captura da frota da prata en Rande, 1702 (gravado)", "A frota anglo-holandesa rompe a barreira que pechaba o estreito o 23 de outubro de 1702. Con lenda da A á Q. Rijksmuseum, Ámsterdam.",
+ "Capture of the silver fleet at Rande, 1702 (engraving)", "The Anglo-Dutch fleet breaks the boom closing the strait on 23 October 1702. With a key from A to Q. Rijksmuseum, Amsterdam.",
+ "Captura da frota da prata em Rande, 1702 (gravura)", "A frota anglo-holandesa rompe a barreira que fechava o estreito a 23 de outubro de 1702. Com legenda de A a Q. Rijksmuseum, Amesterdão.",
+ "Capture de la flotte de l'argent à Rande, 1702 (gravure)", "La flotte anglo-hollandaise force la barrière qui fermait le détroit le 23 octobre 1702. Avec une légende de A à Q. Rijksmuseum, Amsterdam."),
+"rijks-rp-p-ob-83-143": (
+ "Ataque a la flota de la plata en la ría, 1702 (grabado)", "Grabado holandés de la captura de la flota de la plata española el 23 de octubre de 1702. Rijksmuseum, Ámsterdam.",
+ "Ataque á frota da prata na ría, 1702 (gravado)", "Gravado holandés da captura da frota da prata española o 23 de outubro de 1702. Rijksmuseum, Ámsterdam.",
+ "Attack on the silver fleet in the estuary, 1702 (engraving)", "Dutch engraving of the capture of the Spanish silver fleet on 23 October 1702. Rijksmuseum, Amsterdam.",
+ "Ataque à frota da prata na ria, 1702 (gravura)", "Gravura holandesa da captura da frota da prata espanhola a 23 de outubro de 1702. Rijksmuseum, Amesterdão.",
+ "Attaque contre la flotte de l'argent dans la ria, 1702 (gravure)", "Gravure hollandaise de la capture de la flotte de l'argent espagnole le 23 octobre 1702. Rijksmuseum, Amsterdam."),
+"rijks-rp-p-ob-83-144": (
+ "La flota de la plata y la barrera de Rande, 1702 (grabado)", "Captura de la flota tras romper la barrera que cerraba el estrecho. Dos angelotes sostienen el título. Rijksmuseum, Ámsterdam.",
+ "A frota da prata e a barreira de Rande, 1702 (gravado)", "Captura da frota tras romper a barreira que pechaba o estreito. Dous anxiños suxeitan o título. Rijksmuseum, Ámsterdam.",
+ "The silver fleet and the Rande boom, 1702 (engraving)", "Capture of the fleet after breaking the boom closing the strait. Two putti hold up the title. Rijksmuseum, Amsterdam.",
+ "A frota da prata e a barreira de Rande, 1702 (gravura)", "Captura da frota depois de romper a barreira que fechava o estreito. Dois anjinhos seguram o título. Rijksmuseum, Amesterdão.",
+ "La flotte de l'argent et la barrière de Rande, 1702 (gravure)", "Capture de la flotte après avoir forcé la barrière qui fermait le détroit. Deux putti tiennent le titre. Rijksmuseum, Amsterdam."),
+"rijks-rp-p-ob-76-820": (
+ "Toma y quema de los barcos en Rande, 1702 (grabado)", "Escena detallada de la captura y el incendio de los barcos franceses y españoles, con un mapa de la costa en una cartela. Rijksmuseum, Ámsterdam.",
+ "Toma e queima dos barcos en Rande, 1702 (gravado)", "Escena detallada da captura e o incendio dos barcos franceses e españois, cun mapa da costa nunha cartela. Rijksmuseum, Ámsterdam.",
+ "Capture and burning of the ships at Rande, 1702 (engraving)", "Detailed scene of the capture and burning of the French and Spanish ships, with a map of the coast in a cartouche. Rijksmuseum, Amsterdam.",
+ "Tomada e incêndio dos navios em Rande, 1702 (gravura)", "Cena pormenorizada da captura e do incêndio dos navios franceses e espanhóis, com um mapa da costa numa cartela. Rijksmuseum, Amesterdão.",
+ "Prise et incendie des navires à Rande, 1702 (gravure)", "Scène détaillée de la capture et de l'incendie des navires français et espagnols, avec une carte de la côte dans un cartouche. Rijksmuseum, Amsterdam."),
 }
 
 # Ubicaciones corregidas a mano (el importador las había asignado por palabras sueltas)
